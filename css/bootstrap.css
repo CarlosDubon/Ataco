@@ -3569,11 +3569,11 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: #F9F9ED;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-  color: rgba(0, 0, 0, 0.9);
+  color: #F9F9ED;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -3592,7 +3592,7 @@ tbody.collapse.show {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #F9F9ED;
 }
 
 .navbar-light .navbar-toggler {

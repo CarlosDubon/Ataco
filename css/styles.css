@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Cantarell-Regular';
+    src: url('../fonts/Cantarell-Regular.ttf');
+    
+}
+@font-face {
+    font-family: 'Cantarell-Bold';
+    src: url('../fonts/Cantarell-Bold.ttf');
+    
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../fonts/Quicksand-Regular.otf');
+    
+}
+@font-face {
+    font-family: 'PT-Regular';
+    src: url('../fonts/PTC55F.ttf');
+    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cantarell-Regular;
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing:border-box ;
+    box-sizing:border-box ;
+}
+
+p{
+    margin: 10px;    
+}
+
+body{
+    background: #F9F9ED;
+}
+
+.menu_bar{
+    display: none;
+}
+header{
+    width: 100%;
+}
+header nav{
+    background: #1F4F59;
+    z-index: 10000;
+    max-width: 1400px;
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li:hover{
+    background: #52a7b1;
+}
+
+header nav ul li a{
+    color:#F9F9ED;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color:#F9F9ED;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header nav ul li:hover .children{
+    display: block;
+}
+header nav ul li .children{
+    display: none;
+    background: #011826;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a{
+    display: block;
+}
+
+i{
+    margin-right: 10px;
+}
+.subitem{
+    margin-left: 10px;
+    margin-right: 0px;
+    float: right;
+    position: relative;
+    top: 3px;
+}
+#toggle_menu{
+    margin-top: 4px;
+    margin-right: 20px;
+    float: left;
+}
+section{
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+.container{
+    background: #ecf0f1;
+    border-radius: 3px;
+    border: 1px solid #7f8c8d;
+    float: left;
+    margin: 10px;
+    
+    
+}
+.head-container{
+    background: #7f8c8d;
+    width: 100%;
+    padding: 10px;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+.container-content{
+    width: 100%;
+    padding: 7px;
+}
+.container-content-label{
+    display: block;
+    margin: 5px;
+}
+.textbox{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    border:1px solid #000000;
+}
+
+@media screen and (max-width:900px){
+    body{
+        padding-top: 67px;
+    }
+    #banner-container{
+        display: none !important;
+    }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-image: url(../img/banner.png);
+    }
+
+    .menu_bar .bt-menu{
+        min-width: 370px;
+        display: block;
+        padding: 16px;
+        color:#FEFEFE;
+        overflow: hidden;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    header nav{
+        width:50%;
+        height: calc(100% - 67px);
+        position: fixed;
+        right: 100%;
+        margin: 0px;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    header nav ul li a{
+        display: block;
+    }
+    
+    header nav ul li .children{
+        width: 100%;
+        widows: 100%;
+        position: relative;
+    }
+    
+    header nav ul li:hover .children{
+        display: none;
+    }
+    #navbar-logo, hype-title {
+    display: none !important;
+    }
+
+}
+#navbar-logo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.hype-title {
+    font-family: PT-Regular;
+    font-weight: 204;
+    text-decoration: none;
+    color: #F9F9ED;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+.hype-title:hover {
+    text-decoration: none;
+    color: #F9F9ED;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+
+#slide-icon {
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+#banner-container {
+    background-image: url(../img/banner.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100px;
+    display: table;
+}
+
+#banner {
+    width: 100%;
+}
+
+#banner-title {
+    color: white;
+    font-weight: black;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    
+    
+}
