@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: 'Nepe';
+    font-family: 'Agency';
     src: url('../fonts/Agency.ttf');
     
 }
@@ -50,16 +50,23 @@ header{
 }
 header nav{
     /*background: #1F4F59;*/
-    background-image: url(../img/banner.png);
+    background-image: url(../img/banner3.png);
+    z-index: 10000;
+    max-width: 1700px;
+    width: 100%;
+    position: fixed;
+    
+}
+#banner-container{
+    background-image: url('../img/banner3.png');
     background-size: cover;
     background-attachment: fixed;
-    z-index: 10000;
-    max-width: 1400px;
-    width: 100%;
+
 }
 
 header nav ul{
     list-style: none;
+    margin: 0;
 }
 header nav ul li{
     display: inline-block;
@@ -122,38 +129,7 @@ section{
     max-width: 1000px;
     margin: 20px auto;
 }
-.container{
-    background: #ecf0f1;
-    border-radius: 3px;
-    border: 1px solid #7f8c8d;
-    float: left;
-    margin: 10px;
-    
-    
-}
-.head-container{
-    background: #7f8c8d;
-    width: 100%;
-    padding: 10px;
-    color: #ecf0f1;
-    font-weight: bold;
-}
-.container-content{
-    width: 100%;
-    padding: 7px;
-}
-.container-content-label{
-    display: block;
-    margin: 5px;
-}
-.textbox{
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 3px;
-    border:1px solid #000000;
-}
+
 
 @media screen and (max-width:900px){
     body{
@@ -167,9 +143,12 @@ section{
         width: 100%;
         position: fixed;
         top: 0;
-        background-image: url(../img/banner.png);
+        /*background: #1F4F59;*/
+        background-image: url(../img/banner3.png);
     }
-
+    #banner-title{
+        display: none;
+    }
     .menu_bar .bt-menu{
         min-width: 370px;
         display: block;
@@ -187,6 +166,7 @@ section{
         right: 100%;
         margin: 0px;
     }
+
     header nav ul li{
         display: block;
         border-bottom: 1px solid rgba(255,255,255,.5);
@@ -199,49 +179,21 @@ section{
         width: 100%;
         widows: 100%;
         position: relative;
+        background-image: url(../img/banner3.png);
     }
     
     header nav ul li:hover .children{
         display: none;
     }
-    #navbar-logo, hype-title {
-    display: none !important;
-    }
+
 
 }
-#navbar-logo {
-    display: inline-block;
-    margin-right: 10px;
-}
 
-.hype-title {
-    font-family: PT-Regular;
-    font-weight: 204;
-    text-decoration: none;
-    color: #F9F9ED;
-    font-size: 1.4em;
-    margin-left: 10px;
-}
-.hype-title:hover {
-    text-decoration: none;
-    color: #F9F9ED;
-    font-size: 1.4em;
-    margin-left: 10px;
-}
+
 
 #slide-icon {
     margin-left: 10px;
     margin-right: -10px;
-}
-
-#banner-container {
-    background-image: url(../img/banner.png);
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100px;
-    max-width: 1400px;
-    display: table;
 }
 
 #banner {
@@ -249,13 +201,11 @@ section{
 }
 
 #banner-title {
+    margin: 0;
     color: white;
-    font-family: Nepe;
+    font-family: Agency;
     font-weight: bolder;
     font-size: 3.5em;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    
+    text-align: center;  
     
 }
