@@ -48,25 +48,31 @@ body{
 header{
     width: 100%;
 }
+.movil{
+    display: none;
+}
 .navbar-ext{
     /*background: #1F4F59;*/
     background-image: url(../img/banner3.png) !important;
     z-index: 10000;
     max-width: 1700px;
     width: 100%;
-    position: static;
+    top: auto;
 }
+
 .navbar-flat{
     background: #1F4F59 !important;
     z-index: 10000;
     max-width: 1700px;
-    width: 100%; 
+    width: 100%;
     position: fixed;
-    top: 0;
+    top:0 !important;
 }
+
 #banner-container{
     background-image: url('../img/banner3.png');
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -141,9 +147,7 @@ section{
     body{
         padding-top: 67px;
     }
-    #banner-container{
-        display: none !important;
-    }
+
     .menu_bar{
         display: block;
         width: 100%;
@@ -165,7 +169,12 @@ section{
         font-weight: bold;
         text-decoration: none;
     }
-    header nav{
+    .navbar-ext, .navbar-flat{
+        display: none;
+    }
+    .movil{
+        display: block;
+        background-image: url(../img/banner3.png);
         width:50%;
         height: calc(100% - 67px);
         position: fixed;

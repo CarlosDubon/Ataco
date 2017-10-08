@@ -7,13 +7,13 @@ var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : 
 function main () {
 	$('.menu_bar').click(function(){
 		if (contador == 1) {
-			$('nav').animate({
+			$('.movil').animate({
 				left: '0'
 			});
 			contador = 0;
 		} else {
 			contador = 1;
-			$('nav').animate({
+			$('.movil').animate({
 				left: '-100%'
 			});
             
@@ -41,10 +41,11 @@ function main () {
 
         }*/
         if(Position > $('#banner-container').offset().top + $('#banner-container').outerHeight(true)){
-            $('nav').removeClass('navbar-ext').addClass('navbar-flat');
+            $('nav[id="banner-container"]').addClass('navbar-flat').removeClass('navbar-ext');
+            
         }else{
             $('banner-cantainer').css('display','block');
-            $('nav').removeClass('navbar-flat').addClass('navbar-ext');
+            $('nav[id="banner-container"]').addClass('navbar-ext').removeClass('navbar-flat');
 
         }
         
