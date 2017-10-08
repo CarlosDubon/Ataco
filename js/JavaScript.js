@@ -26,7 +26,7 @@ function main () {
     $(window).scroll(function(){  
         var Position = window.scrollY;
         
-        if(Position >1){
+        /*if(Position >1){
             
             $('nav').css('position','fixed');
             $('#banner-container').slideUp('fast');
@@ -38,6 +38,13 @@ function main () {
         if(Position <1){
              $('nav').css('position','static');
             $('#banner-container').slideDown('fast');
+
+        }*/
+        if(Position > $('#banner-container').offset().top + $('#banner-container').outerHeight(true)){
+            $('nav').removeClass('navbar-ext').addClass('navbar-flat');
+        }else{
+            $('banner-cantainer').css('display','block');
+            $('nav').removeClass('navbar-flat').addClass('navbar-ext');
 
         }
         
