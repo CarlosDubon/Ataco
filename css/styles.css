@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Cantarell-Regular';
     src: url('../fonts/Cantarell-Regular.ttf');
-    
+
 }
 @font-face {
     font-family: 'Cantarell-Bold';
     src: url('../fonts/Cantarell-Bold.ttf');
-    
+
 }
 @font-face {
     font-family: 'Quicksand-Regular';
     src: url('../fonts/Quicksand-Regular.otf');
-    
+
 }
 @font-face {
     font-family: 'PT-Regular';
     src: url('../fonts/PTC55F.ttf');
-    
+
 }
 
 @font-face {
     font-family: 'Agency';
     src: url('../fonts/Agency.ttf');
-    
+
 }
 
 *{
@@ -35,7 +35,7 @@
 }
 
 p{
-    margin: 10px;    
+    margin: 10px;
 }
 
 body{
@@ -55,7 +55,7 @@ header{
     /*background: #1F4F59;*/
     background-image: url(../img/banner3.png) !important;
     z-index: 10000;
-    max-width: 1700px;
+    /*max-width: 1700px;*/
     width: 100%;
     top: auto;
 }
@@ -63,7 +63,7 @@ header{
 .navbar-flat{
     background: #1F4F59 !important;
     z-index: 10000;
-    max-width: 1700px;
+    /*max-width: 1700px;*/
     width: 100%;
     position: fixed;
     top:0 !important;
@@ -139,7 +139,9 @@ i{
 section{
     width: 95%;
     max-width: 1000px;
+    min-width: 320px;
     margin: 20px auto;
+    min-width:
 }
 
 
@@ -160,12 +162,12 @@ section{
         display: none;
     }
     .menu_bar .bt-menu{
-        min-width: 370px;
+        min-width: 320px;
         display: block;
         padding: 16px;
         color:#FEFEFE;
         overflow: hidden;
-        font-size: 24px;
+        font-size: 21.5px;
         font-weight: bold;
         text-decoration: none;
     }
@@ -178,8 +180,14 @@ section{
         width:50%;
         height: calc(100% - 67px);
         position: fixed;
+        top: 64px;
         right: 100%;
         margin: 0px;
+        overflow:scroll;
+    }
+
+    header nav{
+      min-width: 160px;
     }
 
     header nav ul li{
@@ -189,14 +197,14 @@ section{
     header nav ul li a{
         display: block;
     }
-    
+
     header nav ul li .children{
         width: 100%;
         widows: 100%;
         position: relative;
         background-image: url(../img/banner3.png);
     }
-    
+
     header nav ul li:hover .children{
         display: none;
     }
@@ -221,6 +229,6 @@ section{
     font-family: Agency;
     font-weight: bolder;
     font-size: 3.5em;
-    text-align: center;  
-    
+    text-align: center;
+
 }
