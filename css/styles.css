@@ -3,6 +3,17 @@
     src: url('../fonts/Cantarell-Regular.ttf');
 
 }
+
+@font-face {
+  font-family: 'Bebas-Regular';
+  src: url('../fonts/BebasNeue-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Bebas-Bold';
+  src: url('../fonts/BebasNeue-Bold.otf');
+}
+
 @font-face {
     font-family: 'Cantarell-Bold';
     src: url('../fonts/Cantarell-Bold.ttf');
@@ -136,20 +147,20 @@ i{
     margin-right: 20px;
     float: left;
 }
+
 section{
-    width: 95%;
-    max-width: 1000px;
-    min-width: 320px;
-    margin: 20px auto;
-    min-width:
+  z-index: 0;
+  top:125px;
+  height: 100%;
 }
 
-
-@media screen and (max-width:900px){
+@media screen and (max-width:990px){
     body{
-        padding-top: 67px;
+        padding-top: 64px;
     }
-
+    #Box1{
+      height: calc(100vh - 64px) !important;
+    }
     .menu_bar{
         display: block;
         width: 100%;
@@ -209,7 +220,9 @@ section{
         display: none;
     }
 
-
+    .BotonHome{
+      width: 85% !important;
+    }
 }
 
 
@@ -231,4 +244,93 @@ section{
     font-size: 3.5em;
     text-align: center;
 
+}
+
+/*Efecto Paralax Inicio*/
+
+/*Boxes*/
+
+#Box1{
+  display: table;
+  width: 100%;
+  height: calc(100vh - 125px);
+  background-image: url("../img/Img1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Box2{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Img2.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Box3{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Img3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Box4{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Img4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Box_Container{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilo de botones*/
+
+.BotonHome{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration: none;
+  width: 50%;
+  border-radius: 3px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  color: White;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 2em;
+  font-family: Bebas-Regular;
+  padding: 30px;
+  /*-webkit-transition: 1s ease-in-out 1s;
+  -moz-transition: 1s ease-in-out 1s;*/
+  transition: transform 1s ease-in-out 0s;
+
+}
+
+.BotonHome:hover{
+  color: white;
+  background: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  transform: scale(1.3);
+
+}
+.BotonHome:hover .Bold-Beba{
+  color: #aae0e6;
+  font-family: Bebas-Bold;
+}
+
+.Bold-Beba{
+  font-family: Bebas-Regular;
 }
