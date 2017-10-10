@@ -200,6 +200,7 @@ section{
 
     header nav{
       min-width: 160px;
+      z-index: 101;
     }
 
     header nav ul li{
