@@ -168,6 +168,7 @@ section{
         top: 0;
         /*background: #1F4F59;*/
         background-image: url(../img/banner3.png);
+        z-index: 100;
     }
     #banner-title{
         display: none;
@@ -239,8 +240,7 @@ section{
 #banner-title {
     margin: 0;
     color: white;
-    font-family: Agency;
-    font-weight: bolder;
+    font-family: Bebas-Bold;
     font-size: 3.5em;
     text-align: center;
 
@@ -296,6 +296,7 @@ section{
   text-align: center;
   width: 100%;
   height: 100%;
+    background:rgba(0,0,0,0.5); 
 }
 
 /*Estilo de botones*/
@@ -315,7 +316,7 @@ section{
   padding: 30px;
   /*-webkit-transition: 1s ease-in-out 1s;
   -moz-transition: 1s ease-in-out 1s;*/
-  transition: transform 1s ease-in-out 0s;
+  transition: transform 0.5s ease-in-out 0s;
 
 }
 
@@ -323,14 +324,54 @@ section{
   color: white;
   background: rgba(255, 255, 255, 0.4);
   text-decoration: none;
-  transform: scale(1.3);
+  z-index: 1;
+  transform:scale(1.1);
 
 }
 .BotonHome:hover .Bold-Beba{
-  color: #aae0e6;
-  font-family: Bebas-Bold;
+    font-family: Bebas-Bold;
+    z-index: 0;
 }
 
 .Bold-Beba{
   font-family: Bebas-Regular;
+}
+
+/*Hovers de colores*/
+.BotonHome:hover .HBlue{
+    color:#aae0e6; 
+}
+.BotonHome:hover .HYellow{
+    color:#f1c40f; 
+}
+.BotonHome:hover .HBlack{
+    color:#000000; 
+}
+.BotonHome:hover .HGreen{
+    color:#27ae60; 
+}
+
+#Topscroller{
+    padding: 20px 25px;
+    color: #ffffff !important;
+    font-family: Bebas-Bold;
+    font-size: 1em;
+    position: relative;
+    z-index: 100;
+    top: 85%;
+    left: 1%;
+    position: fixed;
+    background: rgba(255,255,255,0.5);
+    border-radius: 7px;
+}
+
+#Topscroller a{
+    color: #ffffff !important;
+    font-family: Bebas-Bold;
+    font-size: 1em;
+}
+#Topscroller a:hover{
+    color: #ffffff !important;
+    font-family: Bebas-Bold;
+    font-size: 1em;
 }

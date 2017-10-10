@@ -51,5 +51,13 @@ function main () {
 
 
     });
+    
+    $('div[id="Topscroller"]').click(function(){
+        var initialPosition = $('#banner-container').offset().top;
+        $('html,body').animate({
+            scrollTop:initialPosition
+        },2000)
+    });
+    
 
 }
