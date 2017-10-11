@@ -1,4 +1,7 @@
 $(document).ready(main);
+$(document).ready(function(){
+   $('.miniaruta').fadeIn(4000); 
+});
 
 var contador = 1;
 var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
@@ -68,6 +71,12 @@ function main () {
     });
 
     $('div[id="Topscroller"]').click(function(){
+        var initialPosition = $('#banner-container').offset().top;
+        $('html,body').animate({
+            scrollTop:initialPosition
+        },2000)
+    });
+    $('div[id="Topscroller-dark"]').click(function(){
         var initialPosition = $('#banner-container').offset().top;
         $('html,body').animate({
             scrollTop:initialPosition
