@@ -65,6 +65,7 @@ header{
 .navbar-ext{
     /*background: #1F4F59;*/
     background-image: url(../img/banner3.png) !important;
+    background-size: cover;
     z-index: 10000;
     /*max-width: 1700px;*/
     width: 100%;
@@ -298,7 +299,7 @@ section{
   text-align: center;
   width: 100%;
   height: 100%;
-    background:rgba(0,0,0,0.5); 
+    background:rgba(0,0,0,0.5);
 }
 
 /*Estilo de botones*/
@@ -341,16 +342,16 @@ section{
 
 /*Hovers de colores*/
 .BotonHome:hover .HBlue{
-    color:#aae0e6; 
+    color:#aae0e6;
 }
 .BotonHome:hover .HYellow{
-    color:#f1c40f; 
+    color:#f1c40f;
 }
 .BotonHome:hover .HBlack{
-    color:#000000; 
+    color:#000000;
 }
 .BotonHome:hover .HGreen{
-    color:#27ae60; 
+    color:#27ae60;
 }
 
 #Topscroller{
