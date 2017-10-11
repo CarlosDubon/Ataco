@@ -5,6 +5,11 @@ function iniciar(){
 }
 
 function reproducir(){
+    if(medio.ended){
+        $('.play-buttom').removeClass('play-buttom');
+        
+    }
+    //23066026 23096179
     if(!medio.paused && !medio.ended){
         medio.pause();
         $('i[name="pause"]').after('<i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span>');
