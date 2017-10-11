@@ -7,9 +7,15 @@ function iniciar(){
 function reproducir(){
     if(!medio.paused && !medio.ended){
         medio.pause();
-        $('#medio').removeClass('play-buttom');
+        $('i[name="pause"]').after('<i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span>');
+         $('i[name="pause"]').remove();
+        $('span[name="pause"]').remove();
+        
     }else{
-        medio.play();   
+        medio.play();
+        $('i[name="play"]').after('<i name="pause" class="fa fa-pause" aria-hidden="true"></i><span name="pause">Pausa</span>');
+         $('i[name="play"]').remove();
+        $('span[name="play"]').remove();
     }
     
 }
