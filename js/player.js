@@ -5,10 +5,6 @@ function iniciar(){
 }
 
 function reproducir(){
-    if(medio.ended){
-        $('.play-buttom').removeClass('play-buttom');
-        
-    }
     //23066026 23096179
     if(!medio.paused && !medio.ended){
         medio.pause();
