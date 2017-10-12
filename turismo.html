@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-grid.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/JavaScript.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>San Miguel de Mercedes</title>
 </head>
@@ -61,7 +59,7 @@
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex voluptatibus dicta vel quaerat illo quod. Fuga architecto deleniti, quos ad beatae perferendis et voluptatibus delectus, ea voluptate quae. Asperiores.</p>
            <div class="row">
                 <div class="col-md-4">
-                    <a href="#" class="thumbnail">
+                    <a href="#" class="thumbnail" data-toggle="modal" data-target="#Turismo1">
                       <img class="miniaruta" src="img/Img3.jpg" alt="...">
                     </a>
                     <hr>
@@ -84,6 +82,11 @@
                     <h1>Lorem</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eligendi, qui. Quasi illo sit, fugiat, veritatis ad eum repudiandae eaque maxime id aut dolor alias autem soluta quam! Veritatis, modi?</p>
                 </div>
+            </div>
+            <hr>
+            <div class="row" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo expedita ipsum veritatis, vel ut, saepe officia facere porro. Suscipit dignissimos necessitatibus fuga sit, voluptatum architecto aspernatur assumenda deserunt obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam magni nemo deserunt voluptas ut, sint molestiae? Ea repellendus vitae adipisci molestias, in sunt odit recusandae, at aperiam. Delectus, magni, a.</p>
             </div>           
        </div>
         
@@ -92,6 +95,31 @@
         <div id="Topscroller" onclick>
             <a href="#"><i style="margin:0;padding:0" class="fa fa-arrow-up" aria-hidden="true"></i></a>
         </div>
+<!--MODAL TURISMO 1 -->
+        <div class="modal fade" id="Turismo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Lorem</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic dolorem fugit id beatae, sunt perferendis ducimus ab, labore vel, vitae laborum quis vero a reiciendis. Adipisci molestias, voluptatem velit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit debitis a ipsum mollitia quibusdam in provident quasi molestiae, distinctio assumenda, beatae repellat, perferendis quis cum! Iste necessitatibus, minus aliquid.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--MODAL TURISMO 1 -->
     </footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/JavaScript.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/effect.js"></script>
 </body>
 </html>
