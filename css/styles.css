@@ -84,8 +84,8 @@ header{
 
 #banner-container{
     background-image: url('../img/banner3.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover !important;
+    background-attachment: fixed !important;
 
 }
 
