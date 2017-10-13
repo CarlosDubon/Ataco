@@ -258,7 +258,7 @@ section{
   display: table;
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url("../img/Img1.jpg");
+  background-image: url("../img/iglesia.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
