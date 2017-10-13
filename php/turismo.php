@@ -2,55 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-grid.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <?php
+    include '../html/head.html';
+    ?>
     <title>San Miguel de Mercedes</title>
 </head>
 <body>
     <header>
-        <div class="menu_bar">
-            <a href="#" class="bt-menu"><i id="toggle_menu" class="fa fa-th-list" aria-hidden="true"></i>San Miguel de Mercedes</a>
-        </div>
-        <div id="banner-container">
-            <h1 id="banner-title">SAN MIGUEL DE MERCEDES</h1>
-        </div>
-        <nav  id="banner-container" class="navbar-ext">
-            <ul>
-                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Item <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
-                    <ul class="children">
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-shield" aria-hidden="true"></i>Item </a></li>
-                <li><a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Item </a></li>
-                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Item </a></li>
-            </ul>
-        </nav>
-        <nav  class="movil">
-            <ul>
-                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                <li class="submenu">
-                    <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Item <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
-                    <ul class="children">
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-shield" aria-hidden="true"></i>Item </a></li>
-                <li><a href="#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Item </a></li>
-                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Item </a></li>
-            </ul>
-        </nav>
+    <?php
+       include '../html/header.html';
+    ?>
     </header>
     <section>
        <div class="container">
@@ -60,7 +21,7 @@
            <div class="row">
                 <div class="col-md-4">
                     <a href="#" class="thumbnail" data-toggle="modal" data-target="#Turismo1">
-                      <img class="miniaruta" src="img/Img3.jpg" alt="...">
+                      <img class="miniaruta" src="../img/Img3.jpg" alt="...">
                     </a>
                     <hr>
                     <h1>Lorem</h1>
@@ -68,7 +29,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="img/Img2.png" alt="...">
+                      <img class="miniaruta" src="../img/Img2.png" alt="...">
                     </a>
                     <hr>
                     <h1>Lorem</h1>
@@ -76,7 +37,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="img/Img4.jpg" alt="...">
+                      <img class="miniaruta" src="../img/Img4.jpg" alt="...">
                     </a>
                     <hr>
                     <h1>Lorem</h1>
@@ -115,11 +76,6 @@
         </div>
 <!--MODAL TURISMO 1 -->
     </footer>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/JavaScript.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/effect.js"></script>
+
 </body>
 </html>
