@@ -344,16 +344,16 @@ section{
 
 /*Hovers de colores*/
 .BotonHome:hover .HBlue{
-    color:#aae0e6;
+    color:#0f272c;
 }
 .BotonHome:hover .HYellow{
-    color:#f1c40f;
+    color: #3f5007;
 }
 .BotonHome:hover .HBlack{
-    color:#000000;
+    color:rgb(16, 26, 1);
 }
 .BotonHome:hover .HGreen{
-    color:#27ae60;
+    color:#751710;
 }
 
 #Topscroller{
@@ -366,8 +366,9 @@ section{
     top: 85%;
     left: 1%;
     position: fixed;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.3);
     border-radius: 7px;
+    transition: all 500ms ease;
 }
 
 #Topscroller a{
@@ -375,8 +376,16 @@ section{
     font-family: Bebas-Bold;
     font-size: 1em;
 }
+
+#Topscroller:hover{
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.6);
+    border: 1px #f9f9ed solid !important;
+    color: #f9f9ed ;
+}
+
 #Topscroller a:hover{
-    color: #ffffff !important;
+    color: #f9f9ed !important;
     font-family: Bebas-Bold;
     font-size: 1em;
 }
