@@ -36,7 +36,7 @@
       </div>
       <div id="Box4">
         <div class="Box_Container" >
-          <a href="#" class="BotonHome fadeIn animated wowload">
+          <a href="../php/turismo.php" class="BotonHome fadeIn animated wowload">
             Conoce el <span class="Bold-Beba HGreen">turismo</span> de San Miguel de Mercedes...
           </a>
         </div>

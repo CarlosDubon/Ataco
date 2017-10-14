@@ -96,6 +96,7 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     position: relative;
+    transition: all 500ms ease;
 }
 header nav ul li:hover{
     background: #52a7b1;
@@ -411,28 +412,33 @@ section{
     background: #1F4F59;
     color: #FFFFFF;
     border: none;
+    transition: all 500ms ease-in-out;
 }
 .play-buttom:hover {
-    margin-left: 25px;
-    padding: 7px;
-    background: #52a7b1;
-    color: #FFFFFF;
-    border: none;
+     background: rgba(0,0,0,0);
+     color: #3a7999;
+     box-shadow: 0 0 0 1px #3a7999;
 }
 
 .miniaruta {
     width: 100%;
     border-radius: 7px;
+    transition: all 300ms ease-in-out;
+}
+.miniaruta:hover {
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.8);
 }
 
 #button-modal {
     background: #1f4f59 !important;
     border-radius: 3px !important;
     border: 1px solid #1f4f59 !important;
+    transition: all 500ms ease;
 }
 #button-modal:hover {
-    background: #54c0cc !important;
-    border-radius: 3px !important;
-    border: 1px solid #aae0e6 !important;
+    background: rgba(0,0,0,0) !important;
+    color: #3a7999 !important;
+    box-shadow: 0 0 0 1px #3a7999 !important;
+    border: 0px;
 
 }
