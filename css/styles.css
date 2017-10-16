@@ -452,15 +452,13 @@ section{
 
 }
 
-.imgGallery {
-    margin: 0;
-    width: 100%;
-}
+
 
 .galeryThumnails {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 ;
+    padding: 0 ;
 }
+
 
 #galleryContainer {
     padding: 10px;
