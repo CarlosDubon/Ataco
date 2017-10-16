@@ -193,7 +193,7 @@ section{
     .movil{
         display: block;
         background-image: url(../img/banner3.png);
-        width:50%;
+        width:70%;
         height: calc(100% - 67px);
         position: fixed;
         top: 64px;
@@ -450,4 +450,18 @@ section{
     box-shadow: 0 0 0 1px #3a7999 !important;
     border: 0px;
 
+}
+
+.imgGallery {
+    margin: 0;
+    width: 100%;
+}
+
+.galeryThumnails {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#galleryContainer {
+    padding: 10px;
 }
