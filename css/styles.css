@@ -154,7 +154,7 @@ i{
 section{
   z-index: 0;
   top:125px;
-  margin: 15px 0px;    
+  margin: 15px 0px;
   height: 100%;
 }
 
@@ -193,7 +193,7 @@ section{
     .movil{
         display: block;
         background-image: url(../img/banner3.png);
-        width:50%;
+        width:70%;
         height: calc(100% - 67px);
         position: fixed;
         top: 64px;
