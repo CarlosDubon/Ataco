@@ -451,3 +451,17 @@ section{
     border: 0px;
 
 }
+
+.imgGallery {
+    margin: 0;
+    width: 100%;
+}
+
+.galeryThumnails {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#galleryContainer {
+    padding: 10px;
+}

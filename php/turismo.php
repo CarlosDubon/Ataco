@@ -57,14 +57,17 @@
             <a href="#"><i style="margin:0;padding:0" class="fa fa-arrow-up" aria-hidden="true"></i></a>
         </div>
 <!--MODAL TURISMO 1 -->
-        <div class="modal fade" id="Turismo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
+        <div class="modal fade bs-example-modal-lg" id="Turismo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Lorem</h4>
               </div>
               <div class="modal-body">
+                <?php
+                  include '../html/gallery.html';
+                ?>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic dolorem fugit id beatae, sunt perferendis ducimus ab, labore vel, vitae laborum quis vero a reiciendis. Adipisci molestias, voluptatem velit.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit debitis a ipsum mollitia quibusdam in provident quasi molestiae, distinctio assumenda, beatae repellat, perferendis quis cum! Iste necessitatibus, minus aliquid.</p>
               </div>
