@@ -48,9 +48,9 @@
             <div class="row" >
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo expedita ipsum veritatis, vel ut, saepe officia facere porro. Suscipit dignissimos necessitatibus fuga sit, voluptatum architecto aspernatur assumenda deserunt obcaecati.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam magni nemo deserunt voluptas ut, sint molestiae? Ea repellendus vitae adipisci molestias, in sunt odit recusandae, at aperiam. Delectus, magni, a.</p>
-            </div>           
+            </div>
        </div>
-        
+
     </section>
     <footer>
         <div id="Topscroller" onclick>

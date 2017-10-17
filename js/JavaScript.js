@@ -64,6 +64,13 @@ function main () {
             scrollTop:initialPosition
         },2000)
     });
-    
+
+		$('.gallery-container').hover(function(){
+			$('.gallery-container').css('filter','blur(6px)');
+			// $('.gallery-container').css('filter','grayscale(100%)');
+			$(this).attr('style','filter:none !important;');
+		},function(){
+			$('.gallery-container').css('filter','none');
+		});
 
 }
