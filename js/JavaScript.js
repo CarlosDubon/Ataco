@@ -62,15 +62,21 @@ function main () {
         var initialPosition = $('#banner-container').offset().top;
         $('html,body').animate({
             scrollTop:initialPosition
-        },2000)
+        },1000)
     });
 
 		$('.gallery-container').hover(function(){
 			$('.gallery-container').css('filter','blur(6px)');
 			// $('.gallery-container').css('filter','grayscale(100%)');
+			$('.modal-header').css('filter','blur(6px)');
+			$('.modal-body p').css('filter','blur(6px)');
+			$('.modal-footer').css('filter','blur(6px)');
 			$(this).attr('style','filter:none !important;');
 		},function(){
 			$('.gallery-container').css('filter','none');
+			$('.modal-header').css('filter','none');
+			$('.modal-body p').css('filter','none');
+			$('.modal-footer').css('filter','none');
 		});
 
 }

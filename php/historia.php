@@ -59,9 +59,9 @@
         </div>
     </section>
     <footer>
-        <div id="Topscroller-dark" onclick>
-            <a href="#"><i style="margin:0;padding:0" class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        </div>
+        <?php
+          include '../html/Topscroller-dark.html';
+        ?>
     </footer>
     <!--Modals-->
 </body>
