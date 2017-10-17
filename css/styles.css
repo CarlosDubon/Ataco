@@ -463,3 +463,33 @@ section{
 #galleryContainer {
     padding: 10px;
 }
+
+
+
+#slider-k .frame-k {
+ box-sizing: border-box;
+ width: 25%;
+ height: 100%;
+ float: left;
+ overflow: hidden;
+ border-left: 10px solid #fff;
+ pointer: cursor;
+ box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+ transform: skewX(-20deg);
+ transition: width 1.2s ease-in-out;
+}
+
+.gallery-container {
+    margin: 0px;
+    padding: 0px;
+    transition: all 500ms ease;
+}
+.gallery-container:hover {
+    position: relative;
+    z-index: 10;
+    transform: scale(2);
+}
+
+#gallery {
+    margin: 10px auto;
+}
