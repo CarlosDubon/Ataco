@@ -20,12 +20,12 @@
                 <source src="../audios/audio.mp3" >
             </audio>
             <div class="row">
-                <div class="col-md-4  bounceInLeft animated">
+                <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
                       <img class="miniaruta" src="../img/Img1.jpg" alt="...">
                     </a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12">
                     <h1>Lorem</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
                 </div>
@@ -35,23 +35,23 @@
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12">
                     <h1>Lorem</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
                 </div>
-                <div class="col-md-4 bounceInRight animated">
+                <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
                       <img class="miniaruta" src="../img/Img3.jpg" alt="...">
                     </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 bounceInLeft animated wowload">
+                <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                     <a href="#" class="thumbnail">
                       <img class="miniaruta" src="../img/Img1.jpg" alt="...">
                     </a>
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12">
                     <h1>Lorem</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
                 </div>
