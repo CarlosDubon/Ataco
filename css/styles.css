@@ -512,3 +512,7 @@ section{
 #gallery {
     margin: 10px auto;
 }
+
+.profile{
+    width: 70%;
+}

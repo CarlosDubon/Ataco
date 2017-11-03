@@ -16,18 +16,33 @@
    <section>
        <div class="container">
            <h1>Gobierno Local</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum similique mollitia, vitae a, nisi ratione nobis fugiat consequuntur illum excepturi ipsam vel distinctio iure voluptates quas, pariatur explicabo veniam aliquid!.</p>
+           <p>Miembros de Concejo, 6:</p>
            <div class="row">
-               <div class="col-lg-4">
+               <div class="col-md-4">
                    <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../img/Img8.jpg" alt="...">
-                    </a>
+                       <img class="profile" src="../img/President.png" alt="...">
+                   </a>
+                   <p><b>Alcalde:</b> 1.</p>
+                   <p><b>Alcalde actual:</b> Óscar Oliverio Gómez</p>
                </div>
-               <div class="col-lg-8">
-                  <h2>Lorem</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quisquam cum ipsam veritatis dicta repellendus quae odio accusamus cumque similique perferendis eligendi saepe praesentium officiis ratione unde, possimus numquam cupiditate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rem deserunt quidem, voluptates optio maxime. Temporibus dolorem voluptate dicta, repellat quisquam, laborum vero aperiam, tenetur quos reprehenderit, animi voluptates! Omnis.</p>
+               <div class="col-md-4">
+                   <a href="#" class="thumbnail">
+                       <img class="profile" src="../img/Sindico.png" alt="...">
+                   </a>
+                   <p><b>Síndico:</b> 1</p>
+                   <p><b>Síndico Actual:</b>Lorem ipsum dolor sit amet.</p>
+               </div>
+               <div class="col-md-4">
+                   <a href="#" class="thumbnail">
+                       <img class="profile" src="../img/Regidores.png" alt="...">
+                   </a>
+                   <p><b>Regisdores:</b> 4</p>
+                   <p><b>Regidores Actuales:</b> Lorem, ipsum, dolor, sit amet.</p>
                </div>
            </div>
        </div>
+
    </section>
     
 </body>
