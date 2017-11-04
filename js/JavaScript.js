@@ -6,22 +6,28 @@ var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : 
 
 
 function main () {
-	$('.menu_bar').click(function(){
+	$('.menu_bar').click(function(e){
 		if (contador == 1) {
-			$('.movil').animate({
-				left: '0'
-			});
+			$('.movil').fadeIn('slow');
+            $('i[name="bars"]').after('<i id="toggle_menu" class="fa fa-times" name="exit" aria-hidden="true"></i>');
+            $('i[name="bars"]').remove();
+            $('.menu_bar').css('background','#000');
 			contador = 0;
 		} else {
 			contador = 1;
-			$('.movil').animate({
-				left: '-100%'
-			});
+			$('.movil').fadeOut('slow');
+            $('i[name="exit"]').after('<i id="toggle_menu" class="fa fa-th-list" name="bars" aria-hidden="true"></i>');
+            $('i[name="exit"]').remove();
+            
+            $('.menu_bar').css('background-image',' url(../img/banner3.png)');
 
 		}
+        e.preventDefault();
+
 	});
-    $('.submenu').click(function(){
+    $('.submenu').click(function(e){
         $(this).children('.children').slideToggle();
+        e.preventDefault();
     });
 
     $(window).scroll(function(){
