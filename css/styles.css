@@ -63,6 +63,7 @@ header{
 .movil{
     display: none;
 }
+
 .navbar-ext{
     /*background: #1F4F59;*/
     background-image: url(../img/banner3.png) !important;
@@ -215,12 +216,16 @@ section{
     }
     .movil ul li:hover{
         background: transparent;
+        border-bottom: 1px solid transparent;
+        -webkit-border-image:
+            -webkit-linear-gradient(left, rgba(82,167,177,0) 30%, rgba(82,167,177,1) 51%, rgba(82,167,177,0) 70%);
+         border-image-slice: 1;
     }
     .movil ul li a:hover{
         color: #52a7b1;
     }
     .movil ul li{
-        
+        transition: all 500ms ease;
         border-bottom: 1px solid transparent;
         -webkit-border-image:
             -webkit-linear-gradient(left, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 51%, rgba(255,255,255,0) 70%);
