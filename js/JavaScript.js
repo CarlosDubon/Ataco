@@ -13,6 +13,8 @@ function main () {
             $('i[name="bars"]').remove();
             $('.menu_bar').css('background','#000');
 			contador = 0;
+            e.preventDefault();
+
 		} else {
 			contador = 1;
 			$('.movil').fadeOut('slow');
@@ -20,14 +22,14 @@ function main () {
             $('i[name="exit"]').remove();
             
             $('.menu_bar').css('background-image',' url(../img/banner3.png)');
+            e.preventDefault();
+
 
 		}
-        e.preventDefault();
 
 	});
-    $('.submenu').click(function(e){
+    $('.submenu').click(function(){
         $(this).children('.children').slideToggle();
-        e.preventDefault();
     });
 
     $(window).scroll(function(){
