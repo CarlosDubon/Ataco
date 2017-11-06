@@ -34,6 +34,15 @@
           <img class="img-fluid" src="../img/Img5.jpg" alt="">
         </div>
       </div>
+      <div class="row">
+        <h2 style="display:inline-block"> Como llegar </h2>
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1TlshQTzDfDnDfTmglSuyvNQWPEA&hl=en_US" style="width:100%; height:70vh; margin-left:auto; margin-right:auto; "></iframe>
+      </div>
     </div>
   </section>
 </body>
