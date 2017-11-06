@@ -540,7 +540,40 @@ section{
     margin: 10px auto;
 }
 
+<<<<<<< HEAD
 .profile{
     width: 60%;
     margin-left: 35px;
 }
+=======
+/*Vias de Comnicacion*/
+
+.GaleriaVias div{
+  padding: 15px;
+}
+
+.GaleriaVias div img{
+  filter: grayscale(1);
+  transition: all 1s ease;
+}
+
+.GaleriaVias div img:hover{
+  filter: none;
+  transform: scale(1.2);
+  border-radius: 20px;
+}
+
+@media screen and (max-width:575px) {
+  .GaleriaVias div img{
+    filter: none;
+  }
+  .GaleriaVias div img:hover{
+    filter: none;
+    transform: none;
+    border-radius: 20px;
+  }
+  .Limit{
+    display: none;
+  }
+}
+>>>>>>> douglas
