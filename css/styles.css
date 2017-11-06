@@ -63,6 +63,7 @@ header{
 .movil{
     display: none;
 }
+
 .navbar-ext{
     /*background: #1F4F59;*/
     background-image: url(../img/banner3.png) !important;
@@ -96,7 +97,6 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     position: relative;
-    transition: all 500ms ease;
 }
 header nav ul li:hover{
     background: #52a7b1;
@@ -189,21 +189,48 @@ section{
         font-weight: bold;
         text-decoration: none;
     }
+    header nav ul li .children li{
+        border-bottom: 1px solid transparent;
+        -webkit-border-image:
+            -webkit-linear-gradient(left, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 51%, rgba(255,255,255,0) 70%);
+         border-image-slice: 1;
+    }
     .navbar-ext, .navbar-flat{
         display: none;
     }
     .movil{
-        display: block;
-        background-image: url(../img/banner3.png);
-        width:70%;
-        height: calc(100% - 67px);
+        background: #080808;
+        width:100%;
+        height: calc(100% - 64px);
         position: fixed;
         top: 64px;
-        right: 100%;
         margin: 0px;
         overflow:scroll;
+        text-align: center;
+        display: table;
     }
-
+    .movil ul{
+        display: table-cell;
+        vertical-align: middle;
+        
+    }
+    .movil ul li:hover{
+        background: transparent;
+        border-bottom: 1px solid transparent;
+        -webkit-border-image:
+            -webkit-linear-gradient(left, rgba(82,167,177,0) 30%, rgba(82,167,177,1) 51%, rgba(82,167,177,0) 70%);
+         border-image-slice: 1;
+    }
+    .movil ul li a:hover{
+        color: #52a7b1;
+    }
+    .movil ul li{
+        transition: all 500ms ease;
+        border-bottom: 1px solid transparent;
+        -webkit-border-image:
+            -webkit-linear-gradient(left, rgba(255,255,255,0) 30%, rgba(255,255,255,1) 51%, rgba(255,255,255,0) 70%);
+         border-image-slice: 1;
+    }
     header nav{
       min-width: 160px;
       z-index: 101;
@@ -211,7 +238,6 @@ section{
 
     header nav ul li{
         display: block;
-        border-bottom: 1px solid rgba(255,255,255,.5);
     }
     header nav ul li a{
         display: block;
@@ -221,7 +247,8 @@ section{
         width: 100%;
         widows: 100%;
         position: relative;
-        background-image: url(../img/banner3.png);
+        background: #000;
+
     }
 
     header nav ul li:hover .children{
@@ -511,4 +538,9 @@ section{
 
 #gallery {
     margin: 10px auto;
+}
+
+.profile{
+    width: 60%;
+    margin-left: 35px;
 }
