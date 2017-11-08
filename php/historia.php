@@ -21,7 +21,8 @@
             </audio>
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
-                    <a href="#" class="thumbnail">
+                    <a href="#" class="thumbnail"
+                    >
                       <img class="miniaruta" src="../img/Img8.jpg" alt="...">
                     </a>
                 </div>
