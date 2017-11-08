@@ -47,6 +47,7 @@
             <hr>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
+                   <h3>Orígenes y Etimología</h3>
                     <?php
                         echo '<p>'.$historia[0].'</p>'    
                     ?>
@@ -64,6 +65,7 @@
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
+                   <h3>Época Colonial</h3>
                     <?php
                         echo '<p>'.$historia[1].'</p>'
                     ?>
