@@ -20,7 +20,7 @@ function main () {
 			$('.movil').fadeOut('slow');
             $('i[name="exit"]').after('<i id="toggle_menu" class="fa fa-th-list" name="bars" aria-hidden="true"></i>');
             $('i[name="exit"]').remove();
-            
+
             $('.menu_bar').css('background-image',' url(../img/banner3.png)');
             e.preventDefault();
 
@@ -63,13 +63,13 @@ function main () {
     $('div[id="Topscroller"]').click(function(){
         var initialPosition = $('#banner-container').offset().top;
         $('html,body').animate({
-            scrollTop:initialPosition
+            scrollTop:0
         },2000)
     });
     $('div[id="Topscroller-dark"]').click(function(){
         var initialPosition = $('#banner-container').offset().top;
         $('html,body').animate({
-            scrollTop:initialPosition
+            scrollTop:0
         },1000)
     });
 
@@ -86,13 +86,13 @@ function main () {
 			$('.modal-body p').css('filter','none');
 			$('.modal-footer').css('filter','none');
 		});
-        
+
         $('#FotoRuta').hover(function(){
             setTimeout(function(){
                 $('#FotoRuta').attr('src','../img/ruta_flores_2.jpg');
-            },300);  
+            },300);
         },function(){
             $('#FotoRuta').delay('1000').attr('src','../img/ruta_flores.jpg');
         });
-		
+
 }

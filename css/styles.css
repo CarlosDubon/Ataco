@@ -62,6 +62,7 @@ header{
 }
 .movil{
     display: none;
+    z-index: 1000;
 }
 
 .navbar-ext{
@@ -181,6 +182,9 @@ section{
     #boxGeo{
       height: calc(100vh - 64px)!important;
     }
+    #boxGob{
+      height: calc(100vh - 64px)!important;
+    }
     .menu_bar{
         display: block;
         width: 100%;
@@ -213,20 +217,20 @@ section{
         display: none;
     }
     .movil{
-        background: #080808;
+        background: rgba(0,0,0,0.95);
         width:100%;
         height: calc(100% - 64px);
         position: fixed;
         top: 64px;
         margin: 0px;
-        overflow:scroll;
+        overflow:scroll!important;
         text-align: center;
-        display: table;
+        display: block;
     }
     .movil ul{
-        display: table-cell;
-        vertical-align: middle;
-
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     .movil ul li:hover{
         background: transparent;
@@ -394,6 +398,15 @@ section{
 /*Hovers de colores*/
 .BotonHome:hover .HBlue{
     color:#216379;
+}
+.BotonHome:hover .HBlue2{
+    color:#167EFB;
+}
+.BotonHome:hover .HOrange{
+    color:#FF6A00;
+}
+.BotonHome:hover .HTurquese{
+    color:#2CB59C;
 }
 .BotonHome:hover .HGreen{
     color: #3f5007;
@@ -608,6 +621,17 @@ section{
   width: 100%;
   height: calc(100vh - 125px);
   background-image: url('../img/Img5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Menu Gobierno*/
+
+#boxGob{
+  width: 100%;
+  height: calc(100vh - 125px);
+  background-image: url('../img/Img7.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

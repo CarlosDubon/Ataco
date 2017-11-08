@@ -24,7 +24,7 @@
                <div class="hijo">
                    <a href="#" class="thumbnail" data-toggle="modal" data-target="#mapeo">
                         <img id="FotoRuta" class="img-fluid miniaruta"  src="../img/ruta_flores.jpg" alt="">
-                   </a>   
+                   </a>
                </div>
             </div>
         </div>
@@ -54,6 +54,9 @@
     </div>
   </section>
   <footer>
+    <?php
+      include '../html/Topscroller-dark.html';
+    ?>
       <div class="modal fade bs-example-modal-lg" id="mapeo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
