@@ -177,6 +177,10 @@ section{
     #Box1{
       height: calc(100vh - 64px) !important;
     }
+
+    #boxGeo{
+      height: calc(100vh - 64px)!important;
+    }
     .menu_bar{
         display: block;
         width: 100%;
@@ -222,7 +226,7 @@ section{
     .movil ul{
         display: table-cell;
         vertical-align: middle;
-        
+
     }
     .movil ul li:hover{
         background: transparent;
@@ -389,16 +393,28 @@ section{
 
 /*Hovers de colores*/
 .BotonHome:hover .HBlue{
-    color:#0f272c;
+    color:#216379;
 }
-.BotonHome:hover .HYellow{
+.BotonHome:hover .HGreen{
     color: #3f5007;
 }
 .BotonHome:hover .HBlack{
-    color:rgb(16, 26, 1);
+    color:black;
 }
-.BotonHome:hover .HGreen{
+.BotonHome:hover .HRed{
     color:#751710;
+}
+.BotonHome:hover .HRedIntenso{
+    color:#CF000F;
+}
+.BotonHome:hover .HLightBlue{
+    color:#249991;
+}
+.BotonHome:hover .HPurple{
+    color:#422E39;
+}
+.BotonHome:hover .HGray{
+    color:#52645E;
 }
 
 #Topscroller{
@@ -585,4 +601,14 @@ section{
     display: none;
   }
 }
->>>>>>> douglas
+
+/*Menu geografia*/
+
+#boxGeo{
+  width: 100%;
+  height: calc(100vh - 125px);
+  background-image: url('../img/Img5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

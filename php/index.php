@@ -23,7 +23,7 @@
       <div id="Box2">
         <div class="Box_Container" >
           <a href="#" class="BotonHome fadeIn animated wowload">
-            Conoce la <span class="Bold-Beba HYellow">Hidrografia</span> de San Miguel de Mercedes...
+            Conoce la <span class="Bold-Beba HGreen">Hidrografia</span> de San Miguel de Mercedes...
           </a>
         </div>
       </div>
@@ -37,7 +37,7 @@
       <div id="Box4">
         <div class="Box_Container" >
           <a href="../php/turismo.php" class="BotonHome fadeIn animated wowload">
-            Conoce el <span class="Bold-Beba HGreen">turismo</span> de San Miguel de Mercedes...
+            Conoce el <span class="Bold-Beba HRed">turismo</span> de San Miguel de Mercedes...
           </a>
         </div>
       </div>
@@ -50,4 +50,4 @@
 </body>
 <script src="../js/navBarColor.js"></script>
 
-</html> 
+</html>
