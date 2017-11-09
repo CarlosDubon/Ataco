@@ -12,7 +12,7 @@
     }
     mysql_set_charset('utf8');
     $db = mysql_select_db("Ataco", $conn);
-
+    
     function getResult($query,$conn){
         return mysql_query($query,$conn);
     }

@@ -13,11 +13,14 @@
     <?php
        include '../html/header.html';
          $sql = "SELECT * FROM municipio";
+         $queryImg_Municipio1="SELECT * FROM img_municipio where idImg_Municipio = 1";
          $result = getResult($sql,$conn);
          $municipio = getRows($result);
          $seccion = explode('|',$municipio[2]);
          $historia = explode('|',$municipio[4]);
-
+         
+         $rs = getResult($queryImg_Municipio1,$conn);
+         $img1 = getRows($rs);
     ?>
     </header>
     <section>
@@ -29,7 +32,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../img/Img8.jpg" alt="...">
+                      <img class="miniaruta" src=<?php '.$img1[1].' ?> alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
