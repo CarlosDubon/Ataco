@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="<?php $img1[1] ?>" alt="...">
+                      <img class="miniaruta" src="<?php echo $img1[1] ?>" alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
