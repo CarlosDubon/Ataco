@@ -3,6 +3,7 @@
 <head>
    <?php
    include '../html/head.html';
+   require 'sql_conn.php';
    ?>
     <title>San Miguel de Mercedes</title>
 </head>

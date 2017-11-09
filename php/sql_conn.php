@@ -1,22 +1,28 @@
  <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
 
     // Create connection
-    $conn = mysql_connect($servername, $username, $password);
+    function Arrancar(){
+      $servername = "localhost";
+      $username = "root";
+      $password = "";
+    try{
+        $conn = new PDO('mysql:host=localhost;dbname=ataco;charset=utf8mb4', $username, $password);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conn;
+      }catch(PDOException $e){
+        echo "ERROR: " . $e->getMessage();
+        return false;
+      }
+    }
 
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysql_error());
+    function getResult($sql){
+      $conn=Arrancar();
+      try {
+        $stmt = $conn->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+      } catch (Exception $e) {
+
+      }
+
     }
-    mysql_set_charset('utf8');
-    $db = mysql_select_db("Ataco", $conn);
-    
-    function getResult($query,$conn){
-        return mysql_query($query,$conn);
-    }
-    function getRows($result){
-        return mysql_fetch_row($result);
-    }
-?> 
+?>

@@ -13,14 +13,12 @@
     <?php
        include '../html/header.html';
          $sql = "SELECT * FROM municipio";
-         $queryImg_Municipio1="SELECT * FROM img_municipio where idImg_Municipio = 1";
-         $result = getResult($sql,$conn);
-         $municipio = getRows($result);
-         $seccion = explode('|',$municipio[2]);
-         $historia = explode('|',$municipio[4]);
-         
-         $rs = getResult($queryImg_Municipio1,$conn);
-         $img1 = getRows($rs);
+         $queryImg_Municipio1="SELECT * FROM img_municipio";
+         $descripcion = getResult($sql);
+         $Ruta_Imagenes= getResult($queryImg_Municipio1);
+         $secciones= explode('|',$descripcion[0]['Descripcion']);
+         $historia= explode('|',$descripcion[0]['Historia']);
+
     ?>
     </header>
     <section>
@@ -32,19 +30,19 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="<?php echo $img1[1] ?>" alt="...">
+                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[0]['ruta'] ?>" alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
                     <?php
-                        echo '<h1>'.$municipio[1].'</h1>';
-                        echo '<p>'.$seccion[0].'</p>'
+                        echo '<h1>'.$descripcion[0]['Nombre'].'</h1>';
+                        echo '<p>'.$secciones[0].'</p>';
                     ?>
                 </div>
             </div>
             <div class="row">
                 <?php
-                    echo '<p>'.$seccion[1].'</p>'
+                    echo '<p>'.$secciones[1].'</p>';
                 ?>
             </div>
             <hr>
@@ -52,7 +50,7 @@
                 <div class="col-lg-8 col-md-12">
                    <h3>Orígenes y Etimología</h3>
                     <?php
-                        echo '<p>'.$historia[0].'</p>'    
+                        echo '<p>'.$historia[0].'</p>'
                     ?>
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
