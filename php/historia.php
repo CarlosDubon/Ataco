@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <?php
     include '../html/head.html';
+    require 'sql_conn.php';
     ?>
     <title>San Miguel de Mercedes</title>
 </head>
@@ -11,6 +12,15 @@
     <header>
     <?php
        include '../html/header.html';
+         $sql = "SELECT * FROM municipio";
+         $queryImg_Municipio1="SELECT * FROM img_municipio where idImg_Municipio = 1";
+         $result = getResult($sql,$conn);
+         $municipio = getRows($result);
+         $seccion = explode('|',$municipio[2]);
+         $historia = explode('|',$municipio[4]);
+         
+         $rs = getResult($queryImg_Municipio1,$conn);
+         $img1 = getRows($rs);
     ?>
     </header>
     <section>
@@ -22,22 +32,28 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../img/Img8.jpg" alt="...">
+                      <img class="miniaruta" src="<?php echo $img1[1] ?>" alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <h1>Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
+                    <?php
+                        echo '<h1>'.$municipio[1].'</h1>';
+                        echo '<p>'.$seccion[0].'</p>'
+                    ?>
                 </div>
             </div>
             <div class="row">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi facilis doloremque! Doloribus omnis, quaerat temporibus odio quo quasi voluptas dolorem. Sunt dolorum nostrum ab velit alias pariatur, libero porro?</p>
+                <?php
+                    echo '<p>'.$seccion[1].'</p>'
+                ?>
             </div>
             <hr>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                    <h1>Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
+                   <h3>Orígenes y Etimología</h3>
+                    <?php
+                        echo '<p>'.$historia[0].'</p>'    
+                    ?>
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
@@ -52,8 +68,10 @@
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <h1>Lorem</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
+                   <h3>Época Colonial</h3>
+                    <?php
+                        echo '<p>'.$historia[1].'</p>'
+                    ?>
                 </div>
             </div>
         </div>
