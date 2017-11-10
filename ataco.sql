@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-11-2017 a las 23:34:58
--- Versión del servidor: 10.1.19-MariaDB
--- Versión de PHP: 5.6.28
+-- Tiempo de generación: 10-11-2017 a las 23:39:40
+-- Versión del servidor: 10.1.26-MariaDB
+-- Versión de PHP: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -120,6 +122,18 @@ CREATE TABLE `img_turismo` (
   `idTurismo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `img_turismo`
+--
+
+INSERT INTO `img_turismo` (`idImg_turismo`, `ruta`, `idTurismo`) VALUES
+(1, '/Ataco/img/SantaTeresa1.jpg', 1),
+(2, '/Ataco/img/SantaTeresa2.jpg', 1),
+(3, '/Ataco/img/SantaTeresa3.jpg', 1),
+(5, '/Ataco/img/Mirador1.jpg', 2),
+(6, '/Ataco/img/Mirador2.jpg', 2),
+(7, '/Ataco/img/Mirador3.jpg', 2);
+
 -- --------------------------------------------------------
 
 --
@@ -143,7 +157,7 @@ CREATE TABLE `municipio` (
 --
 
 INSERT INTO `municipio` (`idMunicipio`, `Nombre`, `Descripcion`, `Como_Llegar`, `Historia`, `Alcalde`, `Población`, `ViasComunicacion`, `DViasComunicacion`) VALUES
-(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa "lugar de elevados manantiales", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco "del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'PENE', 'NEPE');
+(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa \"lugar de elevados manantiales\", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco \"del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'PENE', 'NEPE');
 
 -- --------------------------------------------------------
 
@@ -170,6 +184,14 @@ CREATE TABLE `turismo` (
   `Descripcion` text NOT NULL,
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `turismo`
+--
+
+INSERT INTO `turismo` (`idTurismo`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
+(1, 'Aguas Termales Santa Teresa\r\n', 'Santa Teresa es una de las mayores atracciones de Ataco para sus visitantes. Sus aguas y sus senderos conducen al Ausol Santa Teresa, en un recorrido donde podrás apreciar toda la naturaleza viva de su flora y fauna, además de sus ricas y deliciosas aguas.\r\n\r\nDe igual forma, podrás ver todos los cafetales y los campos donde se produce el mejor café de altura en El Salvador.\r\n\r\nSanta Teresa te ofrece también la oportunidad de practicar el alpinismo con guías capacitados y alquiler de equipo por si no pudiste llevar tus implementos. Todas estas atracciones se combinan con el sabor de sus exquisitas aguas para convertir a Santa Teresa en la primera parada que deberás hacer en Ataco.', 1),
+(2, 'Miradores Divina Providencia y Cielito Lindo', 'Al ser un pueblo ubicado a buena altura sobre el nivel del mar, Ataco ofrece los miradores Divina Providencia y Cielito Lindo, ubicados en la carretera que conduce a este municipio.\r\n\r\nEn ellos podrás hacer una parada especial para dejarte impactar por la belleza del paisaje y lo imponente de las montañas que rodean a toda la Ruta de las Flores.\r\n\r\nTambién podrás encontrar cafeterías y restaurantes para disfrutar de postres nacionales e internacionales, así como del delicioso café de altura de Ahuachapán.', 1);
 
 --
 -- Índices para tablas volcadas
@@ -277,7 +299,7 @@ ALTER TABLE `img_orografia`
 -- AUTO_INCREMENT de la tabla `img_turismo`
 --
 ALTER TABLE `img_turismo`
-  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `municipio`
 --
@@ -292,7 +314,7 @@ ALTER TABLE `orografia`
 -- AUTO_INCREMENT de la tabla `turismo`
 --
 ALTER TABLE `turismo`
-  MODIFY `idTurismo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idTurismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Restricciones para tablas volcadas
 --
@@ -350,6 +372,7 @@ ALTER TABLE `orografia`
 --
 ALTER TABLE `turismo`
   ADD CONSTRAINT `fk_turismo` FOREIGN KEY (`idMunicipio`) REFERENCES `municipio` (`idMunicipio`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
