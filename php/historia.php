@@ -1,10 +1,18 @@
+<?
+    require 'sql_conn.php';
+    $sql = "SELECT * FROM municipio";
+    $queryImg_Municipio1="SELECT * FROM img_municipio";
+    $descripcion = getResult($sql);
+    $Ruta_Imagenes= getResult($queryImg_Municipio1);
+    $secciones= explode('|',$descripcion[0]['Descripcion']);
+    $historia= explode('|',$descripcion[0]['Historia']);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <?php
     include '../html/head.html';
-    require 'sql_conn.php';
     ?>
     <title>San Miguel de Mercedes</title>
 </head>
@@ -12,13 +20,6 @@
     <header>
     <?php
        include '../html/header.html';
-         $sql = "SELECT * FROM municipio";
-         $queryImg_Municipio1="SELECT * FROM img_municipio";
-         $descripcion = getResult($sql);
-         $Ruta_Imagenes= getResult($queryImg_Municipio1);
-         $secciones= explode('|',$descripcion[0]['Descripcion']);
-         $historia= explode('|',$descripcion[0]['Historia']);
-
     ?>
     </header>
     <section>
