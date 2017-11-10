@@ -1,4 +1,4 @@
-<?
+<?php
     require 'sql_conn.php';
     $sql = "SELECT * FROM municipio";
     $queryImg_Municipio1="SELECT * FROM img_municipio";
