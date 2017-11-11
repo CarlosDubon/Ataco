@@ -637,6 +637,54 @@ section{
   background-size: cover;
   background-attachment: fixed;
 }
-=======
+
+
+.h5-contact {
+    color: gray !important; text-align: justify;
 }
->>>>>>> Kilmar
+.a-contact{
+    color: gray !important;
+    text-decoration:none;
+}
+.a-contact:link, a-contact:visited, a-contact:active {
+    color: gray !important;
+    text-decoration:none;
+
+}
+
+.form-container {
+    width: 100%;
+    padding-right: 20px;
+    border-right: 1px solid transparent;
+    -webkit-border-image:
+            -webkit-linear-gradient(top, rgba(189, 195, 199,0) 1%, rgba(189, 195, 199,1) 80%, rgba(189, 195, 199,0) 100%);
+            border-image-slice: 1;
+}
+
+.comment-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 1px solid #2c3e50;
+}
+
+.comment-container-header {
+    background: #34495e;
+    color: #ecf0f1;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.comment-container-body {
+    padding: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.comment-container-footer {
+    text-align: right;
+    font-size: 0.5em;
+}

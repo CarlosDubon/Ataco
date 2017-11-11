@@ -30,14 +30,8 @@
             </audio>
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
-<<<<<<< HEAD
                     <a href="#" class="thumbnail">
                       <img class="miniaruta" src="<?php echo $Ruta_Imagenes[0]['ruta'] ?>" alt="...">
-=======
-                    <a href="#" class="thumbnail"
-                    >
-                      <img class="miniaruta" src="../img/Img8.jpg" alt="...">
->>>>>>> Kilmar
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
