@@ -1,3 +1,10 @@
+<?php
+    require 'sql_conn.php';
+    $query ="SELECT * FROM Comentario";
+    $query2 = "select count(*) as rows from Comentario";
+    $comentarios = getResult($query); 
+    $rows=getResult($query2);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,12 +20,11 @@
        include '../html/header.html';
     ?>
     </header>
-    <section>
         <div class="container">
-            <br>
+           <section>
             <h1 style="display: inline-block">Contacto</h1><br>
             <h6 class="mt-0 pt-0">Te invitamos a contactarnos, te responderemos a la brevedad.</h6>
-            <hr color="black" size=1>
+            <hr>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                    <div class="form-container">
@@ -55,25 +61,35 @@
                         <h5 class="h5-contact" ><span class="icon-facebook"></span><a class="a-contact" href="https://www.facebook.com/alcaldiamunicipalatacoamca"> Facebook</a></h5>
                     </div>
                 </div>
-        </div>
-    </section>
-    <section>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="comment-container">
-                    <div class="comment-container-header">
-                        
-                    </div>
-                    <div class="comment-container-body">
-                        
-                    </div>
-                    <div class="comment-container-footer">
-                        
-                    </div>
+                <hr>
+            </section>
+            <section>
+                <h2>Comentarios:</h2>
+                <div class="row" style="height:70vh; overflow-y:scroll;overflow-x:hidden;width:95%">
+                        <?php
+                        for($i=0;$i<$rows[0]['rows'];$i++){
+                            echo '
+                            <div class="col-md-12">
+                                <div class="comment-container">
+                                    <div class="comment-container-header">
+                                        <p>'.$comentarios[$i]['Nombre'].'</p>
+                                        <p style="font-size:0.6em">'.$comentarios[$i]['Correo'].'</p>
+                                    </div>
+                                    <div class="comment-container-body">
+                                        <p>"'.$comentarios[$i]['Comentario'].'"</p>
+                                    </div>
+                                    <div class="comment-container-footer">
+                                        <p>'.$comentarios[$i]['Fecha'].'</p>
+                                    </div>
+                                </div>
+                            </div>';
+
+                        }
+                        ?>
                 </div>
+            </section>
             </div>
-        </div>
-    </section>
+
     <footer>
         <?php
           include '../html/Topscroller-dark.html';

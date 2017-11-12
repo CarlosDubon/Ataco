@@ -1,3 +1,12 @@
+<?php
+require 'sql_conn.php';
+$query ="SELECT * FROM municipio";
+$query2="SELECT * FROM Img_municipio";
+$img=getResult($query2);
+$municipio = getResult($query);
+$arrayMunicipio = explode("\r\n",$municipio[0]['Ubicacion']);
+$arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,9 +32,11 @@
             <div class="row">
               <div class="col-lg-8 col-md-12">
                   <strong><h1>Concepción de Ataco</h1></strong>
-                  <p>Concepción de Ataco esta localizada en el departamento de Ahuachapán, a 1275 m SNM, en una meseta de la sierra Apaneca-Ilamatepec. Es parte de la Ruta de las Flores. A esta podemos llegar por la CA 8 desde Sonsonate, 105 km, o desde Ahuachapán.</p>
-                  <p>Fue fundada por tribus nahuas. Concepción de Ataco tiene lugares de atracción turística como, la piscina de Atzumpa, las cascadas de Los Apantes, Salinas, miradores, además de telares de cintura. Según algunos lingüistas, Ataco quiere decir "Lugar de Elevados Manantiales". El historiador Tomás Fidias Jiménez nació en esta ciudad. Sus fiestas patronales son celebradas del 11 al 15 de diciembre en honor a la Virgen de Concepción.</p>
-                  <p>En este poblado todavía podemos ver algunas de sus calles empedradas, un legado de la colonia. Su principal medio de ingreso es el café, otros rubros son el textil y las artesanías.</p>
+                  <?php
+                  for($i=0;$i<count($arrayMunicipio);$i++){
+                      echo '<p>'.$arrayMunicipio[$i].'</p>';
+                  }
+                  ?>
               </div>
                 <div class="col-lg-4 col-md-12 FadeInDown animated">
                     <a href="#" class="thumbnail">
@@ -37,13 +48,15 @@
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <h1>Cómo llegar a Ataco?</h1>
-                    <p>Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.</p>
-                    <p>A lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.</p>
-                    <p>Si va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.</p>
+                    <?php
+                    for($i=0;$i<count($arrayComo);$i++){
+                        echo '<p>'.$arrayComo[$i].'</p>';
+                    }
+                    ?>
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta pulse infinite animated" src="../img/ubi1.jpg" alt="...">
+                      <img class="miniaruta pulse infinite animated" src="<?php echo $img[0]['ruta']?>" alt="...">
                     </a>
                 </div>
             </div>
@@ -81,7 +94,7 @@
                     <div class="padre">
                        <div class="hijo">
                            <a href="#" class="thumbnail">
-                               <img class="miniaruta pulse infinite animated" src="../img/ubi2.jpg" alt="...">
+                               <img class="miniaruta pulse infinite animated" src="<?php echo $img[1]['ruta']?>" alt="...">
                            </a>
                        </div>
                     </div>
