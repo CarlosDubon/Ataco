@@ -15,28 +15,13 @@
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Division Politica</h1>
-            
-            <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <h1>Su estructura</h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, fuga quibusdam illo distinctio omnis voluptatum alias blanditiis ratione maiores earum ex aspernatur commodi maxime, veritatis. Ipsum, ab optio? Accusamus, distinctio!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, aliquam, molestias hic iure accusantium sint ex reiciendis, non consectetur beatae sit. Necessitatibus nesciunt libero accusantium? Quibusdam aperiam enim necessitatibus sit. </p>
+            <h1 style="display: inline-block">Division Politica</h1><hr><br>
+            <h1>Su estructura</h1>
+            <div class="row"><br>
+                <div class="col-lg-7 col-md-12">
+                    <p> Esta población es de origen precolombino, y fue fundada por indios yaquis o pipiles en el corazón de la Sierra  Apaneca, con posterioridad al undécimo siglo de Era Vulgal. Según el arzobispo don Pedro Cortes y Larraz, Ataco permanecía en 1770 a la parroquia de Ahuachapán y su población estaba representada por 303 familias con 784 personas indígenas que hablaban el idioma nahuat, pero que hablaban y entendían también el castellano. En Ataco, agrega monseñor, había una escuela donde se enseñaba a los indizuelos, además de la doctrina cristiana, a leer y escribir. Durante toda la colonia, Ataco perteneció a la unidad administrativa llamada provincia de los Izalcos o Alcaldía mayor de Sonsonate. A partir del 12 de junio de 1824, fue municipio del primitivo y gran departamento de Sonsonate. Por decreto Ejecutivo de 26 de febrero de 1869, entro a formar parte del distrito y departamento de Ahuachapán. Durante la administración del Presidente de la Republica doctor Manuel Enrique Araujo y por Decreto Legislativo de 11 de mayo de 1911, ratificado por otro de 11 de abril de 1913, se otorgó el título de villa al pueblo de concepción de ataco. </p>
                 </div>
-            </div>    
-
-            <div class="row">
-                <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nisi facilis doloremque! Doloribus omnis, quaerat temporibus odio quo quasi voluptas dolorem. Sunt dolorum nostrum ab velit alias pariatur, libero porro?</p>
-                </div>
-            </div>
-            
-            <hr>
-            <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <h1>Sus cantones</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
-                </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-5 col-md-12"><br><br>
                     <div id="carouselExampleIndicators" class="carousel slide col-md-12" data-ride="carousel">
                       <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,10 +50,65 @@
                     </div>
                 </div>
             </div>
+            <hr>
+
+            <h1>Sus cantones</h1>
             <div class="row">
-                <div class="col-md-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
+            	<div class="col-lg-6 col-md-12"><br>
+                      <img class="miniaruta" src="../img/mataco2.jpg" alt="...">
                 </div>
+                <div class="col-lg-6 col-md-12">
+                    <p>Para su administración el municipio de Ataco se divide en 11 cantones y 24 caseríos, que son:</p>
+                    <div class="row">
+                    	<div class=""></div>
+                    	<div class="col-1"></div>
+                    	<div class="col-6">
+                    		<ol>
+                    		  <li>El Arco</li><br><br>
+                    		  <li>El Limo</li><br><br>
+                    		  <li>El Molino</li><br>
+                    		  <li>El Naranjito</li><br>
+                    		  <li>El Tronconal</li><br>
+                    		  <li>La Ceiba</li><br><br><br><br>
+                    		  <li>La Joya de Los Apantes</li><br><br><br><br><br>
+                    		  <li>Los Tablones</li><br><br>
+                    		  <li>San José</li><br>
+                    		  <li>Shucutitán</li><br><br>
+                    		  <li>Texusin Chirizo</li>
+                    		</ol> 
+                    	</div>
+                    	<div class="col-5">
+                    		<ul>
+                    		  <li>El Arco</li>
+                    		  <li>La Peña</li><br>
+                    		  <li>El Limo</li>
+                    		  <li>El Tarro</li><br>
+                    		  <li>El Molino</li><br>
+                    		  <li>El Naranjito</li><br>
+                    		  <li>El Tronconal</li><br>
+                    		  <li>La Ceiba</li>
+                    		  <li>Las Lajas</li>
+                    		  <li>El Espino</li>
+                    		  <li>Admunga</li><br>
+                    		  <li>La Joya de Los Apantes</li>
+                    		  <li>El Ciprés</li>
+                    		  <li>San Cayetano</li>
+                    		  <li>Chichigazapa</li>
+                    		  <li>Santa Berta</li><br>
+                    		  <li>Los Tablones</li>
+                    		  <li>El Carmen</li><br>
+                    		  <li>San José</li><br>
+                    		  <li>Shucutitán</li>
+                    		  <li>La Gloria</li><br>
+                    		  <li>Texusin</li>
+                    		  <li>El Chirizo</li>
+                    		  <li>Melinche Abajo</li>
+                    		</ul> 
+                    	</div>
+                    </div>
+
+                </div>
+
             </div>
     </div> 
     </section>
