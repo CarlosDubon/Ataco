@@ -44,7 +44,25 @@
     -moz-box-sizing:border-box ;
     box-sizing:border-box ;
 }
-
+p,span,a{
+    font-size: 1em !important;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2.2em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+}
+h5{
+    font-size: 1.2em;
+}
+/*Fin de generalidades*/
 p{
     margin: 10px;
     text-align: justify;
@@ -52,6 +70,7 @@ p{
 
 body{
     background: #F9F9ED;
+    font-size: 16px;
 }
 
 .menu_bar{
@@ -223,7 +242,8 @@ section{
         position: fixed;
         top: 64px;
         margin: 0px;
-        overflow:scroll!important;
+        overflow-y:scroll;
+        overflow-x: hidden;
         text-align: center;
         display: block;
     }
@@ -241,6 +261,7 @@ section{
     }
     .movil ul li a:hover{
         color: #52a7b1;
+        
     }
     .movil ul li{
         transition: all 500ms ease;
@@ -274,7 +295,8 @@ section{
     }
 
     .BotonHome{
-      width: 85% !important;
+        width: 85% !important;    
+            
     }
 }
 
@@ -369,7 +391,7 @@ section{
   border: 3px solid rgba(255, 255, 255, 0.8);
   color: White;
   background: rgba(255, 255, 255, 0.2);
-  font-size: 2em;
+  font-size: 2em !important;
   font-family: Bebas-Regular;
   padding: 30px;
   /*-webkit-transition: 1s ease-in-out 1s;
@@ -637,6 +659,85 @@ section{
   background-size: cover;
   background-attachment: fixed;
 }
-=======
+
+
+.h5-contact {
+    color: gray !important; text-align: justify;
 }
->>>>>>> Kilmar
+.a-contact{
+    color: gray !important;
+    text-decoration:none;
+}
+.a-contact:link, a-contact:visited, a-contact:active {
+    color: gray !important;
+    text-decoration:none;
+
+}
+
+.form-container {
+    width: 100%;
+    padding-right: 20px;
+    border-right: 1px solid transparent;
+    -webkit-border-image:
+            -webkit-linear-gradient(top, rgba(189, 195, 199,0) 1%, rgba(189, 195, 199,1) 80%, rgba(189, 195, 199,0) 100%);
+            border-image-slice: 1;
+}
+
+.comment-container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #808080;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.comment-container-header {
+    background: #808080;
+    color: #ecf0f1;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.comment-container-body {
+    padding: 7px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.comment-container-footer {
+    text-align: right;
+    font-size: 0.6em;
+}
+
+/*Scroll Bar editing*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(22, 58, 65); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(47, 120, 136); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(31, 79, 89, 0.5);  
+}
+
+.defaultModal-btn {
+    border: 1px solid #95a5a6;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    background: #ecf0f1;
+    transition: all 500ms ease;
+}
+
+.center{
+    text-align: center;
+}

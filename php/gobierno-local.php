@@ -17,7 +17,7 @@
    <section>
        <div class="container">
            <h1 style="display: inline-block">Gobierno Local</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum similique mollitia, vitae a, nisi ratione nobis fugiat consequuntur illum excepturi ipsam vel distinctio iure voluptates quas, pariatur explicabo veniam aliquid!.</p>
+           <p>El municipio de Concepción de Ataco cuenta actualmente con la siguiente estructura:</p>
            <p>Miembros de Concejo, 6:</p>
            <div class="row">
                <div class="col-md-4">
@@ -32,14 +32,12 @@
                        <img class="profile" src="../img/Sindico.png" alt="...">
                    </a>
                    <p><b>Síndico:</b> 1</p>
-                   <p><b>Síndico Actual:</b>Lorem ipsum dolor sit amet.</p>
                </div>
                <div class="col-md-4">
                    <a href="#" id="thirt" class="thumbnail" style="visibility:hidden">
                        <img style="width:100%;" src="../img/Regidores.png" alt="...">
                    </a>
                    <p><b>Regidores:</b> 4</p>
-                   <p><b>Regidores Actuales:</b> Lorem, ipsum, dolor, sit amet.</p>
                </div>
            </div>
            <hr>

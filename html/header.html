@@ -24,18 +24,18 @@
             <ul class="children">
                 <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="../php/poblacionVivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <li class="submenu">
             <a href="#"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
             <ul class="children">
-                <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
-        <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+        <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
     </ul>
 </nav>
 
@@ -59,17 +59,41 @@
           <ul class="children">
               <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="../php/poblacionVivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <li class="submenu">
-          <a href="#"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#"  data-toggle="modal" data-target="#fontSize"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
-              <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
-      <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+      <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
   </ul>
 </nav>
+
+<!--Desplegando Modals-->
+<div class="modal fade" id="fontSize" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de letra</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-md-4 center"><button type="button" id="small" class="defaultModal-btn">Pequeño</button></div>
+              <div class="col-md-4 center" ><button type="button" id="normal" class="defaultModal-btn">Normal</button></div>
+              <div class="col-md-4 center"><button type="button" id="big" class="defaultModal-btn">Grande</button></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../js/accesibilidad.js"></script>
