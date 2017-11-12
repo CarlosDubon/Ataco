@@ -512,3 +512,18 @@ section{
 #gallery {
     margin: 10px auto;
 }
+
+.polig1{
+  height: 20px;
+  background:#f45b18;
+}
+
+.polig2{
+  height: 20px;
+  background:#f1d17e;
+}
+
+.polig3{
+  height: 20px;
+  background:#2b7952;
+}
