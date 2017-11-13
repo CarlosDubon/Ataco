@@ -1,3 +1,8 @@
+<?php
+require 'sql_conn.php';
+$query="SELECT * FROM Orografia";
+$cerros=getResult($query);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +22,7 @@
         <div class="container"> 
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h1>OROGRAFIA</h1>
+                    <h1>Orografia</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequat                    sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos                    veritatis a         quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p> 
                 </div>
             </div>
@@ -42,7 +47,20 @@
             </div>
             <div class="row">
                 <h1>Principales Cerros</h1>
-
+                <div class="col-md-12">
+                    <div class="comment-container">
+                        <div class="comment-container-header">
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="comment-container-body">
+                            <p></p>
+                        </div>
+                        <div class="comment-container-footer">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
