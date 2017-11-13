@@ -589,7 +589,11 @@ section{
 .gallery-container:hover {
     /*position: relative;*/
     z-index: 2000;
-    transform: scale(1.8);
+    -webkit-transform:scale(1.8) ;
+    -moz-transform:scale(1.8) ;
+    -ms-transform:scale(1.8) ;
+    -o-transform:scale(1.8) ;
+    transform:scale(1.8);    
     border-radius: 10px;
 }
 
@@ -599,7 +603,6 @@ section{
 
 #gallery {
     margin: 10px auto;
-<<<<<<< HEAD
 }
 
 .profile{
@@ -618,7 +621,6 @@ section{
   transition: all 1s ease;
 }
 
-<<<<<<< HEAD
 .GaleriaVias div img:hover{
   filter: none;
   transform: scale(1.2);

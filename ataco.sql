@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-11-2017 a las 23:39:40
+-- Tiempo de generación: 13-11-2017 a las 21:37:07
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -41,6 +41,30 @@ CREATE TABLE `canton` (
 
 INSERT INTO `canton` (`idCanton`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
 (0, 'El Arco', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `comentario`
+--
+
+CREATE TABLE `comentario` (
+  `idComentario` int(11) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `Correo` varchar(150) NOT NULL,
+  `Comentario` text NOT NULL,
+  `Fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `idMunicipio` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `comentario`
+--
+
+INSERT INTO `comentario` (`idComentario`, `Nombre`, `Correo`, `Comentario`, `Fecha`, `idMunicipio`) VALUES
+(1, 'Carlos', 'carlosminero@gmail.com', 'Muy buena pagina', '2017-11-11 04:25:33', 1),
+(2, 'Gerardo', 'gerardo@gmail.com', 'Sos pupu', '2017-11-12 02:52:02', 1),
+(3, 'Ejemlplo', 'ejemplo@gmail.com', 'Mensaje generico', '2017-11-12 14:50:43', 1);
 
 -- --------------------------------------------------------
 
@@ -96,7 +120,8 @@ CREATE TABLE `img_municipio` (
 --
 
 INSERT INTO `img_municipio` (`idImg_Municipio`, `ruta`, `idMunicipio`) VALUES
-(1, '/Ataco/img/Concepcion_ataco.jpg', 1);
+(1, '/Ataco/img/Concepcion_ataco.jpg', 1),
+(2, '/Ataco/img/Img8.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -132,7 +157,8 @@ INSERT INTO `img_turismo` (`idImg_turismo`, `ruta`, `idTurismo`) VALUES
 (3, '/Ataco/img/SantaTeresa3.jpg', 1),
 (5, '/Ataco/img/Mirador1.jpg', 2),
 (6, '/Ataco/img/Mirador2.jpg', 2),
-(7, '/Ataco/img/Mirador3.jpg', 2);
+(7, '/Ataco/img/Mirador3.jpg', 2),
+(8, '/Ataco/img/Img9.jpg', 3);
 
 -- --------------------------------------------------------
 
@@ -144,6 +170,7 @@ CREATE TABLE `municipio` (
   `idMunicipio` int(11) NOT NULL,
   `Nombre` varchar(100) CHARACTER SET latin1 NOT NULL,
   `Descripcion` text NOT NULL,
+  `Ubicacion` text NOT NULL,
   `Como_Llegar` text CHARACTER SET latin1 NOT NULL,
   `Historia` text CHARACTER SET latin1 NOT NULL,
   `Alcalde` text CHARACTER SET latin1 NOT NULL,
@@ -156,8 +183,8 @@ CREATE TABLE `municipio` (
 -- Volcado de datos para la tabla `municipio`
 --
 
-INSERT INTO `municipio` (`idMunicipio`, `Nombre`, `Descripcion`, `Como_Llegar`, `Historia`, `Alcalde`, `Población`, `ViasComunicacion`, `DViasComunicacion`) VALUES
-(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa \"lugar de elevados manantiales\", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco \"del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'PENE', 'NEPE');
+INSERT INTO `municipio` (`idMunicipio`, `Nombre`, `Descripcion`, `Ubicacion`, `Como_Llegar`, `Historia`, `Alcalde`, `Población`, `ViasComunicacion`, `DViasComunicacion`) VALUES
+(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Concepción de Ataco esta localizada en el departamento de Ahuachapán, a 1275 m SNM, en una meseta de la sierra Apaneca-Ilamatepec. Es parte de la Ruta de las Flores. A esta podemos llegar por la CA 8 desde Sonsonate, 105 km, o desde Ahuachapán.\r\n\r\nFue fundada por tribus nahuas. Concepción de Ataco tiene lugares de atracción turística como, la piscina de Atzumpa, las cascadas de Los Apantes, Salinas, miradores, además de telares de cintura. Según algunos lingüistas, Ataco quiere decir \"Lugar de Elevados Manantiales\". El historiador Tomás Fidias Jiménez nació en esta ciudad. Sus fiestas patronales son celebradas del 11 al 15 de diciembre en honor a la Virgen de Concepción.\r\n\r\nEn este poblado todavía podemos ver algunas de sus calles empedradas, un legado de la colonia. Su principal medio de ingreso es el café, otros rubros son el textil y las artesanías.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa \"lugar de elevados manantiales\", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco \"del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'PENE', 'NEPE');
 
 -- --------------------------------------------------------
 
@@ -171,6 +198,18 @@ CREATE TABLE `orografia` (
   `Descripcion` text NOT NULL,
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `orografia`
+--
+
+INSERT INTO `orografia` (`idOrografia`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
+(6, 'El batellón', 'Está situado 5.4 kms al SW de la villa de Concepción de Ataco. Elevación 1230m SNM. ', 1),
+(7, 'La empalizada', 'Está situado 1.6 kms al N de la villa de Concepción de Ataco. Elevación 1385m SNM ', 1),
+(8, 'El tronconal ', 'Está situado 2 kms al SE de la villa de Concepción de Ataco. Elevación 1285 SNM \r\n\r\n', 1),
+(9, 'El cipres ', 'Está situado 2.6 kms al S de la villa de Concepción de Ataco. Elevación 1398m SNM ', 1),
+(10, 'El tamagas ', 'Está situado 5.5 kms al SW de la villa de Concepción de Ataco. Elevación 1091m SNM ', 1),
+(11, 'El arco', 'Está situado 5.1 kms al S de la villa de Concepción de Ataco. Sirve de punto limítrofe con el municipio de jujutla. Elevación 1180m SNM', 1);
 
 -- --------------------------------------------------------
 
@@ -191,7 +230,8 @@ CREATE TABLE `turismo` (
 
 INSERT INTO `turismo` (`idTurismo`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
 (1, 'Aguas Termales Santa Teresa\r\n', 'Santa Teresa es una de las mayores atracciones de Ataco para sus visitantes. Sus aguas y sus senderos conducen al Ausol Santa Teresa, en un recorrido donde podrás apreciar toda la naturaleza viva de su flora y fauna, además de sus ricas y deliciosas aguas.\r\n\r\nDe igual forma, podrás ver todos los cafetales y los campos donde se produce el mejor café de altura en El Salvador.\r\n\r\nSanta Teresa te ofrece también la oportunidad de practicar el alpinismo con guías capacitados y alquiler de equipo por si no pudiste llevar tus implementos. Todas estas atracciones se combinan con el sabor de sus exquisitas aguas para convertir a Santa Teresa en la primera parada que deberás hacer en Ataco.', 1),
-(2, 'Miradores Divina Providencia y Cielito Lindo', 'Al ser un pueblo ubicado a buena altura sobre el nivel del mar, Ataco ofrece los miradores Divina Providencia y Cielito Lindo, ubicados en la carretera que conduce a este municipio.\r\n\r\nEn ellos podrás hacer una parada especial para dejarte impactar por la belleza del paisaje y lo imponente de las montañas que rodean a toda la Ruta de las Flores.\r\n\r\nTambién podrás encontrar cafeterías y restaurantes para disfrutar de postres nacionales e internacionales, así como del delicioso café de altura de Ahuachapán.', 1);
+(2, 'Miradores Divina Providencia y Cielito Lindo', 'Al ser un pueblo ubicado a buena altura sobre el nivel del mar, Ataco ofrece los miradores Divina Providencia y Cielito Lindo, ubicados en la carretera que conduce a este municipio.\r\n\r\nEn ellos podrás hacer una parada especial para dejarte impactar por la belleza del paisaje y lo imponente de las montañas que rodean a toda la Ruta de las Flores.\r\n\r\nTambién podrás encontrar cafeterías y restaurantes para disfrutar de postres nacionales e internacionales, así como del delicioso café de altura de Ahuachapán.', 1),
+(3, 'La Esquina de Ataco', 'Pero si de comida se trata, el Restaurante La Esquina de Ataco es el lugar indicado para visitar. Sus platillos típicos y comidas internacionales, además de su variedad de bebidas y postres, son un atractivo para el paladar y una buena forma de recargar baterías para continuar con tu viaje.\r\n\r\nLa Esquina de Ataco se ubica justo en el parque central, por detrás de la Alcaldía Munipal de Ataco.\r\n\r\nSe divide en tres salones grandes donde puedes encontrar mesas bajo techo, mesas estilo lounge y un espacio al aire libre para disfrutar del fresco clima ahuachapaneco.\r\n\r\nCada fin de semana, La Esquina de Ataco ofrece espectáculos en vivo, bailes y fiestas para que disfrutes en compañía de tus amigos.', 1);
 
 --
 -- Índices para tablas volcadas
@@ -203,6 +243,13 @@ INSERT INTO `turismo` (`idTurismo`, `Nombre`, `Descripcion`, `idMunicipio`) VALU
 ALTER TABLE `canton`
   ADD PRIMARY KEY (`idCanton`),
   ADD KEY `fk_canton` (`idMunicipio`);
+
+--
+-- Indices de la tabla `comentario`
+--
+ALTER TABLE `comentario`
+  ADD PRIMARY KEY (`idComentario`),
+  ADD KEY `fk_comentario` (`idMunicipio`);
 
 --
 -- Indices de la tabla `hidrografia`
@@ -271,6 +318,11 @@ ALTER TABLE `turismo`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `comentario`
+--
+ALTER TABLE `comentario`
+  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
 ALTER TABLE `hidrografia`
@@ -289,7 +341,7 @@ ALTER TABLE `img_hidrografia`
 -- AUTO_INCREMENT de la tabla `img_municipio`
 --
 ALTER TABLE `img_municipio`
-  MODIFY `idImg_Municipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idImg_Municipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `img_orografia`
 --
@@ -299,7 +351,7 @@ ALTER TABLE `img_orografia`
 -- AUTO_INCREMENT de la tabla `img_turismo`
 --
 ALTER TABLE `img_turismo`
-  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `municipio`
 --
@@ -309,12 +361,12 @@ ALTER TABLE `municipio`
 -- AUTO_INCREMENT de la tabla `orografia`
 --
 ALTER TABLE `orografia`
-  MODIFY `idOrografia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idOrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `turismo`
 --
 ALTER TABLE `turismo`
-  MODIFY `idTurismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idTurismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Restricciones para tablas volcadas
 --
@@ -324,6 +376,12 @@ ALTER TABLE `turismo`
 --
 ALTER TABLE `canton`
   ADD CONSTRAINT `fk_canton` FOREIGN KEY (`idMunicipio`) REFERENCES `municipio` (`idMunicipio`);
+
+--
+-- Filtros para la tabla `comentario`
+--
+ALTER TABLE `comentario`
+  ADD CONSTRAINT `fk_comentario` FOREIGN KEY (`idMunicipio`) REFERENCES `municipio` (`idMunicipio`);
 
 --
 -- Filtros para la tabla `hidrografia`
