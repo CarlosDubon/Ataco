@@ -618,6 +618,7 @@ section{
   transition: all 1s ease;
 }
 
+<<<<<<< HEAD
 .GaleriaVias div img:hover{
   filter: none;
   transform: scale(1.2);
@@ -740,4 +741,19 @@ section{
 
 .center{
     text-align: center;
+=======
+.polig1{
+  height: 20px;
+  background:#f45b18;
+}
+
+.polig2{
+  height: 20px;
+  background:#f1d17e;
+}
+
+.polig3{
+  height: 20px;
+  background:#2b7952;
+>>>>>>> katherinw
 }
