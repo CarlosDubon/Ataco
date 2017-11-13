@@ -205,7 +205,7 @@ section{
       height: calc(100vh - 64px)!important;
     }
     .menu_bar{
-        display: block;
+        display: table;
         width: 100%;
         position: fixed;
         top: 0;
@@ -216,10 +216,15 @@ section{
     #banner-title{
         display: none;
     }
+    .bt-menu{
+      display: table-cell!important;
+      vertical-align: middle;
+    }
     .menu_bar .bt-menu{
         min-width: 320px;
         display: block;
         padding: 16px;
+        height: 64px;
         color:#FEFEFE;
         overflow: hidden;
         font-size: 21.5px;
@@ -261,7 +266,7 @@ section{
     }
     .movil ul li a:hover{
         color: #52a7b1;
-        
+
     }
     .movil ul li{
         transition: all 500ms ease;
@@ -295,8 +300,8 @@ section{
     }
 
     .BotonHome{
-        width: 85% !important;    
-            
+        width: 85% !important;
+
     }
 }
 
@@ -593,7 +598,7 @@ section{
     -moz-transform:scale(1.8) ;
     -ms-transform:scale(1.8) ;
     -o-transform:scale(1.8) ;
-    transform:scale(1.8);    
+    transform:scale(1.8);
     border-radius: 10px;
 }
 
@@ -718,18 +723,18 @@ section{
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgb(22, 58, 65); 
+    background: rgb(22, 58, 65);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(47, 120, 136); 
+    background: rgb(47, 120, 136);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(31, 79, 89, 0.5);  
+	background: rgba(31, 79, 89, 0.5);
 }
 
 .defaultModal-btn {
