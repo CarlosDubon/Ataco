@@ -22,23 +22,8 @@
                 </div>
                  <div class="col-lg-10 col-md-12">
 
-<<<<<<< HEAD
-                    <img class="miniaruta" src="../img/img.jpg" alt="...">
-=======
                     <img class="miniaruta" src="../img/relieve.jpg" alt="...">
->>>>>>> origin/katherinw
                 </div>
-<<<<<<< HEAD
-                 <div class="col-lg-12 col-md-12">
-               
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p> 
-<<<<<<< HEAD
-                </div> 
-=======
-                </div>
->>>>>>> origin/katherinw
-   
-=======
                 <div class="col-lg-2 col-md-12 ">
                  <div class="col-md-12 polig1 col-sm-6">
                     
@@ -65,7 +50,6 @@
                 </div> <br><br>
             </div>
                 
->>>>>>> katherinw
             </div>
         </div>
         
