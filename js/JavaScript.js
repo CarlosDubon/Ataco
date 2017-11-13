@@ -28,9 +28,9 @@ function main () {
 		}
 
 	});
-    /*$('.submenu').click(function(){
+    $('.submenu').click(function(){
         $(this).children('.children').slideToggle();
-    });*/
+    });
 
     $(window).scroll(function(){
         var Position = window.scrollY;
