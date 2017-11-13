@@ -743,17 +743,35 @@ section{
     text-align: center;
 =======
 .polig1{
-  height: 20px;
+  height: 30px;
   background:#f45b18;
+  width: 30px;
+    float: left;
+    border-radius: 7px;
+    margin-right: 15px;
 }
 
 .polig2{
-  height: 20px;
+  height: 30px;
   background:#f1d17e;
+    width: 30px;
+    float: left;
+    border-radius: 7px;
+    margin-right: 15px;
+
 }
 
 .polig3{
-  height: 20px;
+  height: 30px;
   background:#2b7952;
+<<<<<<< HEAD
 >>>>>>> katherinw
 }
+=======
+    width: 30px;
+    float:left;
+    border-radius: 7px;
+    margin-right: 15px;
+
+}
+>>>>>>> katherinw
