@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <?php
@@ -53,13 +53,13 @@
                    <p class="tab"><i class="fa fa-address-card-o" aria-hidden="true"></i> Cedula</p>
                    <p class="tab"><i class="fa fa-money" aria-hidden="true"></i> Tesoreria</p>
                </div>
-               
+
            </div>
-                   
+
        </div>
 
    </section>
-    
+
 </body>
 </html>
 <style>

@@ -777,3 +777,15 @@ section{
     margin-right: 15px;
 
 }
+
+/*Login*/
+
+#LoginContainer{
+  width: 75%!important;
+  font-family: PT-regular;
+  margin-left: auto;
+  padding: 30px;
+  background: #EDEFF1;
+  margin-right: auto;
+  border-radius: 5px;
+}
