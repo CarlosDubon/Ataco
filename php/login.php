@@ -17,7 +17,7 @@
       <h1 style="text-align:center;">Administrador</h1>
       <div class="row">
           <div id="LoginContainer">
-              <form class="" action="index.html" method="post">
+              <form class="" action="login.php" method="post">
                 <p style="margin-top:0;" class="LoginTitle">Usuario: </p>
                 <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1"><i style="margin:0;" id="toggle_menu" class="fa fa-user" name="bars" aria-hidden="true"></i></span>
@@ -28,7 +28,7 @@
                   <span class="input-group-addon" id="basic-addon1"><i style="margin:0;" id="toggle_menu" class="fa fa-key" name="bars" aria-hidden="true"></i></span>
                   <input type="password" class="form-control" placeholder="Ingrese la contraseña de usuario" aria-describedby="basic-addon1" name="Pass" value="">
                 </div>
-                <input type="submit" style="display:block; width:100%;margin-top:30px;" class="btn btn-success" name="Submit" value="Ingresar">
+                <input type="submit" style="display:block; width:100%;margin-top:30px;" class="btn btn-success" name="Submit" value="Ingresar" disabled>
               </form>
       </div>
     </div>
