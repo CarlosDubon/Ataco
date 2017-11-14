@@ -18,11 +18,11 @@
             <h1 style="display: inline-block">Division Politica</h1><hr><br>
             <h1>Su estructura</h1>
             <div class="row"><br>
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-8 col-md-12">
                     <p> Esta población es de origen precolombino, y fue fundada por indios yaquis o pipiles en el corazón de la Sierra  Apaneca, con posterioridad al undécimo siglo de Era Vulgal. Según el arzobispo don Pedro Cortes y Larraz, Ataco permanecía en 1770 a la parroquia de Ahuachapán y su población estaba representada por 303 familias con 784 personas indígenas que hablaban el idioma nahuat, pero que hablaban y entendían también el castellano. En Ataco, agrega monseñor, había una escuela donde se enseñaba a los indizuelos, además de la doctrina cristiana, a leer y escribir. Durante toda la colonia, Ataco perteneció a la unidad administrativa llamada provincia de los Izalcos o Alcaldía mayor de Sonsonate. A partir del 12 de junio de 1824, fue municipio del primitivo y gran departamento de Sonsonate. Por decreto Ejecutivo de 26 de febrero de 1869, entro a formar parte del distrito y departamento de Ahuachapán. Durante la administración del Presidente de la Republica doctor Manuel Enrique Araujo y por Decreto Legislativo de 11 de mayo de 1911, ratificado por otro de 11 de abril de 1913, se otorgó el título de villa al pueblo de concepción de ataco. </p>
                 </div>
-                <div class="col-lg-5 col-md-12"><br><br>
-                    <div id="carouselExampleIndicators" class="carousel slide col-md-12" data-ride="carousel">
+                <div class="col-lg-4 col-md-12 padre">
+                    <div id="carouselExampleIndicators" class="carousel slide hijo" data-ride="carousel">
                       <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -60,9 +60,7 @@
                 <div class="col-lg-6 col-md-12">
                     <p>Para su administración el municipio de Ataco se divide en 11 cantones y 24 caseríos, que son:</p>
                     <div class="row">
-                    	<div class=""></div>
-                    	<div class="col-1"></div>
-                    	<div class="col-6">
+                    	<div class="col-6 ">
                     		<ol>
                     		  <li>El Arco</li><br><br>
                     		  <li>El Limo</li><br><br>
@@ -77,7 +75,7 @@
                     		  <li>Texusin Chirizo</li>
                     		</ol> 
                     	</div>
-                    	<div class="col-5">
+                    	<div class="col-6">
                     		<ul>
                     		  <li>El Arco</li>
                     		  <li>La Peña</li><br>

@@ -1,3 +1,8 @@
+<?php
+require 'sql_conn.php';
+$query = "select * from municipio";
+$vias = getResult($query);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,12 +17,12 @@
       include '../html/header.html';
      ?>
   </header>
-  <section>
     <div class="container">
+    <section>
       <h1 style="display: inline-block">Vias de comunicacion</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
       <div class="row" >
         <div class="col-md-6">
-          <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><?php echo $vias[0]['ViasComunicacion'] ?></p>
         </div>
         <div class="col-md-6">
             <div class="padre">
@@ -30,9 +35,9 @@
         </div>
       </div>
       <div class="row">
-        <h2 style="display:inline-block"> Como llegar </h2>
-        <div class="col-12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="col-md-12">
+          <h2> Como llegar </h2>
+          <p><?php echo $vias[0]['DViasComunicacion'] ?></p>
         </div>
       </div>
       <div class="col-12">
@@ -51,8 +56,8 @@
             </div>
           </div>
       </div>
+    </section>
     </div>
-  </section>
   <footer>
     <?php
       include '../html/Topscroller-dark.html';

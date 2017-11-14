@@ -1,3 +1,10 @@
+<?php
+require 'sql_conn.php';
+$query="SELECT * FROM Orografia";
+$query2="SELECT * FROM municipio";
+$orografia=getResult($query2);
+$cerros=getResult($query);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,8 +24,8 @@
         <div class="container"> 
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h1>OROGRAFIA</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequat                    sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos                    veritatis a         quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p> 
+                    <h1>Orografia</h1>
+                    <p><?php echo $orografia[0]['Orografia'] ?></p> 
                 </div>
             </div>
             <div class="row">
@@ -40,9 +47,22 @@
                     <p>Relieve Bajo</p>
                 </div>
             </div>
+            <h1>Principales Cerros</h1>
             <div class="row">
-                <h1>Principales Cerros</h1>
-
+                <?php
+                for($i=0;$i<count($cerros);$i++){
+                    echo '<div class="col-md-4">
+                            <div class="success-container">
+                                <div class="success-container-header">
+                                    <h4><i class="fa fa-picture-o" aria-hidden="true"></i>'.$cerros[$i]['Nombre'].'</h4>
+                                </div>
+                                <div class="success-container-body">
+                                    <p>'.$cerros[$i]['Descripcion'].'</p>
+                                </div>
+                            </div>
+                        </div>';
+                }
+                ?>
             </div>
         </div>
         
