@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!isset($_SESSION['Nombre'])){
+        header('Location: /Ataco/php/index.php');
+    }
     require 'sql_conn.php';
     $query ="SELECT * FROM Comentario";
     $query2 = "select count(*) as rows from Comentario";
