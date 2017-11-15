@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2017 a las 00:27:25
+-- Tiempo de generación: 15-11-2017 a las 02:13:14
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -63,7 +63,6 @@ CREATE TABLE `comentario` (
 
 INSERT INTO `comentario` (`idComentario`, `Nombre`, `Correo`, `Comentario`, `Fecha`, `idMunicipio`) VALUES
 (1, 'Carlos', 'carlosminero@gmail.com', 'Muy buena pagina', '2017-11-11 04:25:33', 1),
-(2, 'Gerardo', 'gerardo@gmail.com', 'Sos pupu', '2017-11-12 02:52:02', 1),
 (3, 'Ejemlplo', 'ejemplo@gmail.com', 'Mensaje generico', '2017-11-12 14:50:43', 1);
 
 -- --------------------------------------------------------
@@ -244,15 +243,16 @@ INSERT INTO `turismo` (`idTurismo`, `Nombre`, `Descripcion`, `idMunicipio`) VALU
 CREATE TABLE `usuario` (
   `idUsuario` int(11) NOT NULL,
   `Usuario` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL
+  `Password` varchar(100) NOT NULL,
+  `Mail` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idUsuario`, `Usuario`, `Password`) VALUES
-(1, 'Ataco', 'Ataco');
+INSERT INTO `usuario` (`idUsuario`, `Usuario`, `Password`, `Mail`) VALUES
+(1, 'Ataco', 'Ataco', 'Admin@Ataco.gob.sv');
 
 --
 -- Índices para tablas volcadas
@@ -348,7 +348,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `comentario`
 --
 ALTER TABLE `comentario`
-  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
