@@ -23,28 +23,7 @@
       <div class="row">
           <div id="LoginContainer">
             <?php
-              $flag = true;
-              if(isset($_POST['User']) && isset($_POST['Pass'])){
-                if (!empty($_POST['User']) && !empty($_POST['Pass'])) {
-                  $flag=true;
-                  for($i=0; $i<count($Result); $i++){
-                    if($Result[$i]['Usuario']==$_POST['User'] && $Result[$i]['Password']==$_POST['Pass']){
-                      // session_start();
-                      // $_SESSION['nombre']= $_POST['User'];
-                      echo 'Variables Correctas';
-                    }else{
-                      $flag=false;
-                    }
-                  }
-                  if(!$flag){
-                      echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> sus credenciales no son correctas</div>';
-                  }
-
-                }else {
-                  echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> sus credenciales no pueden estar vacias</div>';
-                }
-
-              }
+              require 'login-process.php';
             ?>
               <form class="" action="login.php" method="post">
                 <p style="margin-top:0;" class="LoginTitle">Usuario: </p>
