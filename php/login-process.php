@@ -5,9 +5,10 @@
         $flag=true;
         for($i=0; $i<count($Result); $i++){
           if($Result[$i]['Usuario']==$_POST['User'] && $Result[$i]['Password']==$_POST['Pass']){
-            session_start();
-            $_SESSION['nombre']= $_POST['User'];
-            header('Location: /Ataco/php/contacto-admin.php');
+            $_SESSION['Nombre']= $_POST['User'];
+            $_SESSION['Mail']= $Result[$i]['Mail'];
+              echo "<script>location.href='/Ataco/php/contacto-admin.php'</script>";
+            // header('Location: /Ataco/php/contacto-admin.php');
             // echo 'Variables Correctas';
           }else{
             $flag=false;

@@ -1,6 +1,7 @@
 <?php
+  session_start();
   require 'sql_conn.php';
-  $Query_User='SELECT Usuario, Password from Usuario;';
+  $Query_User='SELECT * from Usuario;';
   $Result= getResult($Query_User);
  ?>
 <!DOCTYPE html>

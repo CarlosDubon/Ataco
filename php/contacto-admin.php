@@ -32,14 +32,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                    <div class="form-container">
-                        <form id="contactForm" action="form-process.php" method="POST">
+                        <form id="contactForm" action="formAdmin-process.php" method="POST">
                             <div class="form-group">
                                 <h5><label for="name">Nombre:</label>
-                                <input name="name" type="text" value="<?php echo $_SESSION['Nombre'] ?>" class="form-control disabled" required></h5>
+                                <input name="name" type="text" value="<?php echo $_SESSION['Nombre'] ?>" class="form-control" disabled required></h5>
                             </div>
                             <div class="form-group">
                                 <h5><label for="mail">Email:</label>
-                                    <input name="mail" type="email" placeholder="ejemplo@dominio.com" class="form-control" required></h5>
+                                    <input name="mail" type="email" value="<?php echo $_SESSION['Mail'] ?>" class="form-control" disabled required></h5>
                             </div>
                             <div class="form-group">
                                 <h5><label for="message">Comentario:</label>
