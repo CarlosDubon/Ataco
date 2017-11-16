@@ -108,6 +108,7 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

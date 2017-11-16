@@ -21,11 +21,11 @@ $cerros=getResult($query);
     ?>
     </header>
     <section>
-        <div class="container"> 
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <h1>Orografia</h1>
-                    <p><?php echo $orografia[0]['Orografia'] ?></p> 
+                    <p><?php echo $orografia[0]['Orografia'] ?></p>
                 </div>
             </div>
             <div class="row">
@@ -65,11 +65,12 @@ $cerros=getResult($query);
                 ?>
             </div>
         </div>
-        
+
     </section>
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

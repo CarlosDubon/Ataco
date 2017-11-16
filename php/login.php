@@ -18,7 +18,7 @@
       include '../html/header.html';
     ?>
   </header>
-  <section>
+  <section style="height: 100vh;">
     <div class="container">
       <h1 style="text-align:center;">Administrador</h1>
       <div class="row">
@@ -45,6 +45,7 @@
   <footer>
     <?php
       include '../html/Topscroller-dark.html';
+      include '../html/footer.html';
     ?>
   </footer>
 </body>

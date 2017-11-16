@@ -78,6 +78,7 @@
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

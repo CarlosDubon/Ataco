@@ -812,3 +812,49 @@ section{
   margin-right: auto;
   border-radius: 5px;
 }
+
+/*Footer*/
+
+#Footer{
+  width: 100%;
+  background: #021F25;
+  color: #A5AEAF;
+  font-size: 1em;
+}
+
+.Footer-Center p{
+  text-align: center;
+}
+
+.Footer-Right p{
+  text-align: right;
+}
+
+@media screen and (max-width:990px) {
+  #Footer p{
+    font-size: 0.8em!important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #Footer p{
+    font-size: 0.6em!important;
+  }
+}
+
+/*@media screen and (max-width:425px) {
+  #Footer p{
+    font-size: 0.5em!important;
+  }
+}*/
+
+.Footer-bottom{
+  width: 100%;
+  height: 10px;
+  background: #194852;
+}
+
+#Footer a{
+  text-decoration: none;
+  color: #A5AEAF !important;
+}

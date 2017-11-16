@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2017 a las 02:13:14
+-- Tiempo de generación: 17-11-2017 a las 00:31:55
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -40,7 +40,59 @@ CREATE TABLE `canton` (
 --
 
 INSERT INTO `canton` (`idCanton`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
-(0, 'El Arco', NULL, 1);
+(1, 'El Arco', NULL, 1),
+(2, 'El Limo', NULL, 1),
+(3, 'El Molino', NULL, 1),
+(4, 'El Naranjito', NULL, 1),
+(5, 'El Tronconal', NULL, 1),
+(6, 'La Ceiba', NULL, 1),
+(7, 'La Joya de Los Apantes', NULL, 1),
+(8, 'Los Tablones', NULL, 1),
+(9, 'San José', NULL, 1),
+(10, 'Shucutitán', NULL, 1),
+(11, 'Texusin Chirizo', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `caserio`
+--
+
+CREATE TABLE `caserio` (
+  `idCaserio` int(11) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `IdCanton` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `caserio`
+--
+
+INSERT INTO `caserio` (`idCaserio`, `Nombre`, `IdCanton`) VALUES
+(1, 'El Arco', 1),
+(2, 'La Peña', 1),
+(3, 'El Limo', 2),
+(4, 'El Tarro', 2),
+(5, 'El Molino', 3),
+(6, 'El Naranjito', 4),
+(7, 'El Tronconal', 5),
+(8, 'La Ceiba', 6),
+(9, 'Las Lajas', 6),
+(10, 'El Espino', 6),
+(11, 'Admunga', 6),
+(12, 'La Joya de Los Apantes', 7),
+(13, 'El Ciprés', 7),
+(14, 'San Cayetano', 7),
+(15, 'Chichigazapa', 7),
+(16, 'Santa Berta', 7),
+(17, 'Los Tablones', 8),
+(18, 'El Carmen', 8),
+(19, 'San José', 9),
+(20, 'Shucutitán', 10),
+(21, 'La Gloria', 10),
+(22, 'Texusin', 11),
+(23, 'El Chirizo', 11),
+(24, 'Melinche Abajo', 11);
 
 -- --------------------------------------------------------
 
@@ -56,14 +108,6 @@ CREATE TABLE `comentario` (
   `Fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `comentario`
---
-
-INSERT INTO `comentario` (`idComentario`, `Nombre`, `Correo`, `Comentario`, `Fecha`, `idMunicipio`) VALUES
-(1, 'Carlos', 'carlosminero@gmail.com', 'Muy buena pagina', '2017-11-11 04:25:33', 1),
-(3, 'Ejemlplo', 'ejemplo@gmail.com', 'Mensaje generico', '2017-11-12 14:50:43', 1);
 
 -- --------------------------------------------------------
 
@@ -185,7 +229,7 @@ CREATE TABLE `municipio` (
 --
 
 INSERT INTO `municipio` (`idMunicipio`, `Nombre`, `Descripcion`, `Ubicacion`, `Como_Llegar`, `Historia`, `Alcalde`, `Población`, `Orografia`, `ViasComunicacion`, `DViasComunicacion`, `Estructura`) VALUES
-(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Concepción de Ataco esta localizada en el departamento de Ahuachapán, a 1275 m SNM, en una meseta de la sierra Apaneca-Ilamatepec. Es parte de la Ruta de las Flores. A esta podemos llegar por la CA 8 desde Sonsonate, 105 km, o desde Ahuachapán.\r\n\r\nFue fundada por tribus nahuas. Concepción de Ataco tiene lugares de atracción turística como, la piscina de Atzumpa, las cascadas de Los Apantes, Salinas, miradores, además de telares de cintura. Según algunos lingüistas, Ataco quiere decir \"Lugar de Elevados Manantiales\". El historiador Tomás Fidias Jiménez nació en esta ciudad. Sus fiestas patronales son celebradas del 11 al 15 de diciembre en honor a la Virgen de Concepción.\r\n\r\nEn este poblado todavía podemos ver algunas de sus calles empedradas, un legado de la colonia. Su principal medio de ingreso es el café, otros rubros son el textil y las artesanías.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa \"lugar de elevados manantiales\", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco \"del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'Los rasgos orográficos más notables del municipio son los cerros: El Batellon, La empalizada, el tonconal, el cipres, el tamagaz, el arco y trompa de tunco; Las Lomas, el temblador, el triangulo, la Oscurana, La Cruz, El Esfuerzo, El Pito, El Rosario, El Bosque, La Mira, El Manzanillo, El Rotulo, San Felipe, El Ojo de Agua, El Escobal, Shucutitán, El Estoraque, Calle La Peña y Tierra Colorada', 'La villa de Concepción de taco se comunica a través de la carretera (CA-8) con la ciudad de Ahuachapán, al Norte, y la villa de Apaneca a Sur Este del municipio. Por carretera sin pavimentar, transitable todo el año, desviandose de la (CA-8) cerca de las fincas Germania y El Rosario, se comunica al Sur de la vila, con los pueblos de Jujutla y Guaymango. Caminos vecinales enlazan cantones y caserios con la cabecera municipal', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, temporibus, cum vero architecto voluptatum vel nemo. Iure eius id, dolor blanditiis! Porro eligendi iste deserunt recusandae dolorum error velit fugiat. ipsum dolor sit amet, consectetur adipisicing elit. Quos cum perferendis tenetur doloremque laudantium distinctio omnis aspernatur necessitatibus deleniti, placeat similique, iure labore unde laboriosam. Provident labore libero amet expedita. ipsum dolor sit amet, consectetur adipisicing elit. Inventore nostrum sint adipisci obcaecati cum voluptas illum, dolorem itaque, accusamus repellendus quam suscipit libero eius porro amet dignissimos aliquam molestias ipsum!', 'Esta población es de origen precolombino, y fue fundada por indios yaquis o pipiles en el corazón de la Sierra Apaneca, con posterioridad al undécimo siglo de Era Vulgal. Según el arzobispo don Pedro Cortes y Larraz, Ataco permanecía en 1770 a la parroquia de Ahuachapán y su población estaba representada por 303 familias con 784 personas indígenas que hablaban el idioma nahuat, pero que hablaban y entendían también el castellano. En Ataco, agrega monseñor, había una escuela donde se enseñaba a los indizuelos, además de la doctrina cristiana, a leer y escribir. Durante toda la colonia, Ataco perteneció a la unidad administrativa llamada provincia de los Izalcos o Alcaldía mayor de Sonsonate. A partir del 12 de junio de 1824, fue municipio del primitivo y gran departamento de Sonsonate. Por decreto Ejecutivo de 26 de febrero de 1869, entro a formar parte del distrito y departamento de Ahuachapán. Durante la administración del Presidente de la Republica doctor Manuel Enrique Araujo y por Decreto Legislativo de 11 de mayo de 1911, ratificado por otro de 11 de abril de 1913, se otorgó el título de villa al pueblo de concepción de ataco. ');
+(1, 'Concepcion de Ataco', 'Concepción de Ataco es un pueblo de origen precolombino. sus fascinantes paisajes, su valor cultural y sus calles empedradas fueron suficientes para nombrarla parte de la Ruta de las Flores. En nombre del pueblo es de origen nahuatl significa “Lugar de elevados manantiales“, un nombre muy acertado para una población asentada entre montañas a una altura de 1,275 metros snm, lo que permite gozar de un clima muy fresco en estos tiempos calurosos.\r\n|\r\nAtaco es conocido por ser un pueblo muy pintoresco ya que muchos de los muros han sido decorados con murales alusivos a la cultura salvadoreña.', 'Concepción de Ataco esta localizada en el departamento de Ahuachapán, a 1275 m SNM, en una meseta de la sierra Apaneca-Ilamatepec. Es parte de la Ruta de las Flores. A esta podemos llegar por la CA 8 desde Sonsonate, 105 km, o desde Ahuachapán.\r\n\r\nFue fundada por tribus nahuas. Concepción de Ataco tiene lugares de atracción turística como, la piscina de Atzumpa, las cascadas de Los Apantes, Salinas, miradores, además de telares de cintura. Según algunos lingüistas, Ataco quiere decir \"Lugar de Elevados Manantiales\". El historiador Tomás Fidias Jiménez nació en esta ciudad. Sus fiestas patronales son celebradas del 11 al 15 de diciembre en honor a la Virgen de Concepción.\r\n\r\nEn este poblado todavía podemos ver algunas de sus calles empedradas, un legado de la colonia. Su principal medio de ingreso es el café, otros rubros son el textil y las artesanías.', 'Si procede de San Salvador deberá tomar la Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate. En el punto conocido como “El Poliedro” del municipio de Lourdes deberá tomar el desvío hacia Sonsonate que está a la derecha.\r\nA lo largo del camino encontrará la señalización que le indica cómo llegar a cada destino de la Ruta de las Flores. El recorrido en vehículo lleva una hora con 30 minutos aproximadamente.\r\nSi va en autobús, hay varias opciones. Desde la terminal de Occidente en San Salvador, puede tomar la 205 especial a $1.30 USD (1 hora y 15 minutos aproximadamente), la 205 normal a $0.75 USD (1 hora y 45 minutos aproximadamente). También podrá abordar la ruta 249 con destino Sonsonate-Ahuachapán.', 'Esta población es de origen precolombino y fue fundada por indios yaquis o pipiles en el corazón de la sierra de Apaneca con posterioridad al undécimo siglo de la Era Vulgar. En idioma náhuat este toponímico significa \"lugar de elevados manantiales\", ya que proviene de at, agua, manantial; aeu, elevado, alto; y co, sufijo locativo.| En 1550 tenía unos 800 habitantes. El oidor don Diego García de Palacio, en carta de relación al Rey Felipe II, de 8 de marzo de 1576, dice que en lo alto de la sierra de Apaneca está el pueblo de Ataco \"del mismo temple y fertilidad (que los otros de la sierra), y muy abundante de toda montería y caza, por los muchos y buenos montes que para ella tienen. Tuve noticias que había en él venados, de la forma que son los que en la India de Portugal crían la piedra bezar e hice matar algunos en que se hallaron algunas piedras, que probadas en enfermedades pestilentes hacen el mismo efecto que las que se traen de la dicha India. ', 'Óscar Oliverio Gómez', ' 12,786', 'Los rasgos orográficos más notables del municipio son los cerros: El Batellon, La empalizada, el tonconal, el cipres, el tamagaz, el arco y trompa de tunco; Las Lomas, el temblador, el triangulo, la Oscurana, La Cruz, El Esfuerzo, El Pito, El Rosario, El Bosque, La Mira, El Manzanillo, El Rotulo, San Felipe, El Ojo de Agua, El Escobal, Shucutitán, El Estoraque, Calle La Peña y Tierra Colorada', 'La villa de Concepción de taco se comunica a través de la carretera (CA-8) con la ciudad de Ahuachapán, al Norte, y la villa de Apaneca a Sur Este del municipio. Por carretera sin pavimentar, transitable todo el año, desviandose de la (CA-8) cerca de las fincas Germania y El Rosario, se comunica al Sur de la vila, con los pueblos de Jujutla y Guaymango. Caminos vecinales enlazan cantones y caserios con la cabecera municipal', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, temporibus, cum vero architecto voluptatum vel nemo. Iure eius id, dolor blanditiis! Porro eligendi iste deserunt recusandae dolorum error velit fugiat. ipsum dolor sit amet, consectetur adipisicing elit. Quos cum perferendis tenetur doloremque laudantium distinctio omnis aspernatur necessitatibus deleniti, placeat similique, iure labore unde laboriosam. Provident labore libero amet expedita. ipsum dolor sit amet, consectetur adipisicing elit. Inventore nostrum sint adipisci obcaecati cum voluptas illum, dolorem itaque, accusamus repellendus quam suscipit libero eius porro amet dignissimos aliquam molestias ipsum!', 'Esta población es de origen precolombino, y fue fundada por indios yaquis o pipiles en el corazón de la Sierra Apaneca, con posterioridad al undécimo siglo de Era Vulgal. Según el arzobispo don Pedro Cortes y Larraz, Ataco permanecía en 1770 a la parroquia de Ahuachapán y su población estaba representada por 303 familias con 784 personas indígenas que hablaban el idioma nahuat, pero que hablaban y entendían también el castellano. |En Ataco, agrega monseñor, había una escuela donde se enseñaba a los indizuelos, además de la doctrina cristiana, a leer y escribir. Durante toda la colonia, Ataco perteneció a la unidad administrativa llamada provincia de los Izalcos o Alcaldía mayor de Sonsonate. |A partir del 12 de junio de 1824, fue municipio del primitivo y gran departamento de Sonsonate. Por decreto Ejecutivo de 26 de febrero de 1869, entro a formar parte del distrito y departamento de Ahuachapán. Durante la administración del Presidente de la Republica doctor Manuel Enrique Araujo y por Decreto Legislativo de 11 de mayo de 1911, ratificado por otro de 11 de abril de 1913, se otorgó el título de villa al pueblo de concepción de ataco. ');
 
 -- --------------------------------------------------------
 
@@ -263,7 +307,15 @@ INSERT INTO `usuario` (`idUsuario`, `Usuario`, `Password`, `Mail`) VALUES
 --
 ALTER TABLE `canton`
   ADD PRIMARY KEY (`idCanton`),
-  ADD KEY `fk_canton` (`idMunicipio`);
+  ADD KEY `fk_canton` (`idMunicipio`),
+  ADD KEY `idCanton` (`idCanton`);
+
+--
+-- Indices de la tabla `caserio`
+--
+ALTER TABLE `caserio`
+  ADD PRIMARY KEY (`idCaserio`),
+  ADD KEY `FK_CASerio` (`IdCanton`);
 
 --
 -- Indices de la tabla `comentario`
@@ -345,10 +397,15 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `caserio`
+--
+ALTER TABLE `caserio`
+  MODIFY `idCaserio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+--
 -- AUTO_INCREMENT de la tabla `comentario`
 --
 ALTER TABLE `comentario`
-  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
@@ -408,6 +465,12 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `canton`
   ADD CONSTRAINT `fk_canton` FOREIGN KEY (`idMunicipio`) REFERENCES `municipio` (`idMunicipio`);
+
+--
+-- Filtros para la tabla `caserio`
+--
+ALTER TABLE `caserio`
+  ADD CONSTRAINT `FK_CASerio` FOREIGN KEY (`IdCanton`) REFERENCES `canton` (`idCanton`);
 
 --
 -- Filtros para la tabla `comentario`

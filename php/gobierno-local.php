@@ -59,6 +59,12 @@
        </div>
 
    </section>
+   <footer>
+     <?php
+        include '../html/footer.html';
+        include '../html/Topscroller-dark.html';
+      ?>
+   </footer>
 
 </body>
 </html>

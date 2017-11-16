@@ -2,7 +2,7 @@
     require 'sql_conn.php';
     $query ="SELECT * FROM Comentario";
     $query2 = "select count(*) as rows from Comentario";
-    $comentarios = getResult($query); 
+    $comentarios = getResult($query);
     $rows=getResult($query2);
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <?php
     include '../html/head.html';
-    ?>        
+    ?>
     <title>Contacto</title>
 </head>
 <body>
@@ -45,7 +45,7 @@
                                 <input class="btn btn-info" type="submit" id="submit" value="Enviar">
                             </div>
                         </form>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-md-6">
                         <div>
@@ -93,6 +93,7 @@
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

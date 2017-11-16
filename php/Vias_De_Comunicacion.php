@@ -61,6 +61,7 @@ $vias = getResult($query);
   <footer>
     <?php
       include '../html/Topscroller-dark.html';
+      include '../html/footer.html';
     ?>
       <div class="modal fade bs-example-modal-lg" id="mapeo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog modal-lg" role="document">

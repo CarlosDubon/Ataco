@@ -19,12 +19,13 @@
            <audio id="medio" width="200px">
                 <source src="../audios/audio.mp3" >
            </audio>
-           
-       </div> 
+
+       </div>
     </section>
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

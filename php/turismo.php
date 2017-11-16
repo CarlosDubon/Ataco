@@ -2,10 +2,10 @@
     require 'sql_conn.php';
     $query = "Select * from turismo";
     $query2 = "select count(*) as rows from turismo";
-    
-    
+
+
     $turismo = getResult($query);
-    
+
     $rows = getResult($query2);
 ?>
 <!DOCTYPE html>
@@ -37,7 +37,7 @@
                         $imgTur = getResult($query_img);
                         $query2_img= 'select count(*) as rows from img_turismo where idTurismo='.($i+1).';';
                         $rows_img = getResult($query2_img);
-                        
+
                         echo '
                             <div class="col-md-4">
                                 <a href="#" class="thumbnail" data-toggle="modal" data-target="#Turismo'.$i.'">
@@ -47,7 +47,7 @@
                                 <h1>'.$turismo[$i]['Nombre'].'</h1>
                                 <p>'.$sinopsis[0].'...</p>
                             </div>
-                            
+
                             <div class="modal fade bs-example-modal-lg" id="Turismo'.$i.'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                               <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
@@ -61,8 +61,8 @@
                                         for($j=0; $j<$rows_img[0]['rows']; $j++){
                                             echo '<div class="col-4 gallery-container"><img src="'.$imgTur[$j]['ruta'].'" width="100%"></div>';
                                         }
-                                        
-                                          
+
+
                         echo       '</div>
                                     </div>
                                     <p>'.$turismo[$i]['Descripcion'].'</p>
@@ -74,7 +74,7 @@
                               </div>
                             </div>';
                     }
-                    
+
                 ?>
            </div>
        </div>
@@ -83,6 +83,7 @@
     <footer>
       <?php
         include '../html/Topscroller-dark.html';
+        include '../html/footer.html';
       ?>
 <!--MODAL TURISMO 1 -->
         <div class="modal fade bs-example-modal-lg" id="Turismo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
