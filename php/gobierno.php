@@ -9,7 +9,7 @@
 <body>
   <header>
     <?php
-        include '../html/header.html';
+        include '../html/header.php';
     ?>
   </header>
   <section style="margin:0px;">

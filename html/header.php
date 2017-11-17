@@ -1,3 +1,8 @@
+<?php
+   if($_SERVER['REQUEST_URI']!="/Ataco/php/contacto-admin.php"){
+      session_start();
+   }
+?>
 <div class="menu_bar">
     <a href="#" class="bt-menu"><i id="toggle_menu" class="fa fa-th-list" name="bars" aria-hidden="true"></i>Concepcion de Ataco</a>
 </div>
@@ -35,7 +40,20 @@
                 <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
-        <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+        <?php
+        if(isset($_SESSION['Nombre'])){
+            
+            echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class="rigth-list"><a href="../php/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar  Sesion</a></li>
+            
+';
+        }else{
+            echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class="rigth-list"><a href="../php/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
+';
+        }
+        ?>
+
     </ul>
 </nav>
 
@@ -70,7 +88,19 @@
               <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
-      <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+      <?php
+        if(isset($_SESSION['Nombre'])){
+            
+            echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class=""><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a></li>
+            
+';
+        }else{
+            echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class=""><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
+';
+        }
+        ?>
   </ul>
 </nav>
 

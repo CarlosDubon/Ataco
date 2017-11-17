@@ -1,4 +1,8 @@
 <?php
+    session_start();
+    if(!isset($_SESSION['Nombre'])){
+        header('Location: /Ataco/php/Index.php');
+    }
     require 'sql_conn.php';
     $conn=Arrancar();
     $stmt = $conn->prepare('Insert into comentario (Nombre,Correo,Comentario,idMunicipio) values (:Nombre,:Correo,:Comentario,:idMunicipio)');

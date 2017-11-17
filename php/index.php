@@ -5,40 +5,40 @@
    include '../html/head.html';
    require 'sql_conn.php';
    ?>
-    <title>San Miguel de Mercedes</title>
+    <title>Concepción de Ataco</title>
 </head>
 <body>
    <header>
        <?php
-       include '../html/header.html';
+       include '../html/header.php';
        ?>
    </header>
     <section style="margin:0">
       <div id="Box1">
         <div class="Box_Container">
           <a href="historia.php" class="BotonHome fadeIn animated wowload">
-            Conoce la <span class="Bold-Beba HBlue" >historia</span> de San Miguel de Mercedes...
+            Conoce la <span class="Bold-Beba HBlue" >historia</span> de Concepción de Ataco...
           </a>
         </div>
       </div>
       <div id="Box2">
         <div class="Box_Container" >
           <a href="#" class="BotonHome fadeIn animated wowload">
-            Conoce la <span class="Bold-Beba HGreen">Hidrografia</span> de San Miguel de Mercedes...
+            Conoce el <span class="Bold-Beba HGreen">turismo</span> de Concepción de Ataco...
           </a>
         </div>
       </div>
       <div id="Box3">
         <div class="Box_Container" >
           <a href="#" class="BotonHome fadeIn animated wowload">
-            Conoce la <span class="Bold-Beba HBlack">Fauna</span> de San Miguel de Mercedes...
+            Conoce la <span class="Bold-Beba HBlack">geografía</span> de Concepción de Ataco...
           </a>
         </div>
       </div>
       <div id="Box4">
         <div class="Box_Container" >
           <a href="../php/turismo.php" class="BotonHome fadeIn animated wowload">
-            Conoce el <span class="Bold-Beba HRed">turismo</span> de San Miguel de Mercedes...
+            Conoce el <span class="Bold-Beba HRed">gobierno</span> de Concepción de Ataco...
           </a>
         </div>
       </div>

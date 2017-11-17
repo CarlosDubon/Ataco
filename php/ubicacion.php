@@ -19,7 +19,7 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
 <body>
     <header>
     <?php
-       include '../html/header.html';
+       include '../html/header.php';
     ?>
     </header>
     <section>

@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['Nombre'])){
-        header('Location: /Ataco/php/Index.php');
+        header('Location: /Ataco/php/contacto.php');
     }
     require 'sql_conn.php';
     $query ="SELECT * FROM Comentario";
@@ -9,6 +9,7 @@
     $comentarios = getResult($query);
     $rows=getResult($query2);
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,8 +22,9 @@
 <body>
     <header>
     <?php
-       include '../html/header.html';
+     include '../html/header.php';
     ?>
+
     </header>
         <div class="container">
            <section>

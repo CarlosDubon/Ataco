@@ -339,7 +339,7 @@ section{
   display: table;
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url("../img/iglesia.png");
+  background-image: url("../img/Iglesia.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ section{
   display: table;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/Img2.png");
+  background-image: url("../img/Img2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -811,4 +811,8 @@ section{
   background: #EDEFF1;
   margin-right: auto;
   border-radius: 5px;
+}
+
+.rigth-list {
+    float: right;
 }

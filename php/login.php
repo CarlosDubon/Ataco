@@ -1,5 +1,4 @@
 <?php
-  session_start();
   require 'sql_conn.php';
   $Query_User='SELECT * from Usuario;';
   $Result= getResult($Query_User);
@@ -15,7 +14,7 @@
 <body>
   <header>
     <?php
-      include '../html/header.html';
+      include '../html/header.php';
     ?>
   </header>
   <section>
