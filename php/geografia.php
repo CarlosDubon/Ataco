@@ -4,12 +4,12 @@
   <?php
       include '../html/head.html';
   ?>
-  <title>Geografia :v</title>
+  <title>Geografia</title>
 </head>
 <body>
   <header>
     <?php
-        include '../html/header.html';
+        include '../html/header.php';
     ?>
   </header>
   <section style="margin:0;">
