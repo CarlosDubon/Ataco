@@ -535,7 +535,19 @@ section{
     border: none;
     transition: all 500ms ease-in-out;
 }
+.play-buttom-center {
+    padding: 7px;
+    background: #1F4F59;
+    color: #FFFFFF;
+    border: none;
+    transition: all 500ms ease-in-out;
+}
 .play-buttom:hover {
+     background: rgba(0,0,0,0);
+     color: #3a7999;
+     box-shadow: 0 0 0 1px #3a7999;
+}
+.play-buttom:center {
      background: rgba(0,0,0,0);
      color: #3a7999;
      box-shadow: 0 0 0 1px #3a7999;
