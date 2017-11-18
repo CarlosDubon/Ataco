@@ -1,13 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {}<?php
 
 =======
+=======
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
 <?php
 require 'sql_conn.php';
 $query="SELECT * FROM municipio";
 $query2="SELECT * FROM hidrografia";
 $hidrografia = getResult($query);
 $rios = getResult($query2);
+<<<<<<< HEAD
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
+=======
 >>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
 ?>
 <!DOCTYPE html>
@@ -48,6 +54,7 @@ $rios = getResult($query2);
                   </a>
               </div>
             </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
@@ -123,6 +130,8 @@ $rios = getResult($query2);
         </div>
     </div> -->
 =======
+=======
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
                <?php
                 $flag = true;
                 for($i=0;$i<count($rios);$i++){
@@ -164,6 +173,9 @@ $rios = getResult($query2);
                 }
                 
                ?>
+<<<<<<< HEAD
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
+=======
 >>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
   </section>
     <footer>
