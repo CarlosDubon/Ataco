@@ -16,7 +16,9 @@
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">Hidrografia 💧</h1>
+            <h1 style="display: inline-block">Hidrografia 💧</h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
+              <span name="play">Reproducir</span>
+          </button>
             <div class="row">
               <div class="col-xs-12">
                <a class="navbar-brand logo fadeIn animated" href="index.html">
@@ -26,9 +28,6 @@
           </div>
           <div class="text-center" style="">
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-         <span name="play">Reproducir</span>
-     </button>
      </div>
           <div class="row">
               <div class="col-lg-4 col-md-12 bounceInLeft animated">
