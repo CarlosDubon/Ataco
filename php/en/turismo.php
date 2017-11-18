@@ -13,14 +13,14 @@
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>San Miguel de Mercedes</title>
 </head>
 <body>
     <header>
     <?php
-       include '../html/header.php';
+       include '../../html/en/header.php';
     ?>
     </header>
     <section>
@@ -82,35 +82,9 @@
     </section>
     <footer>
       <?php
-        include '../html/Topscroller-dark.html';
-        include '../html/footer.html';
+        include '../../html/Topscroller-dark.html';
+        include '../../html/footer.html';
       ?>
-<!--MODAL TURISMO 1 -->
-        <div class="modal fade bs-example-modal-lg" id="Turismo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Turismo 1</h4>
-              </div>
-              <div class="modal-body">
-                <div class="container">
-                  <div class="row gallery">
-                      <div class="col-4 gallery-container"><img src="../img/Img6.jpg" width="100%"></div>
-                      <div class="col-4 gallery-container"><img src="../img/Img2.png" width="100%"></div>
-                      <div class="col-4 gallery-container"><img src="../img/Img9.jpg" width="100%"></div>
-                  </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic dolorem fugit id beatae, sunt perferendis ducimus ab, labore vel, vitae laborum quis vero a reiciendis. Adipisci molestias, voluptatem velit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe suscipit debitis a ipsum mollitia quibusdam in provident quasi molestiae, distinctio assumenda, beatae repellat, perferendis quis cum! Iste necessitatibus, minus aliquid.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-<!--MODAL TURISMO 1 -->
     </footer>
 
 </body>

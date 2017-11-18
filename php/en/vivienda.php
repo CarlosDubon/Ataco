@@ -9,14 +9,14 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>Tipos de Vivienda</title>
 </head>
 <body>
     <header>
     <?php
-       include '../html/header.php';
+       include '../../html/en/header.php';
     ?>
     </header>
     <section>
@@ -31,7 +31,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                     ?>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                      <img class="miniaruta" src="../img/calleataco.jpg" alt="...">
+                      <img class="miniaruta" src="../../img/calleataco.jpg" alt="...">
                 </div>
             </div>
             <div class="row">
@@ -79,7 +79,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                                     <li>3,440</li>
                                     <li>3,444</li>
                                 </ul><br>
-                        
+
                             </ul>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                                 <li>Personas sin Vivienda</li>
                             </ol>
                         </div>
-                        
+
                     </div>
                 </div>
                 </div>
@@ -111,8 +111,8 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
     </section>
     <footer>
         <?php
-          include '../html/Topscroller-dark.html';
-          include '../html/footer.html';
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

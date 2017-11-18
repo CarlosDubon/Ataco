@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <?php
-        include '../html/head.html';
+        require '../../html/head.html';
     ?>
     <title>Accesibilidad</title>
 </head>
 <body>
    <header>
        <?php
-            include '../html/header.php';
+            require '../../html/en/header.php';
        ?>
    </header>
    <section>
@@ -67,11 +67,10 @@
    </section>
    <footer>
      <?php
-        include '../html/footer.html';
-        include '../html/Topscroller-dark.html';
+        require '../../html/footer.html';
+        require '../../html/Topscroller-dark.html';
       ?>
    </footer>
 
 </body>
 </html>
-

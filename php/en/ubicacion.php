@@ -12,14 +12,14 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>Ataco</title>
 </head>
 <body>
     <header>
     <?php
-       include '../html/header.php';
+       include '../../html/en/header.php';
     ?>
     </header>
     <section>
@@ -27,7 +27,7 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
           <h1 style="display: inline-block">Ubicación</h1>
           <button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
           <audio id="medio" width="200px">
-            <source src="../audios/audio.mp3" >
+            <source src="../../audios/audio.mp3" >
           </audio>
             <div class="row">
               <div class="col-lg-8 col-md-12">
@@ -71,13 +71,13 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="../img/Img8.jpg" alt="First slide">
+                          <img class="d-block w-100" src="../../img/Img8.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="../img/Img4.jpg" alt="Second slide">
+                          <img class="d-block w-100" src="../../img/Img4.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="../img/Img9.jpg" alt="Third slide">
+                          <img class="d-block w-100" src="../../img/Img9.jpg" alt="Third slide">
                         </div>
                       </div>
                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -107,8 +107,8 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
 
     <footer>
         <?php
-          include '../html/Topscroller-dark.html';
-          include '../html/footer.html';
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
         ?>
     </footer>
     <!--Modals-->
