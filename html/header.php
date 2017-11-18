@@ -92,12 +92,12 @@
         if(isset($_SESSION['Nombre'])){
             
             echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
-            <li class=""><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a></li>
+            <li class=""><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a></li>
             
 ';
         }else{
             echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
-            <li class=""><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
+            <li class=""><a href="../php/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
 ';
         }
         ?>

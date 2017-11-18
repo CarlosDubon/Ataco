@@ -311,6 +311,10 @@ section{
   .gallery{
     display: none;
   }
+  .comment-container {
+    width: 100% !important;
+  }
+        
 }
 
 #slide-icon {
@@ -814,7 +818,14 @@ section{
 }
 
 /*Footer*/
-
+footer{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing:border-box ;
+    -ms-box-sizing:border-box ;
+    -o-box-sizing:border-box ;
+    box-sizing:border-box ; 
+    width: 100%;
+}
 #Footer{
   width: 100%;
   background: #021F25;
@@ -824,6 +835,10 @@ section{
 
 .Footer-Center p{
   text-align: center;
+}
+
+.Footer-Right{
+    margin-right: 0!important;
 }
 
 .Footer-Right p{
