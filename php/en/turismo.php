@@ -15,7 +15,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>San Miguel de Mercedes</title>
+    <title>Tourism</title>
 </head>
 <body>
     <header>
@@ -25,10 +25,10 @@
     </header>
     <section>
        <div class="container">
-           <h1 style="display: inline-block">Turismo</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
-           <p>Dentro de las Rutas de las Flores, en El Salvador, se encuentran muchos paraísos mágicos llenos de naturaleza, ambiente y curiosidades por visitar.</p>
-           <p>Pero, uno de esos lugares es Concepción de Ataco, en Ahuachapán. Ahí podrás encontrar muchas atracciones turísticas que puedes disfrutar para que tu viaje por El Salvador sea inolvidable.</p>
-           <p>Con un clima fresco y una temperatura agradable, estás son algunas de las atracciones que Ataco ofrece para que disfrutes en tu viaje.</p>
+           <h1 style="display: inline-block">Tourism</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+           <p>Rutas de las Flores, in El Salvador, there are many magical paradises full of nature, environment and curiosities to visit.</p>
+           <p>But, one of those places is Concepción de Ataco, in Ahuachapán. There you can find many tourist attractions that you can enjoy to make your trip to El Salvador unforgettable.</p>
+           <p>With a cool climate and a pleasant temperature, these are some of the attractions that Ataco offers to enjoy your trip.</p>
            <div class="row">
                 <?php
                     for($i = 0; $i<$rows[0]['rows'];$i++){

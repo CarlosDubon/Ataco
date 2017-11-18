@@ -9,7 +9,7 @@ $vias = getResult($query);
   <?php
     include '../../html/head.html';
   ?>
-  <title>Vias de Comunicacion</title>
+  <title>Comunication Routes</title>
 </head>
 <body>
   <header>
@@ -19,7 +19,7 @@ $vias = getResult($query);
   </header>
     <div class="container">
     <section>
-      <h1 style="display: inline-block">Vias de comunicacion</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+      <h1 style="display: inline-block">Comunication Routes</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
       <div class="row" >
         <div class="col-md-6">
           <p><?php echo $vias[0]['ViasComunicacion'] ?></p>
@@ -36,7 +36,7 @@ $vias = getResult($query);
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2> Como llegar </h2>
+          <h2>Directions </h2>
           <p><?php echo $vias[0]['DViasComunicacion'] ?></p>
         </div>
       </div>
@@ -78,7 +78,7 @@ $vias = getResult($query);
                   </div>
               </div>
               <div class="modal-footer">
-                <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Cerrar</button>
+                <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Close</button>
               </div>
             </div>
           </div>

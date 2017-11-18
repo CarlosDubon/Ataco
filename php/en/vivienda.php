@@ -41,22 +41,22 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                     <div class="row">
                         <div class="col-lg-6 col-md-12 center">
                             <ol>
-                                <li>Poblacion total</li>
+                                <li>Total Population</li>
                                 <ul>
-                                    <li>Hombres</li>
-                                    <li>Mujeres</li>
+                                    <li>Men</li>
+                                    <li>Women</li>
                                 </ul><br>
 
-                                <li>Urbano</li>
+                                <li>Urban</li>
                                 <ul>
-                                    <li>Hombres</li>
-                                    <li>Mujeres</li>
+                                    <li>Men</li>
+                                    <li>Women</li>
                                 </ul><br>
 
                                 <li>Rural</li>
                                 <ul>
-                                    <li>Hombres</li>
-                                    <li>Mujeres</li>
+                                    <li>Men</li>
+                                    <li>Women</li>
                                 </ul><br>
                             </ol>
                         </div>
@@ -85,21 +85,21 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <h5 align="center"><b>Tipo de Vivienda</b></h5><hr>
-                    <p>Otro aspecto de gran importancia en el censo son los tipos de vivienda de la región, los cuales se muestran a continuación:</p>
+                    <h5 align="center"><b>Type housing</b></h5><hr>
+                    <p>Another aspect of great importance in the census are the types of housing in the region, which are shown below:</p>
                     <div class="row">
                         <div class="col-lg-12 col-md-12" style="margin-left:5%">
                             <ol>
-                                <li>Casa Independite</li>
-                                <li>Apartamento</li>
-                                <li>Pieza en Casa</li>
-                                <li>Pieza en Mesón</li>
-                                <li>Rancho o Choza</li>
-                                <li>Casa Improvisada</li>
-                                <li>Local no Destinado para Habitación Humana</li>
-                                <li>Otra (Vivienda Movil, Carpa, Etc.)</li>
-                                <li>Viviendas Colectivas</li>
-                                <li>Personas sin Vivienda</li>
+                                <li>Independen House</li>
+                                <li>Apartment</li>
+                                <li>Piece at home</li>
+                                <li>Piece at meson</li>
+                                <li>Ranch</li>
+                                <li>improvised house</li>
+                                <li>Local Not Destined for Human Room</li>
+                                <li>Other</li>
+                                <li>collective housing</li>
+                                <li>homeless</li>
                             </ol>
                         </div>
 

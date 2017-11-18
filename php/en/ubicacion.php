@@ -14,7 +14,7 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
     <?php
     include '../../html/head.html';
     ?>
-    <title>Ataco</title>
+    <title>Location</title>
 </head>
 <body>
     <header>
@@ -24,8 +24,8 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
     </header>
     <section>
         <div class="container">
-          <h1 style="display: inline-block">Ubicación</h1>
-          <button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+          <h1 style="display: inline-block">Location</h1>
+          <button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
           <audio id="medio" width="200px">
             <source src="../../audios/audio.mp3" >
           </audio>
@@ -47,7 +47,7 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
             <hr>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                    <h1>Cómo llegar a Ataco?</h1>
+                    <h1>Directions</h1>
                     <?php
                     for($i=0;$i<count($arrayComo);$i++){
                         echo '<p>'.$arrayComo[$i].'</p>';

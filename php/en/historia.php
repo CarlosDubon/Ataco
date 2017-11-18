@@ -14,7 +14,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>San Miguel de Mercedes</title>
+    <title>History</title>
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
     </header>
     <section>
         <div class="container">
-            <h1 style="display: inline-block">Historia</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+            <h1 style="display: inline-block">History</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
             <audio id="medio" width="200px">
                 <source src="../../audios/audio.mp3" >
             </audio>
@@ -49,7 +49,7 @@
             <hr>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
-                   <h3>Orígenes y Etimología</h3>
+                   <h3>Origins and Etymology</h3>
                     <?php
                         echo '<p>'.$historia[0].'</p>'
                     ?>
@@ -67,7 +67,7 @@
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                   <h3>Época Colonial</h3>
+                   <h3>Colonial period</h3>
                     <?php
                         echo '<p>'.$historia[1].'</p>'
                     ?>

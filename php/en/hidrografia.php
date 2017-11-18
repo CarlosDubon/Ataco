@@ -1,4 +1,3 @@
-
 <?php
 require 'sql_conn.php';
 $query="SELECT * FROM municipio";
@@ -13,7 +12,7 @@ $rios = getResult($query2);
     <?php
     include '../../html/head.html';
     ?>
-    <title>Hidrografia</title>
+    <title>Hydrography</title>
 </head>
 <body>
     <header>
@@ -24,8 +23,8 @@ $rios = getResult($query2);
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">Hidrografia </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-              <span name="play">Reproducir</span>
+            <h1 style="display: inline-block">Hydrography </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
+              <span name="play">Play</span>
           </button>
             <div class="row">
               <div class="col-md-12 center">

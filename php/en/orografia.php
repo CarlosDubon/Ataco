@@ -12,7 +12,7 @@ $cerros=getResult($query);
     <?php
     include '../../html/head.html';
     ?>
-    <title>Orografia de Ataco</title>
+    <title>Orography</title>
 </head>
 <body>
     <header>
@@ -24,8 +24,8 @@ $cerros=getResult($query);
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h1 style="display: inline-block">Orografía </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-                      <span name="play">Reproducir</span>
+                    <h1 style="display: inline-block">Orography </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
+                      <span name="play">Play</span>
                   </button>
                     <p><?php echo $orografia[0]['Orografia'] ?></p>
                 </div>
@@ -38,18 +38,18 @@ $cerros=getResult($query);
             <div class="row">
                 <div class="col-md-4">
                     <div class="polig1"></div>
-                    <p>Relieve Alto</p>
+                    <p>High Relief</p>
                 </div>
                 <div class="col-md-4">
                     <div class="polig2"></div>
-                    <p>Relieve Medio</p>
+                    <p>Medium Relief</p>
                 </div>
                 <div class="col-md-4">
                     <div class="polig3"></div>
-                    <p>Relieve Bajo</p>
+                    <p>Low Relief</p>
                 </div>
             </div>
-            <h1>Principales Cerros</h1>
+            <h1>Main hills</h1>
             <div class="row">
                 <?php
                 for($i=0;$i<count($cerros);$i++){
