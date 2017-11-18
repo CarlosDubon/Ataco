@@ -858,3 +858,12 @@ section{
   text-decoration: none;
   color: #A5AEAF !important;
 }
+
+.Footer-bottom ol{
+  margin-right: 10px;
+}
+
+.Footer-bottom ol li{
+  display: inline-block;
+  text-align: right;
+}
