@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-11-2017 a las 17:25:00
+-- Tiempo de generación: 18-11-2017 a las 17:49:47
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -129,6 +129,17 @@ CREATE TABLE `hidrografia` (
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `hidrografia`
+--
+
+INSERT INTO `hidrografia` (`idHidrografia`, `Nombre`, `Descripcion`, `idMunicipio`) VALUES
+(1, 'GUAMO ', 'Nace 4.6 km al suroeste de la villa de Concepción de Ataco, es de mucha importancia para el municipio, ya que le sirve de límite natural, en la parte oeste con el municipio de Tacuba. Su confluencia con quebrada El Muerto, dan origen al rio Nejapa. Longitud 7 km.', 1),
+(2, 'MATALA O LOS BOSQUES ', 'Nace 3.6 km al suroeste de la villa de Concepción de Ataco, a inmediaciones del cantón y caserío El Naranjito. Corre de norte a sur hasta confluir con la quebrada El Tamagás y da origen así al rio El Rosario. Longitud 3.7 km.', 1),
+(3, 'ASINO ', 'Se forma de la confluencia de las quebradas El Decuaje y Atzumpa, 1.4 km al sureste de la villa de concepción de ataco; corre de sur a norte hasta salir del municipio. Longitud 5 km.', 1),
+(4, 'COPINULA ', 'Nace a 2.8 km al sur de la villa de Concepción de Ataco, en las faldas del cerro El Ciprés, fluye con rumbo de norte a sur. Longitud 2.7 km.', 1),
+(5, 'LOS APANTES O LOS AMATES', 'Nace 4.8 km al sur de la villa de Concepción de Ataco. Sirve de límite natural con el municipio de Jujutla, desde la confluencia con la quebrada La Soledad, hasta su desembocadura en el rio Copinula, en un tramo aproximado de 3.2 km. Longitud 4.2 km.', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -149,9 +160,20 @@ CREATE TABLE `img_canton` (
 
 CREATE TABLE `img_hidrografia` (
   `idImg_hidrografia` int(11) NOT NULL,
-  `ruta` int(11) NOT NULL,
+  `ruta` varchar(100) NOT NULL,
   `idHidrografia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `img_hidrografia`
+--
+
+INSERT INTO `img_hidrografia` (`idImg_hidrografia`, `ruta`, `idHidrografia`) VALUES
+(1, '/Ataco/img/RIOS/RIOLOSAPANES.png', 5),
+(2, '/Ataco/img/RIOS/RIOASINO.png', 3),
+(3, '/Ataco/img/RIOS/RIOCOPINULA.png', 4),
+(4, '/Ataco/img/RIOS/RIOGUAMO.png', 1),
+(5, '/Ataco/img/RIOS/COPUINA.png', 2);
 
 -- --------------------------------------------------------
 
@@ -418,7 +440,7 @@ ALTER TABLE `comentario`
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
 ALTER TABLE `hidrografia`
-  MODIFY `idHidrografia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idHidrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `img_canton`
 --
@@ -428,7 +450,7 @@ ALTER TABLE `img_canton`
 -- AUTO_INCREMENT de la tabla `img_hidrografia`
 --
 ALTER TABLE `img_hidrografia`
-  MODIFY `idImg_hidrografia` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idImg_hidrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `img_municipio`
 --
