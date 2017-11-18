@@ -20,7 +20,7 @@
             <ul class="children">
                 <li><a href="../php/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="../php/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="../php/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="../php/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
@@ -68,7 +68,7 @@
           <ul class="children">
               <li><a href="../php/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="../php/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
