@@ -865,23 +865,29 @@ footer{
 
 .Footer-bottom{
   width: 100%;
-  height: 10px;
+  color: #A5AEAF !important;
+  font-size: 1.5em;
   background: #194852;
 }
 
 #Footer a{
-  text-decoration: none;
   color: #A5AEAF !important;
+  text-decoration: none;
 }
 .rigth-list {
     float: right;
 }
 
 .Footer-bottom ol{
-  margin-right: 10px;
+  margin:0;
+  display: block;
+  text-align: center;
 }
 
 .Footer-bottom ol li{
   display: inline-block;
-  text-align: right;
+}
+
+.Footer-bottom ol li i{
+  text-align: center;
 }
