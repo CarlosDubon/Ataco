@@ -17,7 +17,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>Contacto</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
@@ -28,15 +28,15 @@
     </header>
         <div class="container">
            <section>
-            <h1 style="display: inline-block">Contacto</h1><br>
-            <h6 class="mt-0 pt-0">Te invitamos a contactarnos, te responderemos a la brevedad.</h6>
+            <h1 style="display: inline-block">Contact Us</h1><br>
+            <h6 class="mt-0 pt-0">We invite you to contact us; we will answer you as soon as possible.</h6>
             <hr>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                    <div class="form-container">
                         <form id="contactForm" action="formAdmin-process.php" method="POST">
                             <div class="form-group">
-                                <h5><label for="name">Nombre:</label>
+                                <h5><label for="name">User name:</label>
                                 <input name="name" type="text" value="<?php echo $_SESSION['Nombre'] ?>" class="form-control" disabled required></h5>
                             </div>
                             <div class="form-group">
@@ -44,11 +44,11 @@
                                     <input name="mail" type="email" value="<?php echo $_SESSION['Mail'] ?>" class="form-control" disabled required></h5>
                             </div>
                             <div class="form-group">
-                                <h5><label for="message">Comentario:</label>
-                                <textarea name="message" class="form-control" placeholder="Escribe tu comentario" rows="5" required></textarea></h5>
+                                <h5><label for="message">Comment:</label>
+                                <textarea name="message" class="form-control" placeholder="Leave your comment" rows="5" required></textarea></h5>
                               </div>
                             <div class="form-group">
-                                <input class="btn btn-info" type="submit" id="submit" value="Enviar">
+                                <input class="btn btn-info" type="submit" id="submit" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -56,12 +56,12 @@
                 <div class="col-md-6">
                         <div>
                         </div>
-                        <h5 class="h5-contact"><span class="icon-laptop"></span><a class="a-contact" href="index.php"> Inicio</a></h5>
+                        <h5 class="h5-contact"><span class="icon-laptop"></span><a class="a-contact" href="index.php"> Home</a></h5>
                         <br>
                         <div>
                             <br>
                         </div>
-                        <h5 class="h5-contact"><span class="icon-location"></span> Carretera Panamericana (CA-8) en dirección a Santa Ana- Sonsonate tomar el desvío hacia Sonsonate a lo largo del camino encontrará la señalización a la Ruta de las Flores para llegar a Concepción de Ataco</h5>
+                        <h5 class="h5-contact"><span class="icon-location"></span> Pan-American Highway (CA-8) in the direction of Santa Ana- Sonsonate take the detour to Sonsonate along the road you will find the signpost to the 'Route of Flowers' to get to Concepcion de Ataco</h5>
                         <br>
                         <br>
                         <h5 class="h5-contact" ><span class="icon-facebook"></span><a class="a-contact" href="https://www.facebook.com/alcaldiamunicipalatacoamca"> Facebook</a></h5>
@@ -70,7 +70,7 @@
                 <hr>
             </section>
             <section>
-                <h2>Comentarios:</h2>
+                <h2>Comments:</h2>
                 <div class="row" style="height:70vh; overflow-y:scroll;overflow-x:hidden;width:95%">
                         <?php
                         for($i=0;$i<$rows[0]['rows'];$i++){
@@ -104,6 +104,5 @@
           include '../../html/footer.html';
         ?>
     </footer>
-    <!--Modals-->
 </body>
 </html>

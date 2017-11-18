@@ -15,7 +15,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>Division Politica</title>
+    <title>Political Division</title>
 </head>
 <body>
     <header>
@@ -25,8 +25,8 @@
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Division Politica</h1><hr><br>
-            <h1>Su estructura</h1>
+            <h1 style="display: inline-block">Political Division</h1><hr><br>
+            <h1>Structure</h1>
                 <div class="row">
                   <div class="col-lg-8 col-md-12">
                     <?php
@@ -66,13 +66,13 @@
                 </div>
             <hr>
 
-            <h1>Sus cantones</h1>
+            <h1>Cantons</h1>
             <div class="row">
             	<div class="col-lg-6 col-md-12"><br>
                       <img class="miniaruta" src="../../img/mataco2.jpg" alt="...">
                 </div>
                 <div class="col-lg-6 col-md-12">
-                    <p>Para su administración el municipio de Ataco se divide en 11 cantones y 24 caseríos, que son:</p>
+                    <p>For its administration the municipality of Ataco is divided into 11 cantons and 24 hamlets, which are:</p>
                     <div class="container">
                       <div class="row">
                         <?php

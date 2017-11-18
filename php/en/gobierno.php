@@ -4,7 +4,7 @@
   <?php
       include '../../html/head.html';
   ?>
-  <title>Gobierno</title>
+  <title>Government</title>
 </head>
 <body>
   <header>
@@ -18,13 +18,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <a class="BotonHome" href="gobierno-local.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HBlue2">Gobierno Local.</span></a>
+              <a class="BotonHome" href="gobierno-local.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HBlue2">Local Government.</span></a>
             </div>
             <div class="col-md-4">
-              <a class="BotonHome" href="divpolitica.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HOrange">Division Politica.</span></a>
+              <a class="BotonHome" href="divpolitica.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HOrange">Political Division.</span></a>
             </div>
             <div class="col-md-4">
-              <a class="BotonHome" href="vivienda.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HTurquese">Poblacion y vida.</span></a>
+              <a class="BotonHome" href="vivienda.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HTurquese">Population and Life.</span></a>
             </div>
           </div>
         </div>
