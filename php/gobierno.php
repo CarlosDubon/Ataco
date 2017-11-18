@@ -24,7 +24,7 @@
               <a class="BotonHome" href="../php/divpolitica.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HOrange">Division Politica.</span></a>
             </div>
             <div class="col-md-4">
-              <a class="BotonHome" href="#" style="width:100%; margin-top:15px;"><span class="Bold-Beba HTurquese">Poblacion y vida.</span></a>
+              <a class="BotonHome" href="../php/vivienda.php" style="width:100%; margin-top:15px;"><span class="Bold-Beba HTurquese">Poblacion y vida.</span></a>
             </div>
           </div>
         </div>
