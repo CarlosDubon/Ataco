@@ -36,7 +36,7 @@
             <a href="#" id="Prevent"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
             <ul class="children">
                 <li><a href="#" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="#" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-info" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
@@ -84,7 +84,7 @@
           <a href="#" id="Prevent" ><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
             <li><a href="#" id="Prevent" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-            <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-info" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+            <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
