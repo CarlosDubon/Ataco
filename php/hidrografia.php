@@ -16,13 +16,13 @@
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">Hidrografia 💧</h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
+            <h1 style="display: inline-block">💧 Hidrografia </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
               <span name="play">Reproducir</span>
           </button>
             <div class="row">
               <div class="col-xs-12">
                <a class="navbar-brand logo fadeIn animated" href="index.html">
-                  <img src="http://www.mapahidrografico.com/wp-content/uploads/2013/08/Mapa-Hidrografico-de-El-Salvador.gif" alt="mapa hidrografico" style="width: 100%;">
+                  <img src="../img/RIOS/RIOS.png" alt="mapa hidrografico" style="width: 100%;">
                </a>
              </div>
           </div>
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../img/Img8.jpg" alt="...">
+                      <img class="miniaruta" src="../img/RIOS/RIO GUAMO.png" alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../img/Img5.jpg" alt="...">
+                      <img class="miniaruta" src="../img/RIOS/RIO COPINULA.png" alt="...">
                     </a>
                 </div>
             </div>
@@ -73,7 +73,7 @@
               <div class="row">
                   <div class="col-lg-4 col-md-12 bounceInLeft animated">
                       <a href="#" class="thumbnail">
-                        <img class="miniaruta" src="../img/Img8.jpg" alt="...">
+                        <img class="miniaruta" src="../img/RIOS/RIO LOS APANTES.png" alt="...">
                       </a>
                   </div>
                   <div class="col-lg-8 col-md-12">
@@ -92,7 +92,7 @@
                   </div>
                   <div class="col-lg-4 col-md-12 bounceInRight animated">
                       <a href="#" class="thumbnail">
-                        <img class="miniaruta" src="../img/Img5.jpg" alt="...">
+                        <img class="miniaruta" src="../img/RIOS/RIO ASINO.png" alt="...">
                       </a>
                   </div>
               </div>
@@ -100,7 +100,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                 <a href="#" class="thumbnail">
-                  <img class="miniaruta" src="../img/Img7.jpg" alt="...">
+                  <img class="miniaruta" src="../img/RIOS/RIO COPINULA.png" alt="...">
                 </a>
             </div>
             <div class="col-lg-8 col-md-12">
