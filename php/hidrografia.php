@@ -1,5 +1,14 @@
-<?php
+<<<<<<< HEAD
+{}<?php
 
+=======
+<?php
+require 'sql_conn.php';
+$query="SELECT * FROM municipio";
+$query2="SELECT * FROM hidrografia";
+$hidrografia = getResult($query);
+$rios = getResult($query2);
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,7 +17,7 @@
     <?php
     include '../html/head.html';
     ?>
-    <title>Hidrografia - San Miguel de Mercedes</title>
+    <title>Hidrografia</title>
 </head>
 <body>
     <header>
@@ -19,7 +28,7 @@
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">💧 Hidrografia </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
+            <h1 style="display: inline-block">Hidrografia </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
               <span name="play">Reproducir</span>
           </button>
             <div class="row">
@@ -30,7 +39,7 @@
              </div>
           </div>
           <div class="text-center" style="">
-       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       <p class="lead"><?php echo $hidrografia[0]['Hidrografia'] ?></p>
      </div>
           <div class="row">
               <div class="col-lg-4 col-md-12 bounceInLeft animated">
@@ -39,6 +48,7 @@
                   </a>
               </div>
             </div>
+<<<<<<< HEAD
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
@@ -100,7 +110,7 @@
                   </div>
               </div>
           <hr>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                 <a href="#" class="thumbnail">
                   <img class="miniaruta" src="../img/RIOS/RIO COPINULA.png" alt="...">
@@ -111,7 +121,50 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
             </div>
         </div>
-    </div>
+    </div> -->
+=======
+               <?php
+                $flag = true;
+                for($i=0;$i<count($rios);$i++){
+                    $query3="SELECT * FROM Img_hidrografia WHERE idHidrografia = ".($i+1)."";
+                    $imgs = getResult($query3);
+                    if($flag){
+                        echo '
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 bounceInLeft animated">
+                                    <a href="#" class="thumbnail">
+                                      <img class="miniaruta" src="'.$imgs[0]['ruta'].'" alt="...">
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 col-md-12">
+                                    <h1>'.$rios[$i]['Nombre'].'</h1>
+                                    <p>'.$rios[$i]['Descripcion'].'</p>
+                                </div>
+                            </div>
+                            <hr>';
+                        
+                         $flag=false;
+                    }else{
+                        echo '
+                            <div class="row">
+                                <div class="col-lg-8 col-md-12">
+                                    <h1>'.$rios[$i]['Nombre'].'</h1>
+                                    <p>'.$rios[$i]['Descripcion'].'</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 bounceInLeft animated">
+                                    <a href="#" class="thumbnail">
+                                      <img class="miniaruta" src="'.$imgs[0]['ruta'].'" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            ';
+                        $flag=true;
+                    }
+                }
+                
+               ?>
+>>>>>>> ee0cbb32f2f39311d2f71136d353b828a3429f0b
   </section>
     <footer>
         <?php
