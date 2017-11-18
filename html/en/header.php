@@ -64,7 +64,7 @@
       <li><a href="../php/historia.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>Historia </a></li>
       <li><a href="turismo.php"><i class="fa fa-map-signs" aria-hidden="true"></i>Turismo </a></li>
       <li class="submenu">
-          <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#" id="Prevent"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
               <li><a href="../php/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
@@ -73,7 +73,7 @@
           </ul>
       </li>
       <li class="submenu">
-          <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#" id="Prevent"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
               <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>

@@ -1,5 +1,5 @@
 <?php
-   if($_SERVER['REQUEST_URI']!="/Ataco/php/contacto-admin.php"){
+   if($_SERVER['REQUEST_URI']!="/Ataco/php/es/contacto-admin.php"){
       session_start();
    }
 ?>
@@ -13,23 +13,23 @@
 </a>
 <nav  id="banner-container" class="navbar-ext">
     <ul>
-        <li><a href="historia.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>Historia </a></li>
-        <li><a href="turismo.php"><i class="fa fa-map-signs" aria-hidden="true"></i>Turismo </a></li>
+        <li><a href="/Ataco/php/es/historia.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>Historia </a></li>
+        <li><a href="/Ataco/php/es/turismo.php"><i class="fa fa-map-signs" aria-hidden="true"></i>Turismo </a></li>
         <li class="submenu">
-            <a href="../php/geografia.php"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+            <a href="/Ataco/php/es/geografia.php"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
             <ul class="children">
-                <li><a href="../php/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <li class="submenu">
-            <a href="../php/gobierno.php"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+            <a href="/Ataco/php/es/gobierno.php"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
             <ul class="children">
-                <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="/Ataco/php/es/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -43,13 +43,13 @@
         <?php
         if(isset($_SESSION['Nombre'])){
 
-            echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
-            <li class="rigth-list"><a href="../php/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar  Sesion</a></li>
+            echo  '<li><a href="/Ataco/php/es/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class="rigth-list"><a href="/Ataco/php/es/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar  Sesion</a></li>
 
 ';
         }else{
-            echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
-            <li class="rigth-list"><a href="../php/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
+            echo' <li><a href="/Ataco/php/es/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class="rigth-list"><a href="/Ataco/php/es/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
 ';
         }
         ?>
@@ -60,24 +60,24 @@
 <!-- BARRA DE NAVEGACION PARA MOVILES -->
 <nav  class="movil" style="display:none">
   <ul>
-      <li><a href="../php/index.php"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
-      <li><a href="../php/historia.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>Historia </a></li>
+      <li><a href="/Ataco/php/es/index.php"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+      <li><a href="/Ataco/php/es/historia.php"><i class="fa fa-file-text-o" aria-hidden="true"></i>Historia </a></li>
       <li><a href="turismo.php"><i class="fa fa-map-signs" aria-hidden="true"></i>Turismo </a></li>
       <li class="submenu">
-          <a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#" id="Prevent"><i class="fa fa-globe" aria-hidden="true"></i>Geografia<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
-              <li><a href="../php/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/ubicacion.php"><i class="fa fa-map-o" aria-hidden="true"></i>Ubicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/orografia.php"><i class="fa fa-picture-o" aria-hidden="true"></i>Orografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/hidrografia.php"><i class="fa fa-tint" aria-hidden="true"></i>Hidrografía<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/Vias_De_Comunicacion.php"><i class="fa fa-street-view" aria-hidden="true"></i>Vias de comunicación<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <li class="submenu">
-          <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#" id="Prevent"><i class="fa fa-user-circle" aria-hidden="true"></i>Gobierno<i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
-              <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="/Ataco/php/es/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <li class="submenu">
@@ -91,13 +91,13 @@
       <?php
         if(isset($_SESSION['Nombre'])){
 
-            echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            echo  '<li><a href="/Ataco/php/es/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
             <li class=""><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a></li>
 
 ';
         }else{
-            echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
-            <li class=""><a href="../php/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
+            echo' <li><a href="/Ataco/php/es/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
+            <li class=""><a href="/Ataco/php/es/login.php"><i class="fa fa-sign-in" aria-hidden="true"></i>Iniciar Sesion</a></li>
 ';
         }
         ?>

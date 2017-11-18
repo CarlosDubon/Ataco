@@ -14,8 +14,8 @@
     
     if(isset($nombre,$mail,$message)){
         $stmt->execute();
-        echo '<script> window.location.replace("/Ataco/php/contacto.php")</script>';
+        echo '<script> window.location.replace("/Ataco/php/es/contacto.php")</script>';
     }else{
-        echo '<script> window.location.replace("/Ataco/php/contacto.php")</script>';
+        echo '<script> window.location.replace("/Ataco/php/es/contacto.php")</script>';
     }
 ?>

@@ -11,14 +11,14 @@ $rios = getResult($query2);
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>Hidrografia</title>
 </head>
 <body>
     <header>
     <?php
-       include '../html/header.php';
+       include '../../html/es/header.php';
     ?>
     </header>
     <section>
@@ -30,7 +30,7 @@ $rios = getResult($query2);
             <div class="row">
               <div class="col-md-12 center">
                <a class="navbar-brand logo fadeIn animated" href="index.html">
-                  <img src="../img/RIOS/RIOS.png" alt="mapa hidrografico" style="width: 100%;">
+                  <img src="../../img/RIOS/RIOS.png" alt="mapa hidrografico" style="width: 100%;">
                </a>
              </div>
           </div>
@@ -82,7 +82,7 @@ $rios = getResult($query2);
   </section>
     <footer>
         <?php
-          include '../html/Topscroller-dark.html';
+          include '../../html/Topscroller-dark.html';
         ?>
     </footer>
     <!--Modals-->
