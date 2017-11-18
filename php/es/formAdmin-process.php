@@ -1,7 +1,11 @@
 <?php
     session_start();
     if(!isset($_SESSION['Nombre'])){
+<<<<<<< HEAD
         header('Location: /Ataco/php/Index.php');
+=======
+        header('Location: /Ataco/php/es/Index.php');
+>>>>>>> MasterBackup
     }
     require 'sql_conn.php';
     $conn=Arrancar();
@@ -18,10 +22,17 @@
 
     if(isset($nombre,$mail,$message)){
         $stmt->execute();
+<<<<<<< HEAD
         echo '<script> window.location.replace("/Ataco/php/contacto-admin.php")</script>';
         // echo 'bien';
     }else{
         echo '<script> window.location.replace("/Ataco/php/contacto-admin.php")</script>';
+=======
+        echo '<script> window.location.replace("/Ataco/php/es/contacto-admin.php")</script>';
+        // echo 'bien';
+    }else{
+        echo '<script> window.location.replace("/Ataco/php/es/contacto-admin.php")</script>';
+>>>>>>> MasterBackup
         // echo $nombre.$mail.$message.$id;
     }
 ?>

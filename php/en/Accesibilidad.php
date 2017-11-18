@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
         include '../html/head.html';
+=======
+        require '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>Accesibilidad</title>
 </head>
 <body>
    <header>
        <?php
+<<<<<<< HEAD
             include '/Ataco/php/en/header.php';
+=======
+            require '../../html/en/header.php';
+>>>>>>> MasterBackup
        ?>
    </header>
    <section>
@@ -67,8 +75,13 @@
    </section>
    <footer>
      <?php
+<<<<<<< HEAD
         include '../html/footer.html';
         include '../html/Topscroller-dark.html';
+=======
+        require '../../html/footer.html';
+        require '../../html/Topscroller-dark.html';
+>>>>>>> MasterBackup
       ?>
    </footer>
 

@@ -7,14 +7,22 @@ $vias = getResult($query);
 <html lang="es">
 <head>
   <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
   ?>
   <title>Vias de Comunicacion</title>
 </head>
 <body>
   <header>
     <?php
+<<<<<<< HEAD
       include '../html/header.php';
+=======
+      include '../../html/es/header.php';
+>>>>>>> MasterBackup
      ?>
   </header>
     <div class="container">
@@ -28,7 +36,11 @@ $vias = getResult($query);
             <div class="padre">
                <div class="hijo">
                    <a href="#" class="thumbnail" data-toggle="modal" data-target="#mapeo">
+<<<<<<< HEAD
                         <img id="FotoRuta" class="img-fluid miniaruta"  src="../img/ruta_flores.jpg" alt="">
+=======
+                        <img id="FotoRuta" class="img-fluid miniaruta"  src="../../img/ruta_flores.jpg" alt="">
+>>>>>>> MasterBackup
                    </a>
                </div>
             </div>
@@ -43,6 +55,7 @@ $vias = getResult($query);
       <div class="col-12">
           <div class="row GaleriaVias">
             <div class="col-lg-3 col-sm-6">
+<<<<<<< HEAD
               <img class="img-fluid" src="../img/Img5.jpg" alt="">
             </div>
             <div class="col-lg-3 col-sm-6 Limit">
@@ -53,6 +66,18 @@ $vias = getResult($query);
             </div>
             <div class="col-lg-3 col-sm-6 Limit">
               <img class="img-fluid" src="../img/Img5.jpg" alt="">
+=======
+              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6 Limit">
+              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6 Limit">
+              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
+            </div>
+            <div class="col-lg-3 col-sm-6 Limit">
+              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
+>>>>>>> MasterBackup
             </div>
           </div>
       </div>
@@ -60,8 +85,13 @@ $vias = getResult($query);
     </div>
   <footer>
     <?php
+<<<<<<< HEAD
       include '../html/Topscroller-dark.html';
       include '../html/footer.html';
+=======
+      include '../../html/Topscroller-dark.html';
+      include '../../html/footer.html';
+>>>>>>> MasterBackup
     ?>
       <div class="modal fade bs-example-modal-lg" id="mapeo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog modal-lg" role="document">

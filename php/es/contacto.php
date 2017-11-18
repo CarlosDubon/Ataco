@@ -10,14 +10,22 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>Contacto</title>
 </head>
 <body>
     <header>
     <?php
+<<<<<<< HEAD
        include '../html/header.php';
+=======
+       include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
     </header>
         <div class="container">
@@ -92,8 +100,13 @@
 
     <footer>
         <?php
+<<<<<<< HEAD
           include '../html/Topscroller-dark.html';
           include '../html/footer.html';
+=======
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
+>>>>>>> MasterBackup
         ?>
     </footer>
     <!--Modals-->

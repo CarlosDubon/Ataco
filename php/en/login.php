@@ -7,14 +7,14 @@
 <html lang="es">
 <head>
   <?php
-    include '../html/head.html';
+    include '../../html/head.html';
   ?>
   <title>Login</title>
 </head>
 <body>
   <header>
     <?php
-      include '../html/header.php';
+      include '../../html/en/header.php';
     ?>
   </header>
   <section style="height: 100vh;">
@@ -43,8 +43,8 @@
   </section>
   <footer>
     <?php
-      include '../html/Topscroller-dark.html';
-      include '../html/footer.html';
+      include '../../html/Topscroller-dark.html';
+      include '../../html/footer.html';
     ?>
   </footer>
 </body>

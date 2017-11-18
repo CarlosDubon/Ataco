@@ -7,14 +7,22 @@
 <html lang="es">
 <head>
   <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
   ?>
   <title>Login</title>
 </head>
 <body>
   <header>
     <?php
+<<<<<<< HEAD
       include '../html/header.php';
+=======
+      include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
   </header>
   <section style="height: 100vh;">
@@ -43,8 +51,13 @@
   </section>
   <footer>
     <?php
+<<<<<<< HEAD
       include '../html/Topscroller-dark.html';
       include '../html/footer.html';
+=======
+      include '../../html/Topscroller-dark.html';
+      include '../../html/footer.html';
+>>>>>>> MasterBackup
     ?>
   </footer>
 </body>

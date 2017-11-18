@@ -7,7 +7,11 @@
           if($Result[$i]['Usuario']==$_POST['User'] && $Result[$i]['Password']==$_POST['Pass']){
             $_SESSION['Nombre']= $_POST['User'];
             $_SESSION['Mail']= $Result[$i]['Mail'];
+<<<<<<< HEAD
               echo "<script>location.href='/Ataco/php/contacto-admin.php'</script>";
+=======
+              echo "<script>location.href='/Ataco/php/es/contacto-admin.php'</script>";
+>>>>>>> MasterBackup
             // header('Location: /Ataco/php/contacto-admin.php');
             // echo 'Variables Correctas';
           }else{

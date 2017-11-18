@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['Nombre'])){
-        header('Location: /Ataco/php/contacto.php');
+        header('Location: /Ataco/php/en/contacto.php');
     }
     require 'sql_conn.php';
     $query ="SELECT * FROM Comentario";
@@ -15,14 +15,14 @@
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>Contacto</title>
 </head>
 <body>
     <header>
     <?php
-     include '../html/header.php';
+     include '../../html/en/header.php';
     ?>
 
     </header>
@@ -100,8 +100,8 @@
 
     <footer>
         <?php
-          include '../html/Topscroller-dark.html';
-          include '../html/footer.html';
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

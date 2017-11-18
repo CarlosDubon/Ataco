@@ -1,7 +1,11 @@
 <?php
     session_start();
     if(!isset($_SESSION['Nombre'])){
+<<<<<<< HEAD
         header('Location: /Ataco/php/contacto.php');
+=======
+        header('Location: /Ataco/php/es/contacto.php');
+>>>>>>> MasterBackup
     }
     require 'sql_conn.php';
     $query ="SELECT * FROM Comentario";
@@ -15,14 +19,22 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>Contacto</title>
 </head>
 <body>
     <header>
     <?php
+<<<<<<< HEAD
      include '../html/header.php';
+=======
+     include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
 
     </header>
@@ -100,8 +112,13 @@
 
     <footer>
         <?php
+<<<<<<< HEAD
           include '../html/Topscroller-dark.html';
           include '../html/footer.html';
+=======
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
+>>>>>>> MasterBackup
         ?>
     </footer>
     <!--Modals-->

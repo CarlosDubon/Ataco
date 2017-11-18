@@ -10,14 +10,22 @@ $cerros=getResult($query);
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>Orografia de Ataco</title>
 </head>
 <body>
     <header>
     <?php
+<<<<<<< HEAD
        include '../html/header.php';
+=======
+       include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
     </header>
     <section>
@@ -32,7 +40,11 @@ $cerros=getResult($query);
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12">
+<<<<<<< HEAD
                     <img class="miniaruta" src="../img/relieve.jpg" alt="...">
+=======
+                    <img class="miniaruta" src="../../img/relieve.jpg" alt="...">
+>>>>>>> MasterBackup
                 </div>
             </div>
             <div class="row">
@@ -71,8 +83,13 @@ $cerros=getResult($query);
     </section>
     <footer>
         <?php
+<<<<<<< HEAD
           include '../html/Topscroller-dark.html';
           include '../html/footer.html';
+=======
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
+>>>>>>> MasterBackup
         ?>
     </footer>
     <!--Modals-->

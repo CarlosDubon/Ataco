@@ -13,14 +13,22 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>San Miguel de Mercedes</title>
 </head>
 <body>
     <header>
     <?php
+<<<<<<< HEAD
        include '../html/header.php';
+=======
+       include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
     </header>
     <section>
@@ -82,6 +90,7 @@
     </section>
     <footer>
       <?php
+<<<<<<< HEAD
         include '../html/Topscroller-dark.html';
         include '../html/footer.html';
       ?>
@@ -111,6 +120,11 @@
           </div>
         </div>
 <!--MODAL TURISMO 1 -->
+=======
+        include '../../html/Topscroller-dark.html';
+        include '../../html/footer.html';
+      ?>
+>>>>>>> MasterBackup
     </footer>
 
 </body>

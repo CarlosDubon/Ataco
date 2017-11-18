@@ -13,21 +13,32 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
     include '../html/head.html';
+=======
+    include '../../html/head.html';
+>>>>>>> MasterBackup
     ?>
     <title>Division Politica</title>
 </head>
 <body>
     <header>
     <?php
+<<<<<<< HEAD
        include '../html/header.php';
+=======
+       include '../../html/es/header.php';
+>>>>>>> MasterBackup
     ?>
     </header>
     <section>
        <div class="container">
             <h1 style="display: inline-block">Division Politica</h1><hr><br>
             <h1>Su estructura</h1>
+<<<<<<< HEAD
             <div class="row"><br>
+=======
+>>>>>>> MasterBackup
                 <div class="row">
                   <div class="col-lg-8 col-md-12">
                     <?php
@@ -45,6 +56,7 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
+<<<<<<< HEAD
                             <img class="d-block img-fluid" src="../img/Img8.jpg" alt="First slide">
                           </div>
                           <div class="carousel-item">
@@ -52,6 +64,15 @@
                           </div>
                           <div class="carousel-item">
                             <img class="d-block img-fluid" src="../img/Img9.jpg" alt="Third slide">
+=======
+                            <img class="d-block img-fluid" src="../../img/Img8.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="../../img/Img4.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block img-fluid" src="../../img/Img9.jpg" alt="Third slide">
+>>>>>>> MasterBackup
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -65,13 +86,20 @@
                       </div>
                   </div>
                 </div>
+<<<<<<< HEAD
             </div>
+=======
+>>>>>>> MasterBackup
             <hr>
 
             <h1>Sus cantones</h1>
             <div class="row">
             	<div class="col-lg-6 col-md-12"><br>
+<<<<<<< HEAD
                       <img class="miniaruta" src="../img/mataco2.jpg" alt="...">
+=======
+                      <img class="miniaruta" src="../../img/mataco2.jpg" alt="...">
+>>>>>>> MasterBackup
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <p>Para su administración el municipio de Ataco se divide en 11 cantones y 24 caseríos, que son:</p>
@@ -103,8 +131,13 @@
     </section>
     <footer>
         <?php
+<<<<<<< HEAD
           include '../html/Topscroller-dark.html';
           include '../html/footer.html';
+=======
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
+>>>>>>> MasterBackup
         ?>
     </footer>
     <!--Modals-->

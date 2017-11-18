@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <?php
+<<<<<<< HEAD
         include '../html/head.html';
     ?>
     <script src="../js/delayAnimate.js"></script>
+=======
+        include '../../html/head.html';
+    ?>
+    <script src="../../js/delayAnimate.js"></script>
+>>>>>>> MasterBackup
     <title>Gobierno Local</title>
 </head>
 <body>
    <header>
        <?php
+<<<<<<< HEAD
             include '../html/header.php';
+=======
+            include '../../html/es/header.php';
+>>>>>>> MasterBackup
        ?>
    </header>
    <section>
@@ -22,20 +32,32 @@
            <div class="row">
                <div class="col-md-4">
                    <a href="#" id="first"  class="thumbnail" style="visibility:hidden">
+<<<<<<< HEAD
                        <img class="profile" src="../img/President.png" alt="...">
+=======
+                       <img class="profile" src="../../img/President.png" alt="...">
+>>>>>>> MasterBackup
                    </a>
                    <p><b>Alcalde:</b> 1.</p>
                    <p><b>Alcalde actual:</b> Óscar Oliverio Gómez</p>
                </div>
                <div class="col-md-4">
                    <a href="#" id="second" style="visibility:hidden" class="thumbnail">
+<<<<<<< HEAD
                        <img class="profile" src="../img/Sindico.png" alt="...">
+=======
+                       <img class="profile" src="../../img/Sindico.png" alt="...">
+>>>>>>> MasterBackup
                    </a>
                    <p><b>Síndico:</b> 1</p>
                </div>
                <div class="col-md-4">
                    <a href="#" id="thirt" class="thumbnail" style="visibility:hidden">
+<<<<<<< HEAD
                        <img style="width:100%;" src="../img/Regidores.png" alt="...">
+=======
+                       <img style="width:100%;" src="../../img/Regidores.png" alt="...">
+>>>>>>> MasterBackup
                    </a>
                    <p><b>Regidores:</b> 4</p>
                </div>
@@ -61,8 +83,13 @@
    </section>
    <footer>
      <?php
+<<<<<<< HEAD
         include '../html/footer.html';
         include '../html/Topscroller-dark.html';
+=======
+        include '../../html/footer.html';
+        include '../../html/Topscroller-dark.html';
+>>>>>>> MasterBackup
       ?>
    </footer>
 
