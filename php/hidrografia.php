@@ -97,16 +97,16 @@
                   </div>
               </div>
           <hr>
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                 <a href="#" class="thumbnail">
-                  <img class="miniaruta" src="../img/RIOS/RIO COPINULA.png" alt="...">
+                  <img class="miniaruta" src="../img/RIOS/RIO MATALA.png" alt="...">
                 </a>
-            </div> -->
-            <!-- <div class="col-lg-8 col-md-12">
+            </div>
+            <div class="col-lg-8 col-md-12">
                 <h1>Lorem</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt doloremque esse accusamus dolor soluta excepturi minus, ipsam adipisci consectetur ad non, labore ab reiciendis id debitis quisquam hic mollitia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis facere, natus necessitatibus dignissimos veritatis a quisquam at minima fugiat dolor consectetur ullam adipisci, vitae labore eveniet tenetur quasi odio amet.</p>
-            </div> -->
+            </div>
         </div>
     </div>
   </section>
