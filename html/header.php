@@ -29,7 +29,7 @@
             <ul class="children">
                 <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="../php/poblacionVivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="../php/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -77,7 +77,7 @@
           <ul class="children">
               <li><a href="../php/gobierno-local.php"><i class="fa fa-info" aria-hidden="true"></i>Gob. Local<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
               <li><a href="../php/divpolitica.php"><i class="fa fa-map-marker" aria-hidden="true"></i>Div. Politica<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="../php/poblacionVivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+              <li><a href="../php/vivienda.php"><i class="fa fa-users" aria-hidden="true"></i>Población y Vivienda<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <li class="submenu">

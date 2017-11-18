@@ -27,7 +27,6 @@
        <div class="container">
             <h1 style="display: inline-block">Division Politica</h1><hr><br>
             <h1>Su estructura</h1>
-            <div class="row"><br>
                 <div class="row">
                   <div class="col-lg-8 col-md-12">
                     <?php
@@ -65,7 +64,6 @@
                       </div>
                   </div>
                 </div>
-            </div>
             <hr>
 
             <h1>Sus cantones</h1>
