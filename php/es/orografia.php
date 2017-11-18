@@ -10,14 +10,14 @@ $cerros=getResult($query);
 <head>
     <meta charset="UTF-8">
     <?php
-    include '../html/head.html';
+    include '../../html/head.html';
     ?>
     <title>Orografia de Ataco</title>
 </head>
 <body>
     <header>
     <?php
-       include '../html/header.php';
+       include '../../html/es/header.php';
     ?>
     </header>
     <section>
@@ -32,7 +32,7 @@ $cerros=getResult($query);
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <img class="miniaruta" src="../img/relieve.jpg" alt="...">
+                    <img class="miniaruta" src="../../img/relieve.jpg" alt="...">
                 </div>
             </div>
             <div class="row">
@@ -71,8 +71,8 @@ $cerros=getResult($query);
     </section>
     <footer>
         <?php
-          include '../html/Topscroller-dark.html';
-          include '../html/footer.html';
+          include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

@@ -9,5 +9,5 @@ if (ini_get("session.use_cookies")) {
     );
 }
 session_destroy();
-header('Location: /Ataco/php/login.php')
+header('Location: /Ataco/php/es/login.php')
 ?>

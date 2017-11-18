@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['Nombre'])){
-        header('Location: /Ataco/php/Index.php');
+        header('Location: /Ataco/php/es/Index.php');
     }
     require 'sql_conn.php';
     $conn=Arrancar();
@@ -18,10 +18,10 @@
 
     if(isset($nombre,$mail,$message)){
         $stmt->execute();
-        echo '<script> window.location.replace("/Ataco/php/contacto-admin.php")</script>';
+        echo '<script> window.location.replace("/Ataco/php/es/contacto-admin.php")</script>';
         // echo 'bien';
     }else{
-        echo '<script> window.location.replace("/Ataco/php/contacto-admin.php")</script>';
+        echo '<script> window.location.replace("/Ataco/php/es/contacto-admin.php")</script>';
         // echo $nombre.$mail.$message.$id;
     }
 ?>
