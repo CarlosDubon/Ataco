@@ -11,7 +11,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
     <?php
     include '../../html/head.html';
     ?>
-    <title>Tipos de Vivienda</title>
+    <title>Housing</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Poblacion y vivienda</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+            <h1 style="display: inline-block">Population and Housing</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <?php
@@ -36,8 +36,8 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <h5 align="center"><b>Población</b></h5><hr>
-                    <p>Segun el censo que se realizo en 2007, la poblacion de Concepción de Ataco ha aumentado cada año más. A continuación se presenta un listado de dichos datos para una mayor comprensión.</p>
+                    <h5 align="center"><b>Population</b></h5><hr>
+                    <p>According to the census that was carried out in 2007, the population of Concepción de Ataco has increased every year. Below is a list of these data for a better understanding.</p>
                     <div class="row">
                         <div class="col-lg-6 col-md-12 center">
                             <ol>
