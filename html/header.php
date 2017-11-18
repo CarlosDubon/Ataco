@@ -33,19 +33,19 @@
             </ul>
         </li>
         <li class="submenu">
-            <a href="#"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+            <a href="#" id="Prevent"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
             <ul class="children">
                 <li><a href="#" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-info" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <?php
         if(isset($_SESSION['Nombre'])){
-            
+
             echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
             <li class="rigth-list"><a href="../php/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar  Sesion</a></li>
-            
+
 ';
         }else{
             echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
@@ -81,19 +81,19 @@
           </ul>
       </li>
       <li class="submenu">
-          <a href="#"  data-toggle="modal" data-target="#fontSize"><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
+          <a href="#" id="Prevent" ><i class="fa fa-universal-access" aria-hidden="true"></i>Accesibilidad <i id="slide-icon" class="fa fa-angle-double-down" aria-hidden="true"></i> </a>
           <ul class="children">
-              <li><a href="#"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+            <li><a href="#" id="Prevent" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+            <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-info" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <?php
         if(isset($_SESSION['Nombre'])){
-            
+
             echo  '<li><a href="../php/contacto-admin.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
             <li class=""><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Cerrar Sesion</a></li>
-            
+
 ';
         }else{
             echo' <li><a href="../php/contacto.php"><i class="fa fa-users" aria-hidden="true"></i>Contactanos</a></li>
@@ -126,4 +126,29 @@
   </div>
 </div>
 
-<script src="../js/accesibilidad.js"></script>
+<div class="modal fade bs-example-modal-lg" id="Espectro_Color" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-font" aria-hidden="true"></i>Espectro de color</h4>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4 center"><button type="button" id="Desactivar" style="width:75%; margin-top:10px;" class="defaultModal-btn">Desactivar</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Protanopia" style="width:75%; margin-top:10px;" class="defaultModal-btn">Protanopia</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Protanomaly" style="width:75%; margin-top:10px;" class="defaultModal-btn">Protanomaly</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Deuteranopia" style="width:75%; margin-top:10px;" class="defaultModal-btn">Deuteranopia</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Deuteranomaly" style="width:75%; margin-top:10px;" class="defaultModal-btn">Deuteranomaly</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Tritanopia" style="width:75%; margin-top:10px;" class="defaultModal-btn">Tritanopia</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Tritanomaly" style="width:75%; margin-top:10px;" class="defaultModal-btn">Tritanomaly</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Achromatopsia" style="width:75%; margin-top:10px;" class="defaultModal-btn">Achromatopsia</button></div>
+              <div class="col-lg-4 center"><button type="button" id="Achromatomaly" style="width:75%; margin-top:10px;" class="defaultModal-btn">Achromatomaly</button></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="button-modal" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>Cerrar</button>
+      </div>
+    </div>
+</div>
+</div>
