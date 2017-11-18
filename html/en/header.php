@@ -38,6 +38,7 @@
                 <li><a href="#" id="Prevent" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Font Size<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Color Spectrum<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="accesibilidad.php"><i class="fa fa-eye-slash" aria-hidden="true"></i>Vision<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+                <li><a href="EnToEs.php?id=<?php echo $_SERVER['REQUEST_URI']?>"><i class="fa fa-language" aria-hidden="true"></i>Spanish Version<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
         <?php
@@ -86,6 +87,7 @@
             <li><a href="#" id="Prevent" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Font Size<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Color Spectrum<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             <li><a href="accesibilidad.php"><i class="fa fa-eye-slash" aria-hidden="true"></i>Vision <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
+            <li><a href="EnToEs.php?id=<?php echo $_SERVER['REQUEST_URI']?>"><i class="fa fa-language" aria-hidden="true"></i>Spanish Version<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
       <?php
