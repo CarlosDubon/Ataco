@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-11-2017 a las 23:23:14
+-- Tiempo de generación: 19-11-2017 a las 00:15:51
 -- Versión del servidor: 10.1.26-MariaDB
--- Versión de PHP: 7.1.9
+-- Versión de PHP: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -260,7 +260,7 @@ CREATE TABLE `municipio` (
 --
 
 INSERT INTO `municipio` (`idMunicipio`, `Nombre`, `Descripcion`, `Ubicacion`, `Como_Llegar`, `Historia`, `Alcalde`, `Población`, `Orografia`, `ViasComunicacion`, `DViasComunicacion`, `Estructura`, `Hidrografia`, `Vivienda`) VALUES
-(1, 'Concepcion de Ataco', 'Concepcion de Ataco is a town of pre-Columbian origin. its fascinating landscapes, its cultural value and its cobbled streets were enough to name it part of the Ruta de las Flores. In the name of the town is of Nahuatl origin means \"Place of high springs\", a very successful name for a population settled between mountains at a height of 1,275 meters asl, which allows to enjoy a very cool climate in these hot times.\r\n|\r\nAtaco is known for being a very picturesque town since many of the walls have been decorated with murals alluding to Salvadoran culture.', 'Concepción de Ataco is located in the department of Ahuachapán, at 1275 m SNM, on a plateau in the Apaneca-Ilamatepec mountain range. It is part of the Ruta de las Flores. This can be reached by CA 8 from Sonsonate, 105 km, or from Ahuachapán.\r\n\r\nIt was founded by Nahua tribes. Concepción de Ataco has places of tourist attraction such as the Atzumpa pool, Los Apantes waterfalls, Salinas, viewpoints, as well as waist looms. According to some linguists, Ataco means \"Place of High Springs\". The historian Tomás Fidias Jiménez was born in this city. Its festivities are celebrated from December 11 to 15 in honor of the Virgin of Concepción.\r\n\r\nIn this town we can still see some of its cobblestone streets, a legacy of the colony. Its main means of income is coffee, other items are textiles and handicrafts.', 'If you come from San Salvador you must take the Pan-American Highway (CA-8) in the direction of Santa Ana-Sonsonate. At the point known as \"El Poliedro\" in the municipality of Lourdes, take the detour to Sonsonate on the right.\r\nAlong the way you will find the signage that tells you how to get to each destination of the Ruta de las Flores. The vehicle journey takes one hour with approximately 30 minutes.\r\nIf you go by bus, there are several options. From the West terminal in San Salvador, you can take the 205 special to $ 1.30 USD (1 hour and 15 minutes approximately), the normal 205 to $ 0.75 USD (1 hour and 45 minutes approximately). You can also take route 249 to Sonsonate-Ahuachapán.', 'This population is of pre-Columbian origin and was founded by Yaqui or Pipil Indians in the heart of the Apaneca mountain range after the eleventh century of the Vulgar Era. In náhuat this toponymic means \"place of high springs\", since it comes from at, water, spring; aeu, high, high; and co, locative suffix. In 1550 it had about 800 inhabitants. The oidor don Diego García de Palacio, in a letter of relation to King Felipe II, of March 8, 1576, says that on the high plateau of Apaneca is the town of Ataco \"of the same temper and fertility (that the others of the mountain), and very abundant of all hunting and hunting, for the many good mountains that they have for her.I had news that there were deer in it, in the way that they are those that in India of Portugal raise the stone to bezar and I made to kill some in which some stones were found, which, proven in pestilential diseases, have the same effect as those that are brought from said India.', 'Óscar Oliverio Gómez', ' 12,786', 'The most notable orographic features of the municipality are the hills: El Batellon, La empalizada, el tonconal, el cipres, el tamagaz, el arco y trompa de tunco; Las Lomas, el temblador, el triangulo, la Oscurana, La Cruz, El Esfuerzo, El Pito, El Rosario, El Bosque, La Mira, El Manzanillo, El Rotulo, San Felipe, El Ojo de Agua, El Escobal, Shucutitán, El Estoraque, Calle La Peña y Tierra Colorada', '\r\n782/5000\r\nOn the way from the city of Sonsonate to Ahuachapán, there is a series of towns with a lot of cultural tradition, natural beauties and a pleasant climate that the Sierra Apaneca - Ilamatepec offers. A winding route, full of coffee plantations between hills that includes 5 villages: Nahuizalco, Salcoatitán, Juayúa, Apaneca and Concepción de Ataco.\r\n\r\nThe town of Concepción de Taco is connected by road (CA-8) with the city of Ahuachapán, to the north, and the town of Apaneca to the south east of the municipality. By unpaved road, passable all the year, deviating from the (CA-8) near the farms Germania and El Rosario, it is communicated to the South of the town, with the towns of Jujutla and Guaymango. Neighborhood roads link cantons and hamlets with the municipal seat', 'Ataco is one of the few places in El Salvador where you can see some of its streets are paved (cobbled) which is considered a legacy of the colony.', 'This population is of pre-Columbian origin, and was founded by Yaqui Indians or Pipiles in the heart of the Sierra Apaneca, after the eleventh century of the Vulgal Era. According to Archbishop Pedro Cortes y Larraz, Ataco remained in 1770 to the parish of Ahuachapán and its population was represented by 303 families with 784 indigenous people who spoke the Nahuat language, but who also spoke and understood Spanish. In Ataco, adds Monsignor, there was a school where the Indizuelos were taught, in addition to Christian doctrine, to read and write. Throughout the colony, Ataco belonged to the administrative unit called the province of the Izalcos or Mayor of Sonsonate. | As of June 12, 1824, it was a municipality of the primitive and large department of Sonsonate. By executive decree of February 26, 1869, it became part of the district and department of Ahuachapán. During the administration of the President of the Republic Dr. Manuel Enrique Araujo and by Legislative Decree of May 11, 1911, ratified by another of April 11, 1913, the village title was granted to the people of conception of attack.', 'Its fluvial system is formed by the rivers: Guamo, El Limo o Tiapan, Matala o Los Bosques, El Naranjo, Asino, Cauta, Copinula, El Rosario, Zapua, Los Apantes o Los Amates, El Regadío, Sunzacuapa, Tepetayo y de Chacala, y las quebradas: El Muerto, Las Lajas, El Tarro, El Tanque, El Molino, Sisiniapa, El Descuaje, Atzumpa, El Tamagás, La Pena o El Pacayal, La Joya de Los Apantes, La Soledad o de Torrento, Buena Vista, El Jutal y de Quezalapa.', 'The census helps to determine the number of inhabitants of the entire country disaggregated according to the political administrative division (department, municipality and canton) through the process of collecting, evaluating and analyzing demographic, educational, economically active population, housing and household data. on a certain moment. The native population of Ataco still preserves many of the customs and traditions of their grandparents, which goes from generation to generation through oral tradition, protecting until now a little of our Nahuat culture.\r\n|\r\nCurrently Concepción de Ataco is a city with a high degree of tourist development, its streets are paved and cobbled, its houses are adobe, bahareque and mixed system; in most of their homes, which have been converted into different stores, pictures of the culture of that area have been painted and the houses are given colorful colors; this city has turicentros, many restaurants, green areas, places for lodging and on top its imposing viewpoint of the cross, where you can climb in only about 30 minutes and be able to appreciate all the beauty of this city and the mountainous area.');
+(1, 'Concepcion de Ataco', 'Concepcion de Ataco is a town of pre-Columbian origin. its fascinating landscapes, its cultural value and its cobbled streets were enough to name it part of the Ruta de las Flores. In the name of the town is of Nahuatl origin means \"Place of high springs\", a very successful name for a population settled between mountains at a height of 1,275 meters asl, which allows to enjoy a very cool climate in these hot times.\r\n|\r\nAtaco is known for being a very picturesque town since many of the walls have been decorated with murals alluding to Salvadoran culture.', 'Concepción de Ataco is located in the department of Ahuachapán, at 1275 m SNM, on a plateau in the Apaneca-Ilamatepec mountain range. It is part of the Ruta de las Flores. This can be reached by CA 8 from Sonsonate, 105 km, or from Ahuachapán.\r\n\r\nIt was founded by Nahua tribes. Concepción de Ataco has places of tourist attraction such as the Atzumpa pool, Los Apantes waterfalls, Salinas, viewpoints, as well as waist looms. According to some linguists, Ataco means \"Place of High Springs\". The historian Tomás Fidias Jiménez was born in this city. Its festivities are celebrated from December 11 to 15 in honor of the Virgin of Concepción.\r\n\r\nIn this town we can still see some of its cobblestone streets, a legacy of the colony. Its main means of income is coffee, other items are textiles and handicrafts.', 'If you come from San Salvador you must take the Pan-American Highway (CA-8) in the direction of Santa Ana-Sonsonate. At the point known as \"El Poliedro\" in the municipality of Lourdes, take the detour to Sonsonate on the right.\r\nAlong the way you will find the signage that tells you how to get to each destination of the Ruta de las Flores. The vehicle journey takes one hour with approximately 30 minutes.\r\nIf you go by bus, there are several options. From the West terminal in San Salvador, you can take the 205 special to $ 1.30 USD (1 hour and 15 minutes approximately), the normal 205 to $ 0.75 USD (1 hour and 45 minutes approximately). You can also take route 249 to Sonsonate-Ahuachapán.', 'This population is of pre-Columbian origin and was founded by Yaqui or Pipil Indians in the heart of the Apaneca mountain range after the eleventh century of the Vulgar Era. In náhuat this toponymic means \"place of high springs\", since it comes from at, water, spring; aeu, high, high; and co, locative suffix.| In 1550 it had about 800 inhabitants. The oidor don Diego García de Palacio, in a letter of relation to King Felipe II, of March 8, 1576, says that on the high plateau of Apaneca is the town of Ataco \"of the same temper and fertility (that the others of the mountain), and very abundant of all hunting and hunting, for the many good mountains that they have for her.I had news that there were deer in it, in the way that they are those that in India of Portugal raise the stone to bezar and I made to kill some in which some stones were found, which, proven in pestilential diseases, have the same effect as those that are brought from said India.', 'Óscar Oliverio Gómez', ' 12,786', 'The most notable orographic features of the municipality are the hills: El Batellon, La empalizada, el tonconal, el cipres, el tamagaz, el arco y trompa de tunco; Las Lomas, el temblador, el triangulo, la Oscurana, La Cruz, El Esfuerzo, El Pito, El Rosario, El Bosque, La Mira, El Manzanillo, El Rotulo, San Felipe, El Ojo de Agua, El Escobal, Shucutitán, El Estoraque, Calle La Peña y Tierra Colorada', '\r\n782/5000\r\nOn the way from the city of Sonsonate to Ahuachapán, there is a series of towns with a lot of cultural tradition, natural beauties and a pleasant climate that the Sierra Apaneca - Ilamatepec offers. A winding route, full of coffee plantations between hills that includes 5 villages: Nahuizalco, Salcoatitán, Juayúa, Apaneca and Concepción de Ataco.\r\n\r\nThe town of Concepción de Taco is connected by road (CA-8) with the city of Ahuachapán, to the north, and the town of Apaneca to the south east of the municipality. By unpaved road, passable all the year, deviating from the (CA-8) near the farms Germania and El Rosario, it is communicated to the South of the town, with the towns of Jujutla and Guaymango. Neighborhood roads link cantons and hamlets with the municipal seat', 'Ataco is one of the few places in El Salvador where you can see some of its streets are paved (cobbled) which is considered a legacy of the colony.', 'This population is of pre-Columbian origin, and was founded by Yaqui Indians or Pipiles in the heart of the Sierra Apaneca, after the eleventh century of the Vulgal Era. According to Archbishop Pedro Cortes y Larraz, Ataco remained in 1770 to the parish of Ahuachapán and its population was represented by 303 families with 784 indigenous people who spoke the Nahuat language, but who also spoke and understood Spanish. In Ataco, adds Monsignor, there was a school where the Indizuelos were taught, in addition to Christian doctrine, to read and write. Throughout the colony, Ataco belonged to the administrative unit called the province of the Izalcos or Mayor of Sonsonate. | As of June 12, 1824, it was a municipality of the primitive and large department of Sonsonate. By executive decree of February 26, 1869, it became part of the district and department of Ahuachapán. During the administration of the President of the Republic Dr. Manuel Enrique Araujo and by Legislative Decree of May 11, 1911, ratified by another of April 11, 1913, the village title was granted to the people of conception of attack.', 'Its fluvial system is formed by the rivers: Guamo, El Limo o Tiapan, Matala o Los Bosques, El Naranjo, Asino, Cauta, Copinula, El Rosario, Zapua, Los Apantes o Los Amates, El Regadío, Sunzacuapa, Tepetayo y de Chacala, y las quebradas: El Muerto, Las Lajas, El Tarro, El Tanque, El Molino, Sisiniapa, El Descuaje, Atzumpa, El Tamagás, La Pena o El Pacayal, La Joya de Los Apantes, La Soledad o de Torrento, Buena Vista, El Jutal y de Quezalapa.', 'The census helps to determine the number of inhabitants of the entire country disaggregated according to the political administrative division (department, municipality and canton) through the process of collecting, evaluating and analyzing demographic, educational, economically active population, housing and household data. on a certain moment. The native population of Ataco still preserves many of the customs and traditions of their grandparents, which goes from generation to generation through oral tradition, protecting until now a little of our Nahuat culture.\r\n|\r\nCurrently Concepción de Ataco is a city with a high degree of tourist development, its streets are paved and cobbled, its houses are adobe, bahareque and mixed system; in most of their homes, which have been converted into different stores, pictures of the culture of that area have been painted and the houses are given colorful colors; this city has turicentros, many restaurants, green areas, places for lodging and on top its imposing viewpoint of the cross, where you can climb in only about 30 minutes and be able to appreciate all the beauty of this city and the mountainous area.');
 
 -- --------------------------------------------------------
 
@@ -432,73 +432,61 @@ ALTER TABLE `usuario`
 --
 ALTER TABLE `caserio`
   MODIFY `idCaserio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
 --
 -- AUTO_INCREMENT de la tabla `comentario`
 --
 ALTER TABLE `comentario`
   MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
 ALTER TABLE `hidrografia`
   MODIFY `idHidrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT de la tabla `img_canton`
 --
 ALTER TABLE `img_canton`
   MODIFY `idImg_Canton` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT de la tabla `img_hidrografia`
 --
 ALTER TABLE `img_hidrografia`
   MODIFY `idImg_hidrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT de la tabla `img_municipio`
 --
 ALTER TABLE `img_municipio`
   MODIFY `idImg_Municipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT de la tabla `img_orografia`
 --
 ALTER TABLE `img_orografia`
   MODIFY `idImg_orografia` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT de la tabla `img_turismo`
 --
 ALTER TABLE `img_turismo`
   MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT de la tabla `municipio`
 --
 ALTER TABLE `municipio`
   MODIFY `idMunicipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT de la tabla `orografia`
 --
 ALTER TABLE `orografia`
   MODIFY `idOrografia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
 --
 -- AUTO_INCREMENT de la tabla `turismo`
 --
 ALTER TABLE `turismo`
   MODIFY `idTurismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- Restricciones para tablas volcadas
 --
