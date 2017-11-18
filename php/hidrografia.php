@@ -10,7 +10,7 @@
 <body>
     <header>
     <?php
-       include '../html/header.html';
+       include '../html/header.php';
     ?>
     </header>
     <section>
@@ -20,7 +20,7 @@
               <span name="play">Reproducir</span>
           </button>
             <div class="row">
-              <div class="col-xs-12">
+              <div class="col-md-12 center">
                <a class="navbar-brand logo fadeIn animated" href="index.html">
                   <img src="../img/RIOS/RIOS.png" alt="mapa hidrografico" style="width: 100%;">
                </a>
