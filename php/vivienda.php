@@ -1,3 +1,9 @@
+<?php
+require 'sql_conn.php';
+$query = "SELECT * FROM municipio";
+$rs = getResult($query);
+$vivienda = explode('|',$rs[0]['Vivienda']);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,30 +16,30 @@
 <body>
     <header>
     <?php
-       include '../html/header.html';
+       include '../html/header.php';
     ?>
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Vivienda en Concepcion de Ataco</h1><hr><br>
-            <h1>Tipo de Vivieda</h1>
-            <div class="row"><br>
+            <h1 style="display: inline-block">Poblacion y vivienda</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+            <div class="row">
                 <div class="col-lg-8 col-md-12">
-                 <p>El censo ayuda a determinar la cantidad de habitantes de todo el país desagregado de acuerdo a la división político administrativa (departamento, municipio y cantón) mediante el proceso de recolectar, evaluar y analizar los datos demográficos, educativos, población económicamente activa, vivienda y hogares en un momento determinado. La población nativa de Ataco aun conserva muchas de las costumbres y tradiciones de sus abuelos, que va de generación en generación a través de la tradición oral, resguardando hasta ahora un poco de nuestra cultura nahuat.</p>
-
-                 <p>En la actualidad Concepción de Ataco es una ciudad con alto grado de desarrollo turístico, sus calles son empedradas y adoquinadas, sus casas son de adobe, bahareque y sistema mixto; en la mayoría de sus viviendas, que han sido convertidas en tiendas diversas, se han pintado estampas de la cultura de dicha zona y se da a las casas colores vistosos; esta ciudad posee turicentros, muchos restaurantes, zonas verdes, lugares para alojamiento y en lo alto su imponente mirador de la cruz, adonde usted puede subir en solo unos 30 minutos y poder apreciar toda la belleza de esta ciudad y la zona montañosa.</p>
+                    <?php
+                    for($i=0;$i<count($vivienda);$i++){
+                        echo '<p>'.$vivienda[$i].'</p>';
+                    }
+                    ?>
                 </div>
-                <div class="col-lg-4 col-md-12"><br>
+                <div class="col-lg-4 col-md-12">
                       <img class="miniaruta" src="../img/calleataco.jpg" alt="...">
                 </div>
-            </div><br>
+            </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <h5 align="center"><b>Población</b></h5><hr>
                     <p>Segun el censo que se realizo en 2007, la poblacion de Concepción de Ataco ha aumentado cada año más. A continuación se presenta un listado de dichos datos para una mayor comprensión.</p>
                     <div class="row">
-                        <div class="col-lg-3"></div>
-                        <div class="col-lg-4 col-md-12">
+                        <div class="col-lg-6 col-md-12 center">
                             <ol>
                                 <li>Poblacion total</li>
                                 <ul>
@@ -54,7 +60,7 @@
                                 </ul><br>
                             </ol>
                         </div>
-                        <div class="col-lg-5 col-md-12">
+                        <div class="col-lg-6 col-md-12 center">
                             <ul>
                                 <li>12,786</li>
                                 <ul>
@@ -80,10 +86,9 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <h5 align="center"><b>Tipo de Vivienda</b></h5><hr>
-                    <p>Otro aspecto de gran importancia en el censo son los tipos de vivienda de la región, los cuales se muestran a continuación:</p><br>
+                    <p>Otro aspecto de gran importancia en el censo son los tipos de vivienda de la región, los cuales se muestran a continuación:</p>
                     <div class="row">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-10 col-md-12">
+                        <div class="col-lg-12 col-md-12" style="margin-left:5%">
                             <ol>
                                 <li>Casa Independite</li>
                                 <li>Apartamento</li>
@@ -107,6 +112,7 @@
     <footer>
         <?php
           include '../html/Topscroller-dark.html';
+          include '../html/footer.html';
         ?>
     </footer>
     <!--Modals-->
