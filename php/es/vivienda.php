@@ -31,7 +31,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
                     ?>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                      <img class="miniaruta" src="../img/calleataco.jpg" alt="...">
+                      <img class="miniaruta" src="../../img/calleataco.jpg" alt="...">
                 </div>
             </div>
             <div class="row">
