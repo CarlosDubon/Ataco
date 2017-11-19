@@ -24,9 +24,10 @@ $cerros=getResult($query);
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <h1 style="display: inline-block">Orografía </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-                      <span name="play">Reproducir</span>
-                  </button>
+                    <h1 style="display: inline-block">Orografía </h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+                    <audio id="medio" width="200px">
+                        <source src="../../audios/es/Orografia.mp3" >
+                    </audio>
                     <p><?php echo $orografia[0]['Orografia'] ?></p>
                 </div>
             </div>

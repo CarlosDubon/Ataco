@@ -26,6 +26,9 @@
     <section>
        <div class="container">
            <h1 style="display: inline-block">Turismo</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+           <audio id="medio" width="200px">
+               <source src="../../audios/es/Turismo.mp3" >
+           </audio>
            <p>Dentro de las Rutas de las Flores, en El Salvador, se encuentran muchos paraísos mágicos llenos de naturaleza, ambiente y curiosidades por visitar.</p>
            <p>Pero, uno de esos lugares es Concepción de Ataco, en Ahuachapán. Ahí podrás encontrar muchas atracciones turísticas que puedes disfrutar para que tu viaje por El Salvador sea inolvidable.</p>
            <p>Con un clima fresco y una temperatura agradable, estás son algunas de las atracciones que Ataco ofrece para que disfrutes en tu viaje.</p>
