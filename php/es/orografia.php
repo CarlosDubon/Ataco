@@ -17,7 +17,7 @@ $cerros=getResult($query);
 <body>
     <header>
     <?php
-       include '../../html/es/header.php';
+       include '../../html/es/header.php'; 
     ?>
     </header>
     <section>
