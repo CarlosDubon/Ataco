@@ -24,8 +24,10 @@ $rios = getResult($query2);
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">Hidrografia </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-              <span name="play">Reproducir</span>
+            <h1 style="display: inline-block">Hidrografia </h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+            <audio id="medio" width="200px">
+                <source src="../../audios/es/Hidrografia.mp3" >
+            </audio>
           </button>
             <div class="row">
               <div class="col-md-12 center">
@@ -56,7 +58,7 @@ $rios = getResult($query2);
                                 </div>
                             </div>
                             <hr>';
-                        
+
                          $flag=false;
                     }else{
                         echo '
@@ -76,13 +78,14 @@ $rios = getResult($query2);
                         $flag=true;
                     }
                 }
-                
+
                ?>
         </div>
   </section>
     <footer>
         <?php
           include '../../html/Topscroller-dark.html';
+          include '../../html/footer.html';
         ?>
     </footer>
     <!--Modals-->

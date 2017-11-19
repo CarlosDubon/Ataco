@@ -25,7 +25,10 @@
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Political Division</h1><hr><br>
+            <h1 style="display: inline-block">Political Division</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+            <audio id="medio" width="200px">
+                <source src="../../audios/en/Politicaldivision.mp3" >
+            </audio><hr><br>
             <h1>Structure</h1>
                 <div class="row">
                   <div class="col-lg-8 col-md-12">

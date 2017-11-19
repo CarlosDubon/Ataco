@@ -26,6 +26,9 @@
     <section>
        <div class="container">
            <h1 style="display: inline-block">Tourism</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+           <audio id="medio" width="200px">
+               <source src="../../audios/en/tourism.mp3" >
+           </audio>
            <p>Rutas de las Flores, in El Salvador, there are many magical paradises full of nature, environment and curiosities to visit.</p>
            <p>But, one of those places is Concepción de Ataco, in Ahuachapán. There you can find many tourist attractions that you can enjoy to make your trip to El Salvador unforgettable.</p>
            <p>With a cool climate and a pleasant temperature, these are some of the attractions that Ataco offers to enjoy your trip.</p>

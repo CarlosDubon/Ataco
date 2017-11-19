@@ -23,9 +23,10 @@ $rios = getResult($query2);
     <section>
         <div class="container">
 
-            <h1 style="display: inline-block">Hydrography </h1><button type="button btn btn-large btn-success" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i>
-              <span name="play">Play</span>
-          </button>
+            <h1 style="display: inline-block">Hydrography </h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+            <audio id="medio" width="200px">
+                <source src="../../audios/en/hydrography.mp3" >
+            </audio>
             <div class="row">
               <div class="col-md-12 center">
                <a class="navbar-brand logo fadeIn animated" href="index.html">

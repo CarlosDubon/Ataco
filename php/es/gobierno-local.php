@@ -17,6 +17,9 @@
    <section>
        <div class="container">
            <h1 style="display: inline-block">Gobierno Local</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+           <audio id="medio" width="200px">
+               <source src="../../audios/es/GobiernoLocal.mp3" >
+           </audio>
            <p>El municipio de Concepción de Ataco cuenta actualmente con la siguiente estructura:</p>
            <p>Miembros de Concejo, 6:</p>
            <div class="row">

@@ -26,7 +26,7 @@
         <div class="container">
             <h1 style="display: inline-block">History</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
             <audio id="medio" width="200px">
-                <source src="../../audios/audio.mp3" >
+                <source src="../../audios/en/history.mp3" >
             </audio>
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">

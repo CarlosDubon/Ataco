@@ -20,6 +20,9 @@ $vias = getResult($query);
     <div class="container">
     <section>
       <h1 style="display: inline-block">Comunication Routes</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+      <audio id="medio" width="200px">
+          <source src="../../audios/en/Communicationchannels.mp3" >
+      </audio>
       <div class="row" >
         <div class="col-md-6">
           <p><?php echo $vias[0]['ViasComunicacion'] ?></p>
