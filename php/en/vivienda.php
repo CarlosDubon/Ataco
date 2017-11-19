@@ -11,7 +11,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
     <?php
     include '../../html/head.html';
     ?>
-    <title>Housing</title>
+    <title>Population and Housing</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@ $vivienda = explode('|',$rs[0]['Vivienda']);
     </header>
     <section>
        <div class="container">
-            <h1 style="display: inline-block">Population and Housing</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+            <h1 style="display: inline-block">Population and Housing</h1>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <?php

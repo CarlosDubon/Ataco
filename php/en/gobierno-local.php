@@ -16,7 +16,10 @@
    </header>
    <section>
        <div class="container">
-           <h1 style="display: inline-block">Local Government</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Reproducir</span></button>
+           <h1 style="display: inline-block">Local Government</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
+           <audio id="medio" width="200px">
+               <source src="../../audios/en/Localgovernment.mp3" >
+           </audio>
            <p>The municipality of Concepción de Ataco currently has the following structure:</p>
            <p>Council Members, 6:</p>
            <div class="row">

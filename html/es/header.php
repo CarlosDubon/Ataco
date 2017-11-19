@@ -37,7 +37,6 @@
             <ul class="children">
                 <li><a href="#" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="#" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-                <li><a href="/Ataco/php/es/Accesibilidad.php"><i class="fa fa-eye-slash" aria-hidden="true"></i>Vision <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
                 <li><a href="EsToEn.php?id=<?php echo $_SERVER['REQUEST_URI']?>"><i class="fa fa-language" aria-hidden="true"></i>Versión en Inglés<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             </ul>
         </li>
@@ -86,7 +85,6 @@
           <ul class="children">
             <li><a href="#" id="Prevent" data-toggle="modal" data-target="#fontSize"><i class="fa fa-font" aria-hidden="true"></i>Tamaño de Letra<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             <li><a href="#" id="Prevent" data-toggle="modal" data-target="#Espectro_Color"><i class="fa fa-eye" aria-hidden="true"></i>Espectro de Color<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i>Sub Item <i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
             <li><a href="EsToEn.php?id=<?php echo $_SERVER['REQUEST_URI']?>"><i class="fa fa-language" aria-hidden="true"></i>Versión en Inglés<i class="fa fa-ellipsis-h subitem" aria-hidden="true"></i></a></li>
           </ul>
       </li>
