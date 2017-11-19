@@ -6,6 +6,17 @@ $img=getResult($query2);
 $municipio = getResult($query);
 $arrayMunicipio = explode("\r\n",$municipio[0]['Ubicacion']);
 $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
+
+
+$rand = mt_rand(0,count($img));
+$pull[] = $rand;
+for($i=0; $i<2;$i++){
+    $rand = mt_rand(0,count($img));
+    while(in_array($rand,$pull)){
+        $rand = mt_rand(0,count($img));
+    }
+    $pull[]=$rand; 
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -70,15 +81,26 @@ $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                       </ol>
                       <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <img class="d-block w-100" src="../../img/Img8.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="../../img/Img4.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                          <img class="d-block w-100" src="../../img/Img9.jpg" alt="Third slide">
-                        </div>
+                        <?php
+                        $first=true;
+                        for($i=0;$i<count($pull);$i++){
+                            if($first){
+                              echo '
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid active" src="'.$img[$pull[$i]]["ruta"].'" >
+                                </div>';
+                                $first=false;
+                            }else{
+                                echo '
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid active" src="'.$img[$pull[$i]]["ruta"].'" >
+                                </div>';
+                            }
+                            
+                            
+                        }
+                           
+                        ?>
                       </div>
                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,6 +1,8 @@
 <?php
 require 'sql_conn.php';
 $query = "select * from municipio";
+$query2="select * from img_municipio where Tipo = 2";
+$img=getResult($query2);
 $vias = getResult($query);
 ?>
 <!DOCTYPE html>
@@ -45,18 +47,14 @@ $vias = getResult($query);
       </div>
       <div class="col-12">
           <div class="row GaleriaVias">
-            <div class="col-lg-3 col-sm-6">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
+              <?php
+                for($i=0;$i<count($img);$i++){
+                    echo '
+                    <div class="col-lg-3 col-sm-6">
+                        <img class="img-fluid" src="'.$img[$i]["ruta"].'" alt="">
+                    </div>';
+                }
+              ?>
           </div>
       </div>
     </section>

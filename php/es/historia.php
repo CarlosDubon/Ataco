@@ -1,7 +1,7 @@
 <?php
     require 'sql_conn.php';
     $sql = "SELECT * FROM municipio";
-    $queryImg_Municipio1="SELECT * FROM img_municipio";
+    $queryImg_Municipio1="SELECT * FROM img_municipio ORDER BY idImg_Municipio ";
     $descripcion = getResult($sql);
     $Ruta_Imagenes= getResult($queryImg_Municipio1);
     $secciones= explode('|',$descripcion[0]['Descripcion']);
@@ -56,14 +56,14 @@
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../../img/Img5.jpg" alt="...">
+                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[3]['ruta'] ?>" alt="...">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="../../img/Img7.jpg" alt="...">
+                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[2]['ruta'] ?>" alt="...">
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
