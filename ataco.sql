@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-11-2017 a las 00:15:14
+-- Tiempo de generación: 19-11-2017 a las 21:50:20
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -184,6 +184,7 @@ INSERT INTO `img_hidrografia` (`idImg_hidrografia`, `ruta`, `idHidrografia`) VAL
 CREATE TABLE `img_municipio` (
   `idImg_Municipio` int(11) NOT NULL,
   `ruta` varchar(100) NOT NULL,
+  `Tipo` int(11) NOT NULL DEFAULT '1',
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -191,9 +192,17 @@ CREATE TABLE `img_municipio` (
 -- Volcado de datos para la tabla `img_municipio`
 --
 
-INSERT INTO `img_municipio` (`idImg_Municipio`, `ruta`, `idMunicipio`) VALUES
-(1, '/Ataco/img/Concepcion_ataco.jpg', 1),
-(2, '/Ataco/img/Img8.jpg', 1);
+INSERT INTO `img_municipio` (`idImg_Municipio`, `ruta`, `Tipo`, `idMunicipio`) VALUES
+(1, '/Ataco/img/ubi3.jpg', 1, 1),
+(3, '/Ataco/img/ATF1/ATF11.jpg', 1, 1),
+(4, '/Ataco/img/ATF1/atf44.jpg', 1, 1),
+(5, '/Ataco/img/ATF1/ATF2222.jpg', 1, 1),
+(6, '/Ataco/img/ATF1/ATF1.jpg', 1, 1),
+(7, '/Ataco/img/ATF1/atf55.jpg', 1, 1),
+(8, '/Ataco/img/ATF1/ATF1111.jpg', 1, 1),
+(9, '/Ataco/img/ATF1/ATF4.jpg', 1, 1),
+(10, '/Ataco/img/ladrillos1.JPG', 2, 1),
+(11, '/Ataco/img/ladrillos2.JPG', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -230,7 +239,7 @@ INSERT INTO `img_turismo` (`idImg_turismo`, `ruta`, `idTurismo`) VALUES
 (5, '/Ataco/img/Mirador1.jpg', 2),
 (6, '/Ataco/img/Mirador2.jpg', 2),
 (7, '/Ataco/img/Mirador3.jpg', 2),
-(8, '/Ataco/img/Img9.jpg', 3);
+(9, '/Ataco/img/esquina1.jpg', 3);
 
 -- --------------------------------------------------------
 
@@ -456,7 +465,7 @@ ALTER TABLE `img_hidrografia`
 -- AUTO_INCREMENT de la tabla `img_municipio`
 --
 ALTER TABLE `img_municipio`
-  MODIFY `idImg_Municipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idImg_Municipio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `img_orografia`
 --
@@ -466,7 +475,7 @@ ALTER TABLE `img_orografia`
 -- AUTO_INCREMENT de la tabla `img_turismo`
 --
 ALTER TABLE `img_turismo`
-  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `municipio`
 --
