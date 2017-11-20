@@ -18,13 +18,13 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6">
-              <a href="ubicacion.php" class="BotonHome" style="width:100%;margin-top:15px;"><span class="Bold-Beba HPurple">Locate</span></a>
+              <a href="ubicacion.php" class="BotonHome" style="width:100%;margin-top:15px;"><span class="Bold-Beba HBlueIn2">Locate</span></a>
             </div>
             <div class="col-lg-3 col-md-6">
-              <a href="orografia.php" class="BotonHome" style="width:100%; margin-top:15px;"><span class="Bold-Beba HGreen">Orography</span></a>
+              <a href="orografia.php" class="BotonHome" style="width:100%; margin-top:15px;"><span class="Bold-Beba HGreenIn">Orography</span></a>
             </div>
             <div class="col-lg-3 col-md-6">
-              <a href="hidrografia.php" class="BotonHome" style="width:100%; margin-top:15px;"><span class="Bold-Beba HBlue">Hydrography</span></a>
+              <a href="hidrografia.php" class="BotonHome" style="width:100%; margin-top:15px;"><span class="Bold-Beba HOrange">Hydrography</span></a>
             </div>
             <div class="col-lg-3 col-md-6">
               <a href="Vias_De_Comunicacion.php" class="BotonHome" style="width:100%; margin-top:15px;margin-bottom:15px;"><span class="Bold-Beba HRedIntenso">Communication R.</span></a>

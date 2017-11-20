@@ -89,10 +89,10 @@ function main () {
 
         $('#FotoRuta').hover(function(){
             setTimeout(function(){
-                $('#FotoRuta').attr('src','../img/ruta_flores_2.jpg');
+                $('#FotoRuta').attr('src','../../img/ruta_flores_2.jpg');
             },300);
         },function(){
-            $('#FotoRuta').delay('1000').attr('src','../img/ruta_flores.jpg');
+            $('#FotoRuta').delay('1000').attr('src','../../img/ruta_flores.jpg');
         });
 
 }

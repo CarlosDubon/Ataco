@@ -107,7 +107,6 @@ header{
     background-image: url('../img/banner3.png');
     background-size: cover !important;
     background-attachment: fixed !important;
-
 }
 .hijo{
     display: table-cell;
@@ -461,6 +460,20 @@ section{
     color:#52645E;
 }
 
+.BotonHome:hover .HBlueIntense{
+    color:#1DABB8;
+}
+
+.BotonHome:hover .HBlueIn2{
+    color:#3498DB;
+}
+
+.BotonHome:hover .HGreenIn{
+    color:#00D717;
+}
+
+
+
 #Topscroller{
     padding: 20px 25px;
     color: #ffffff !important;
@@ -667,7 +680,7 @@ section{
 #boxGeo{
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url('../img/Img5.jpg');
+  background-image: url('../img/ubi3.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -678,7 +691,7 @@ section{
 #boxGob{
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url('../img/Img7.jpg');
+  background-image: url('../img/ubi2.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

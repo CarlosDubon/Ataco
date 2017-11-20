@@ -1,6 +1,6 @@
 <?php
   require 'sql_conn.php';
-  $query="SELECT * FROM Img_municipio";
+  $query="SELECT * FROM Img_municipio where Tipo = 1";
   $img=getResult($query);
   $Query_Municipio='SELECT Estructura as E From municipio;';
   $Result_Municipio= getResult($Query_Municipio);
@@ -9,7 +9,7 @@
   $Query_Canton='SELECT * FROM CANTON;';
   $Cantones= getResult($Query_Canton);
 
- $rand = mt_rand(0,count($img));
+ $rand = mt_rand(0,count($img)-1);
     $pull[] = $rand;
     for($i=0; $i<2;$i++){
         $rand = mt_rand(0,count($img));

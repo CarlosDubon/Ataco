@@ -1,6 +1,8 @@
 <?php
 require 'sql_conn.php';
 $query = "select * from municipio";
+$query2="select * from img_municipio where Tipo = 2";
+$img=getResult($query2);
 $vias = getResult($query);
 ?>
 <!DOCTYPE html>
@@ -21,7 +23,7 @@ $vias = getResult($query);
     <section>
       <h1 style="display: inline-block">Comunication Routes</h1><button type="button" class="play-buttom"><i name="play" class="fa fa-play" aria-hidden="true"></i><span name="play">Play</span></button>
       <audio id="medio" width="200px">
-          <source src="../../audios/en/Communicationchannels.mp3" >
+          <source src="../../audios/es/Víasdecomunicacion.mp3" >
       </audio>
       <div class="row" >
         <div class="col-md-6">
@@ -39,24 +41,20 @@ $vias = getResult($query);
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2>Directions </h2>
+          <h2> Directions </h2>
           <p><?php echo $vias[0]['DViasComunicacion'] ?></p>
         </div>
       </div>
       <div class="col-12">
           <div class="row GaleriaVias">
-            <div class="col-lg-3 col-sm-6">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
-            <div class="col-lg-3 col-sm-6 Limit">
-              <img class="img-fluid" src="../../img/Img5.jpg" alt="">
-            </div>
+              <?php
+                for($i=0;$i<count($img);$i++){
+                    echo '
+                    <div class="col-lg-3 col-sm-6">
+                        <img class="img-fluid" src="'.$img[$i]["ruta"].'" alt="">
+                    </div>';
+                }
+              ?>
           </div>
       </div>
     </section>
@@ -71,7 +69,7 @@ $vias = getResult($query);
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Ruta de las flores</h4>
+                <h4 class="modal-title" id="myModalLabel">Flowers Route</h4>
               </div>
               <div class="modal-body">
                   <div class="container">

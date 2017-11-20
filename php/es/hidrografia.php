@@ -31,7 +31,7 @@ $rios = getResult($query2);
           </button>
             <div class="row">
               <div class="col-md-12 center">
-               <a class="navbar-brand logo fadeIn animated" href="index.html">
+               <a class="navbar-brand logo fadeIn animated" id="Prevent" href="#">
                   <img src="../../img/RIOS/RIOS.png" alt="mapa hidrografico" style="width: 100%;">
                </a>
              </div>
@@ -48,9 +48,14 @@ $rios = getResult($query2);
                         echo '
                             <div class="row">
                                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
-                                    <a href="#" class="thumbnail">
-                                      <img class="miniaruta" src="'.$imgs[0]['ruta'].'" alt="...">
-                                    </a>
+                                    <a href="#" class="thumbnail" id="Prevent">';
+                                    if(count($imgs)>0){
+                                            echo '<img class="miniaruta" src="'.$imgs[0]['ruta'].'" alt="...">';
+                                        }else{
+                                            echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                                        }
+                                
+                        echo  '</a>
                                 </div>
                                 <div class="col-lg-8 col-md-12">
                                     <h1>'.$rios[$i]['Nombre'].'</h1>
@@ -68,7 +73,7 @@ $rios = getResult($query2);
                                     <p>'.$rios[$i]['Descripcion'].'</p>
                                 </div>
                                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
-                                    <a href="#" class="thumbnail">
+                                    <a href="#" class="thumbnail" id="Prevent">
                                       <img class="miniaruta" src="'.$imgs[0]['ruta'].'" alt="...">
                                     </a>
                                 </div>

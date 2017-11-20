@@ -1,7 +1,7 @@
 <?php
 require 'sql_conn.php';
 $query ="SELECT * FROM municipio";
-$query2="SELECT * FROM Img_municipio";
+$query2="SELECT * FROM Img_municipio where Tipo = '1'";
 $img=getResult($query2);
 $municipio = getResult($query);
 $arrayMunicipio = explode("\r\n",$municipio[0]['Ubicacion']);
