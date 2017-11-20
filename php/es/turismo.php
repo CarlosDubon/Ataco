@@ -15,7 +15,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>San Miguel de Mercedes</title>
+    <title>Turismo</title>
 </head>
 <body>
     <header>
@@ -40,12 +40,15 @@
                         $imgTur = getResult($query_img);
                         $query2_img= 'select count(*) as rows from img_turismo where idTurismo='.($i+1).';';
                         $rows_img = getResult($query2_img);
-
                         echo '
                             <div class="col-md-4">
-                                <a href="#" class="thumbnail" data-toggle="modal" data-target="#Turismo'.$i.'">
-                                    <img class="miniaruta" src="'.$imgTur[0]['ruta'].'" alt="...">
-                                </a>
+                                <a href="#" class="thumbnail" data-toggle="modal" data-target="#Turismo'.$i.'">';
+                                    if(count($imgTur)>0){
+                                        echo '<img class="miniaruta" src="'.$imgTur[0]['ruta'].'" alt="...">';
+                                    }else{
+                                        echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                                    }
+                        echo   '</a>
                                 <hr>
                                 <h1>'.$turismo[$i]['Nombre'].'</h1>
                                 <p>'.$sinopsis[0].'...</p>
@@ -61,9 +64,14 @@
                                   <div class="modal-body">
                                     <div class="container">
                                       <div class="row gallery">';
-                                        for($j=0; $j<$rows_img[0]['rows']; $j++){
-                                            echo '<div class="col-4 gallery-container"><img src="'.$imgTur[$j]['ruta'].'" width="100%"></div>';
+                                        if(count($imgTur)>0){
+                                            for($j=0; $j<$rows_img[0]['rows']; $j++){
+                                                echo '<div class="col-4 gallery-container"><img src="'.$imgTur[$j]['ruta'].'" width="100%"></div>';
                                         }
+                                        }else{
+                                            echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                                        }
+                                        
 
 
                         echo       '</div>

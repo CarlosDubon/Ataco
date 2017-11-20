@@ -8,12 +8,12 @@ $arrayMunicipio = explode("\r\n",$municipio[0]['Ubicacion']);
 $arrayComo = explode("\r\n",$municipio[0]['Como_Llegar']);
 
 
-$rand = mt_rand(0,count($img));
+$rand = mt_rand(0,count($img)-1);
 $pull[] = $rand;
 for($i=0; $i<2;$i++){
-    $rand = mt_rand(0,count($img));
+    $rand = mt_rand(0,count($img)-1);
     while(in_array($rand,$pull)){
-        $rand = mt_rand(0,count($img));
+        $rand = mt_rand(0,count($img)-1);
     }
     $pull[]=$rand; 
 }

@@ -14,7 +14,7 @@
     <?php
     include '../../html/head.html';
     ?>
-    <title>San Miguel de Mercedes</title>
+    <title>Historia</title>
 </head>
 <body>
     <header>
@@ -31,7 +31,13 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[0]['ruta'] ?>" alt="...">
+                    <?php
+                        if(count($Ruta_Imagenes)>0){
+                            echo '<img class="miniaruta" src="'.$Ruta_Imagenes[0]["ruta"].'" alt="...">';
+                        }else{
+                            echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                        }
+                    ?>
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
@@ -56,14 +62,26 @@
                 </div>
                 <div class="col-lg-4 col-md-12 bounceInRight animated">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[3]['ruta'] ?>" alt="...">
+                     <?php
+                        if(!empty($Ruta_Imagenes[3]["ruta"])){
+                            echo '<img class="miniaruta" src="'.$Ruta_Imagenes[3]["ruta"].'" alt="...">';
+                        }else{
+                            echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                        }
+                    ?>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-12 bounceInLeft animated wowload">
                     <a href="#" class="thumbnail">
-                      <img class="miniaruta" src="<?php echo $Ruta_Imagenes[2]['ruta'] ?>" alt="...">
+                     <?php
+                        if(!empty($Ruta_Imagenes[2]["ruta"])){
+                            echo '<img class="miniaruta" src="'.$Ruta_Imagenes[2]["ruta"].'" alt="...">';
+                        }else{
+                            echo '<div class="alert alert-danger" role="alert"><strong>Lo sentimos</strong> no se tiene registrado imagenes para esta seccion</div>';
+                        }
+                    ?>
                     </a>
                 </div>
                 <div class="col-lg-8 col-md-12">
