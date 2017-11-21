@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-11-2017 a las 21:50:42
+-- Tiempo de generación: 21-11-2017 a las 17:16:44
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -169,11 +169,11 @@ CREATE TABLE `img_hidrografia` (
 --
 
 INSERT INTO `img_hidrografia` (`idImg_hidrografia`, `ruta`, `idHidrografia`) VALUES
-(1, '/Ataco/img/RIOS/RIOLOSAPANES.png', 5),
+(1, '/Ataco/img/RIOS/RIOLOSAPANTES.png', 5),
 (2, '/Ataco/img/RIOS/RIOASINO.png', 3),
 (3, '/Ataco/img/RIOS/RIOCOPINULA.png', 4),
 (4, '/Ataco/img/RIOS/RIOGUAMO.png', 1),
-(5, '/Ataco/img/RIOS/COPUINA.png', 2);
+(5, '/Ataco/img/RIOS/RIOMATALA.png', 2);
 
 -- --------------------------------------------------------
 
@@ -240,7 +240,7 @@ INSERT INTO `img_turismo` (`idImg_turismo`, `ruta`, `idTurismo`) VALUES
 (5, '/Ataco/img/Mirador1.jpg', 2),
 (6, '/Ataco/img/Mirador2.jpg', 2),
 (7, '/Ataco/img/Mirador3.jpg', 2),
-(8, '/Ataco/img/Img9.jpg', 3);
+(9, '/Ataco/img/esquina1.jpg', 3);
 
 -- --------------------------------------------------------
 
@@ -476,7 +476,7 @@ ALTER TABLE `img_orografia`
 -- AUTO_INCREMENT de la tabla `img_turismo`
 --
 ALTER TABLE `img_turismo`
-  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idImg_turismo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `municipio`
 --

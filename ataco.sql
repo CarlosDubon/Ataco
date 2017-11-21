@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-11-2017 a las 21:50:20
+-- Tiempo de generación: 21-11-2017 a las 17:15:45
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -109,13 +109,6 @@ CREATE TABLE `comentario` (
   `idMunicipio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `comentario`
---
-
-INSERT INTO `comentario` (`idComentario`, `Nombre`, `Correo`, `Comentario`, `Fecha`, `idMunicipio`) VALUES
-(6, 'Ataco', 'Admin@Ataco.gob.sv', '<strong>Te vacile</strong>', '2017-11-17 00:27:50', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -196,7 +189,7 @@ INSERT INTO `img_municipio` (`idImg_Municipio`, `ruta`, `Tipo`, `idMunicipio`) V
 (1, '/Ataco/img/ubi3.jpg', 1, 1),
 (3, '/Ataco/img/ATF1/ATF11.jpg', 1, 1),
 (4, '/Ataco/img/ATF1/atf44.jpg', 1, 1),
-(5, '/Ataco/img/ATF1/ATF2222.jpg', 1, 1),
+(5, '/Ataco/img/ATF1/ATF2222.jpg\r\n', 1, 1),
 (6, '/Ataco/img/ATF1/ATF1.jpg', 1, 1),
 (7, '/Ataco/img/ATF1/atf55.jpg', 1, 1),
 (8, '/Ataco/img/ATF1/ATF1111.jpg', 1, 1),
@@ -445,7 +438,7 @@ ALTER TABLE `caserio`
 -- AUTO_INCREMENT de la tabla `comentario`
 --
 ALTER TABLE `comentario`
-  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idComentario` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `hidrografia`
 --
